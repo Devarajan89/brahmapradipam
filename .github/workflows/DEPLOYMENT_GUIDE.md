@@ -26,20 +26,33 @@ git checkout -b deploy
 git push -u origin deploy
 ```
 
-### 3. Configure GitHub Secret
+### 3. Configure GitHub Secrets
 
 1. Go to your GitHub repository
 2. Navigate to **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
-4. Add this secret:
+4. Add these secrets:
 
-| Secret Name | Value |
-|-------------|-------|
-| `HOSTINGER_REPO_URL` | The Git URL from Hostinger (e.g., `ssh://u123456789@server.hostinger.com:65002/~/repository.git`) |
+| Secret Name | Value | Description |
+|-------------|-------|-------------|
+| `HOSTINGER_REPO_URL` | `ssh://u123456789@server.hostinger.com:65002/~/repository.git` | The Git URL from Hostinger |
+| `HOSTINGER_SSH_KEY` | Your SSH private key | See step 4 below |
+| `HOSTINGER_SSH_HOST` | `server.hostinger.com` | Extract from Git URL |
+| `HOSTINGER_SSH_PORT` | `65002` | Extract from Git URL (optional, defaults to 65002) |
 
-### 4. Setup SSH Key (Important!)
+### 4. Setup SSH Authentication
 
-#### Option A: Generate New SSH Key for GitHub Actions
+Hostinger Git uses SSH for authentication. You need to use your existing SSH key or generate a new one:
+
+#### Option A: Use Existing Hostinger SSH Access
+
+If you already have SSH access to your Hostinger account:
+
+1. Find your private key (usually in `~/.ssh/id_rsa` or `~/.ssh/id_ed25519`)
+2. Copy the entire private key content
+3. Add it to GitHub Secrets as `HOSTINGER_SSH_KEY`
+
+#### Option B: Generate New SSH Key
 
 ```bash
 # Generate SSH key pair
@@ -50,40 +63,24 @@ This creates two files:
 - `deploy_key` (private key)
 - `deploy_key.pub` (public key)
 
-#### Add Public Key to Hostinger
+**Important**: You need to add the public key to your Hostinger account:
 
-1. Go to Hostinger **hPanel** → **Advanced** → **SSH Keys**
-2. Click **Add SSH Key**
-3. Paste content of `deploy_key.pub`
-4. Click **Add Key**
+1. Copy content of `deploy_key.pub`
+2. Log in to Hostinger via SSH or use File Manager
+3. Add the public key to `~/.ssh/authorized_keys`:
+   ```bash
+   # Via SSH
+   cat deploy_key.pub >> ~/.ssh/authorized_keys
+   chmod 600 ~/.ssh/authorized_keys
+   ```
+   Or use **File Manager** in hPanel to edit `.ssh/authorized_keys`
 
-#### Add Private Key to GitHub
-
-1. Go to GitHub **Settings** → **Secrets and variables** → **Actions**
-2. Click **New repository secret**
-3. Name: `HOSTINGER_SSH_KEY`
-4. Value: Copy entire content of `deploy_key` file (including `-----BEGIN` and `-----END` lines)
-5. Click **Add secret**
-
-#### Update Workflow to Use SSH Key
-
-The workflow needs the SSH key. Update `deploy-hostinger.yml`:
-
-```yaml
-- name: Setup SSH Key
-  run: |
-    mkdir -p ~/.ssh
-    echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_ed25519
-    chmod 600 ~/.ssh/id_ed25519
-    ssh-keyscan -p ${{ secrets.HOSTINGER_SSH_PORT || 65002 }} ${{ secrets.HOSTINGER_SSH_HOST }} >> ~/.ssh/known_hosts
-
-- name: Deploy to Hostinger
-  env:
-    HOSTINGER_REPO_URL: ${{ secrets.HOSTINGER_REPO_URL }}
-  run: |
-    git remote add hostinger $HOSTINGER_REPO_URL || git remote set-url hostinger $HOSTINGER_REPO_URL
-    git push hostinger deploy:main --force
-```
+4. Add private key (`deploy_key`) to GitHub Secrets:
+   - Go to GitHub **Settings** → **Secrets and variables** → **Actions**
+   - Click **New repository secret**
+   - Name: `HOSTINGER_SSH_KEY`
+   - Value: Copy entire content of `deploy_key` file (including headers)
+   - Click **Add secret**
 
 ### 5. Deploy Your Site
 
@@ -109,18 +106,23 @@ git push origin deploy
 4. Select `deploy` branch
 5. Click **Run workflow**
 
-### 6. Alternative: Simple Push Method
+### 6. Alternative: Direct Git Push (Without GitHub Actions)
 
-If you prefer simpler deployment without GitHub Actions:
+If you prefer to deploy manually without GitHub Actions:
 
 ```bash
-# Add Hostinger as a remote (one time setup)
+# One-time setup: Add your SSH key to Hostinger's authorized_keys
+# Then add Hostinger as a remote
 git remote add hostinger ssh://u123456789@server.hostinger.com:65002/~/repository.git
 
-# Deploy directly
-git checkout deploy
-git merge main
-git push hostinger deploy:main
+# Deploy manually
+cd /path/to/brahmapradipam
+npm run build
+cd dist
+git init
+git add -A
+git commit -m "Deploy $(date)"
+git push hostinger master:main --force
 ```
 
 ## 🔧 Hostinger Git Configuration
@@ -167,9 +169,37 @@ Your files will be deployed to the path you specified:
 2. **Use GitHub Secrets**: Store all credentials securely
 3. **Limit Access**: Create separate SSH key just for deployment
 4. **Regular Updates**: Keep dependencies updated
-5. **Monitor Logs**: Check GitHub Actions logs for issues
+5. **Moniyour SSH key is in Hostinger's `~/.ssh/authorized_keys`
+- Check `HOSTINGER_SSH_KEY` secret contains the correct private key (with headers)
+- Ensure the Git URL is correct in `HOSTINGER_REPO_URL`
+- Test SSH connection: `ssh -p 65002 u123456789@server.hostinger.com`
+- Make sure SSH key has no passphrase (or use ssh-agent)
 
-## 🐛 Troubleshooting
+### Permission Denied (publickey)
+- Your public key is not in Hostinger's authorized_keys
+- Add it via SSH or File Manager: `cat your_key.pub >> ~/.ssh/authorized_keys`
+- Ensure `.ssh` folder permissions: `chmod 700 ~/.ssh` and `chmod 600 ~/.ssh/authorized_keys`
+
+### How to Add Public Key to Hostinger
+
+Since Hostinger doesn't have an "Add SSH Key" button in Git settings:
+
+1. **Via SSH** (if you have existing SSH access):
+   ```bash
+   ssh u123456789@server.hostinger.com -p 65002
+   nano ~/.ssh/authorized_keys
+   # Paste your public key on a new line
+   # Save and exit (Ctrl+X, Y, Enter)
+   ```
+
+2. **Via File Manager**:
+   - Go to hPanel → **Files** → **File Manager**
+   - Navigate to home directory
+   - Show hidden files (toggle . files)
+   - Find or create `.ssh` folder
+   - Edit `authorized_keys` file
+   - Add your public key on a new line
+   - Sav
 
 ### Authentication Failed
 - Verify SSH key is added to Hostinger
