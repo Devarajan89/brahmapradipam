@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Full history for proper Git operations
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,25 +33,25 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p ${{ secrets.HOSTINGER_SSH_PORT || 65002 }} ${{ secrets.HOSTINGER_SSH_HOST }} >> ~/.ssh/known_hosts || true
         
-      - name: Commit build files
+      - name: Prepare dist-only deployment
         run: |
+          cd dist
+          git init
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add -f dist/
-          git commit -m "Build: Deploy $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git add -A
+          git commit -m "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
         
       - name: Deploy to Hostinger
         env:
           HOSTINGER_REPO_URL: ${{ secrets.HOSTINGER_REPO_URL }}
         run: |
-          # Configure Git remote for Hostinger
-          git remote add hostinger $HOSTINGER_REPO_URL || git remote set-url hostinger $HOSTINGER_REPO_URL
-          
-          # Push to Hostinger (force push to overwrite)
-          git push hostinger HEAD:main --force
+          cd dist
+          git remote add hostinger $HOSTINGER_REPO_URL
+          git push hostinger master:main --force
           
       - name: Deployment Summary
         run: |
           echo "✅ Deployment completed successfully!"
           echo "📦 Build timestamp: $(date)"
-          echo "🚀 Deployed to Hostinger"
+          echo "🚀 Deployed dist folder only to Hostinger"
