@@ -1,0 +1,59 @@
+name: Deploy to Hostinger via Git
+
+on:
+  push:
+    branches:
+      - deploy  # Triggers on push to 'deploy' branch
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for proper Git operations
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build Astro site
+        run: npm run build
+        
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p ${{ secrets.HOSTINGER_SSH_PORT || 65002 }} ${{ secrets.HOSTINGER_SSH_HOST }} >> ~/.ssh/known_hosts || true
+        
+      - name: Commit build files
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add -f dist/
+          git commit -m "Build: Deploy $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        
+      - name: Deploy to Hostinger
+        env:
+          HOSTINGER_REPO_URL: ${{ secrets.HOSTINGER_REPO_URL }}
+        run: |
+          # Configure Git remote for Hostinger
+          git remote add hostinger $HOSTINGER_REPO_URL || git remote set-url hostinger $HOSTINGER_REPO_URL
+          
+          # Push to Hostinger (force push to overwrite)
+          git push hostinger HEAD:main --force
+          
+      - name: Deployment Summary
+        run: |
+          echo "✅ Deployment completed successfully!"
+          echo "📦 Build timestamp: $(date)"
+          echo "🚀 Deployed to Hostinger"
