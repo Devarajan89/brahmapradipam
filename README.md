@@ -2,23 +2,48 @@
 
 > "A lamp for illuminating Brahman"
 
-A sacred digital library for serious spiritual seekers (mumukṣus) of Advaita Vedānta.
+A sacred digital library for serious seekers of **mokṣa** studying Advaita Vedānta under qualified guru guidance.
 
-## 🙏 Purpose
+[![Live Site](https://img.shields.io/badge/Live-Site-saffron)](https://brahmapradipam.vercel.app)
+[![GitHub](https://img.shields.io/github/stars/Devarajan89/brahmapradipam?style=social)](https://github.com/Devarajan89/brahmapradipam)
 
-This is **NOT**:
-- ❌ An educational platform for students
-- ❌ A study/learning tool
-- ❌ A commercial or profit-making project
-- ❌ A replacement for a living guru
+## 🕉️ About
 
-This **IS**:
-- ✅ A reference tool for seekers under guru guidance
-- ✅ Support for daily spiritual practice (sādhana)
-- ✅ A repository of sacred Advaita texts
-- ✅ A free, respectful offering to the tradition
+Brahmapradipam is a reverent digital repository of sacred Advaita Vedānta texts with Ādi Śaṅkarācārya's bhāṣya (commentary). This platform serves as a **reference tool** for serious spiritual seekers who are studying under the guidance of a qualified guru in the traditional guru-śiṣya paramparā.
 
-## 📚 Content Structure
+## ⚠️ Important Notice
+
+**This is NOT:**
+- ❌ An educational platform for casual learners
+- ❌ A self-study course or tutorial
+- ❌ A replacement for a living teacher
+- ❌ For intellectual curiosity alone
+
+**This IS:**
+- ✅ A reference for seekers under guru guidance
+- ✅ Support for daily sādhana and study
+- ✅ A repository of authentic Advaita texts
+- ✅ For serious mumukṣus (seekers of liberation)
+
+## 📚 Available Texts
+
+### ✓ Completed
+- **Īśa Upaniṣad** (18 mantras) - Complete with Śaṅkara's bhāṣya
+  - All 18 mantras with full commentary
+  - Word-by-word analysis
+  - Core concepts extracted
+
+### 🔄 In Progress
+- **Bhagavad Gītā**
+  - Chapter 1: Arjunaviṣādayoga (47 verses) - Context only
+  - Chapter 2: Sāṅkhyayoga (Verses 1-9, 16) - Partial with bhāṣya
+
+### 🔜 Coming Soon
+- More Principal Upaniṣads (Kena, Kaṭha, Muṇḍaka, Māṇḍūkya, etc.)
+- Complete Bhagavad Gītā with bhāṣya
+- Brahma Sūtras with bhāṣya
+
+## 📖 Content Structure
 
 Every verse includes these 8 sections in exact order:
 
