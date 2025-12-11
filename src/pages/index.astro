@@ -1,16 +1,326 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-b from-amber-50 to-bg-white border-b border-border">
+      <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+        <div class="text-center mb-12">
+          <!-- Logo -->
+          <div class="flex justify-center mb-8">
+            <img src="/images/logo.png" alt="Brahmapradipam" class="h-32 md:h-40 drop-shadow-lg" />
+          </div>
+          
+          <!-- Sanskrit Invocation -->
+          <div class="mb-6">
+            <p class="text-accent-saffron text-3xl mb-4">॥ ॐ ॥</p>
+            <h1 class="sanskrit text-3xl md:text-4xl text-accent-saffron mb-3">
+              श्री गुरुभ्यो नमः
+            </h1>
+            <p class="text-text-secondary italic text-sm md:text-base">
+              Salutations to the revered teachers
+            </p>
+          </div>
+
+          <!-- Tagline -->
+          <div class="max-w-3xl mx-auto mb-8">
+            <p class="text-xl md:text-2xl text-text-primary font-light leading-relaxed">
+              A sacred digital library for serious seekers studying <span class="sanskrit-small">Advaita Vedānta</span> under guru guidance
+            </p>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <a href="/library" class="bg-accent-saffron text-white px-8 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-md">
+              Browse Library
+            </a>
+            <a href="/guidance" class="border-2 border-accent-saffron text-accent-saffron px-8 py-3 rounded-lg font-medium hover:bg-bg-sanskrit transition-colors">
+              New to Advaita?
+            </a>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div class="bg-bg-white border border-border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl font-bold text-accent-saffron mb-2">66</div>
+            <p class="text-sm text-text-muted">Verses Available</p>
+          </div>
+          <div class="bg-bg-white border border-border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl font-bold text-green-600 mb-2">1</div>
+            <p class="text-sm text-text-muted">Complete Text</p>
+          </div>
+          <div class="bg-bg-white border border-border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl font-bold text-text-primary mb-2">2</div>
+            <p class="text-sm text-text-muted">Texts Started</p>
+          </div>
+          <div class="bg-bg-white border border-border rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-3xl font-bold text-accent-sandalwood mb-2">100%</div>
+            <p class="text-sm text-text-muted">Īśa Upaniṣad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">📚</span>
+          </div>
+          <h3 class="text-xl font-semibold text-text-primary mb-3">Authentic Texts</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Prasthāna Trayī texts with Ādi Śaṅkarācārya's bhāṣya in Sanskrit
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🕉️</span>
+          </div>
+          <h3 class="text-xl font-semibold text-text-primary mb-3">Traditional Wisdom</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Following the guru-śiṣya paramparā and Advaita tradition
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">💡</span>
+          </div>
+          <h3 class="text-xl font-semibold text-text-primary mb-3">Reference Tool</h3>
+          <p class="text-text-secondary leading-relaxed">
+            Support for daily sādhana and study under qualified guidance
+          </p>
+        </div>
+      </div>
+
+        <div class="text-center mb-8">
+          <h2 class="text-2xl md:text-3xl font-semibold text-accent-saffron mb-3">
+            ⚠️ Important Guidance
+          </h2>
+          <p class="text-text-primary text-lg">
+            These sacred texts must be studied under a <strong>qualified guru</strong>
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6 border-2 border-red-200">
+            <h3 class="font-semibold text-text-primary mb-3 text-lg">❌ This is NOT:</h3>
+            <ul class="space-y-2 text-text-secondary">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">•</span>
+                <span>An educational platform for casual learners</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">•</span>
+                <span>A self-study course or tutorial</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">•</span>
+                <span>A replacement for a living teacher</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">•</span>
+                <span>For intellectual curiosity alone</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 border-2 border-green-200">
+            <h3 class="font-semibold text-text-primary mb-3 text-lg">✓ This IS:</h3>
+            <ul class="space-y-2 text-text-secondary">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>A reference for seekers under guru guidance</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>Support for daily sādhana and study</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>A repository of authentic Advaita texts</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>For serious mumukṣus (seekers of liberation)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mt-6 text-center">
+          <a href="/guidance" class="inline-flex items-center gap-2 text-accent-saffron hover:text-accent-sandalwood font-medium">
+            Learn more about the traditional approach
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Available Texts -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-semibold text-text-primary mb-8 text-center">Available Texts</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+        <!-- Isha Upanishad Card -->
+        <a href="/library/isha-upanishad" class="bg-gradient-to-br from-green-50 to-bg-white border-2 border-green-500 rounded-lg p-6 hover:border-green-600 transition-all hover:shadow-lg group">
+          <div class="flex justify-between items-start mb-3">
+            <h4 class="text-xl font-semibold text-green-700 group-hover:text-green-800">Isha Upanishad ✓</h4>
+            <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Complete</span>
+          </div>
+          <p class="text-sm text-text-secondary mb-3">
+            Foundation text covering jnana-nishtha, karma-vidya samuccaya, and supreme teaching
+          </p>
+          <div class="flex items-center gap-4 text-xs text-text-muted">
+            <span>18 mantras</span>
+            <span>•</span>
+            <span>With Shankara bhashya</span>
+            <span>•</span>
+            <span class="text-green-700 font-medium">100% Complete</span>
+          </div>
+        </a>
+
+        <!-- Bhagavad Gita Card -->
+        <a href="/library/bhagavad-gita" class="bg-bg-white border border-border rounded-lg p-6 hover:border-accent-saffron transition-all hover:shadow-md group">
+          <div class="flex justify-between items-start mb-3">
+            <h4 class="text-xl font-semibold text-text-primary group-hover:text-accent-saffron">Bhagavad Gita</h4>
+            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">In Progress</span>
+          </div>
+          <p class="text-sm text-text-secondary mb-3">
+            Chapter 2 (Sankhya Yoga) - Foundation of all Gita teachings
+          </p>
+          <div class="flex items-center gap-4 text-xs text-text-muted">
+            <span>1/72 verses</span>
+            <span>•</span>
+            <span>Chapter 2</span>
+            <span>•</span>
+            <span class="text-yellow-700 font-medium">1.4% Complete</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+      <!-- Quick Access -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-semibold text-text-primary mb-8 text-center">Explore</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+        <a href="/library" class="bg-bg-white border border-border rounded-lg p-6 text-center hover:border-accent-saffron transition-all hover:shadow-md group">
+          <div class="text-4xl mb-3">📚</div>
+          <h4 class="font-semibold text-text-primary mb-2 group-hover:text-accent-saffron">Browse Library</h4>
+          <p class="text-sm text-text-muted">Explore all available texts and verses</p>
+        </a>
+
+        <a href="/concepts/glossary" class="bg-bg-white border border-border rounded-lg p-6 text-center hover:border-accent-saffron transition-all hover:shadow-md group">
+          <div class="text-4xl mb-3">📖</div>
+          <h4 class="font-semibold text-text-primary mb-2 group-hover:text-accent-saffron">Advaita Concepts</h4>
+          <p class="text-sm text-text-muted">Glossary and key teachings</p>
+        </a>
+
+        <a href="/guidance" class="bg-bg-white border border-border rounded-lg p-6 text-center hover:border-accent-saffron transition-all hover:shadow-md group">
+          <div class="text-4xl mb-3">🧭</div>
+          <h4 class="font-semibold text-text-primary mb-2 group-hover:text-accent-saffron">Guidance</h4>
+          <p class="text-sm text-text-muted">For newcomers to Advaita Vedanta</p>
+        </a>
+      </div>
+    </div>
+
+      <!-- Traditional Wisdom -->
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white border-l-4 border-accent-saffron rounded-lg p-8 text-center shadow-sm">
+          <p class="sanskrit text-xl md:text-2xl text-text-primary mb-4 leading-relaxed">
+            गुरुं विना ज्ञानं न भवति
+          </p>
+          <p class="text-text-secondary italic mb-2">
+            "Without a guru, knowledge cannot arise"
+          </p>
+          <p class="text-text-muted text-sm">
+            — Traditional teaching
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Important Notice Section -->
+    <div class="bg-amber-50 border-y border-amber-200 py-12">
+      <div class="max-w-4xl mx-auto px-4">
+
+
+      <!-- First Visit Modal Script -->
+      <script>
+        // Check if user has visited before
+        if (!localStorage.getItem('brahmapradipam-visited')) {
+          // Show modal on first visit
+          const modal = document.getElementById('first-visit-modal');
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+          }
+        }
+
+        // Handle modal close
+        (window as any).closeWelcomeModal = function() {
+          const modal = document.getElementById('first-visit-modal');
+          if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            localStorage.setItem('brahmapradipam-visited', 'true');
+          }
+        };
+      </script>
+    </div>
+  </main>
+
+  <!-- First Visit Modal -->
+  <div id="first-visit-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+    <div class="bg-bg-white rounded-lg max-w-2xl w-full p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <h2 class="text-3xl font-semibold text-[var(--color-accent-saffron)] mb-4">
+        Welcome to Brahmapradipam
+      </h2>
+      
+      <p class="text-text-primary mb-4 leading-relaxed">
+        This digital library is for serious seekers of <span class="sanskrit-small">moksha</span> 
+        who are studying Advaita Vedanta under a qualified guru.
+      </p>
+
+      <div class="bg-bg-sanskrit p-6 rounded-lg mb-6">
+        <h3 class="text-xl font-semibold text-accent-saffron mb-3">
+          ⚠️ Important:
+        </h3>
+        <ul class="space-y-2 text-text-primary">
+          <li>• This is not a learning platform</li>
+          <li>• It cannot replace a living teacher</li>
+          <li>• Self-study alone can lead to misunderstanding</li>
+          <li>• Seek a qualified guru for proper guidance</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="font-semibold text-text-primary mb-3">
+          If you are new to Advaita Vedanta, we recommend:
+        </h4>
+        <ul class="space-y-2 text-text-secondary">
+          <li>→ Find an authentic teacher/teaching center</li>
+          <li>→ Study the qualifications needed (<span class="sanskrit-small">sadhana-chatushtaya</span>)</li>
+          <li>→ Begin with proper foundation under guidance</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-4">
+        <button 
+          onclick="closeWelcomeModal()"
+          class="flex-1 bg-accent-saffron text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+        >
+          I Understand
+        </button>
+        <a 
+          href="/guidance"
+          class="flex-1 border-2 border-accent-saffron text-accent-saffron px-6 py-3 rounded-lg font-medium hover:bg-bg-sanskrit transition-colors text-center"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,174 @@
+{
+  "id": "bg-2-16",
+  "text": "bhagavad-gita",
+  "chapter": 2,
+  "verse": 16,
+  "reference": "Bhagavad Gītā 2.16",
+  
+  "original": {
+    "devanagari": "नासतो विद्यते भावो नाभावो विद्यते सतः ।\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥",
+    "iast": "nāsato vidyate bhāvo nābhāvo vidyate sataḥ |\nubhayorapi dṛṣṭo'ntastvanayostattvadarśibhiḥ ||"
+  },
+  
+  "wordAnalysis": [
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "indeclinable (avyaya)"
+    },
+    {
+      "word": "असतः",
+      "transliteration": "asataḥ",
+      "meaning": "of the unreal",
+      "grammar": "genitive singular",
+      "root": "sat (being)"
+    },
+    {
+      "word": "विद्यते",
+      "transliteration": "vidyate",
+      "meaning": "exists, is found",
+      "grammar": "3rd person singular, passive",
+      "root": "vid (to know, to be)"
+    },
+    {
+      "word": "भावः",
+      "transliteration": "bhāvaḥ",
+      "meaning": "being, existence",
+      "grammar": "nominative singular",
+      "root": "bhū (to be)"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "indeclinable"
+    },
+    {
+      "word": "अभावः",
+      "transliteration": "abhāvaḥ",
+      "meaning": "non-being, cessation",
+      "grammar": "nominative singular"
+    },
+    {
+      "word": "सतः",
+      "transliteration": "sataḥ",
+      "meaning": "of the real, of that which exists",
+      "grammar": "genitive singular",
+      "root": "sat (being)"
+    },
+    {
+      "word": "उभयोः",
+      "transliteration": "ubhayoḥ",
+      "meaning": "of both",
+      "grammar": "genitive dual"
+    },
+    {
+      "word": "अपि",
+      "transliteration": "api",
+      "meaning": "also, even",
+      "grammar": "indeclinable"
+    },
+    {
+      "word": "दृष्टः",
+      "transliteration": "dṛṣṭaḥ",
+      "meaning": "seen, perceived",
+      "grammar": "past passive participle",
+      "root": "dṛś (to see)"
+    },
+    {
+      "word": "अन्तः",
+      "transliteration": "antaḥ",
+      "meaning": "conclusion, end, truth",
+      "grammar": "nominative singular"
+    },
+    {
+      "word": "तु",
+      "transliteration": "tu",
+      "meaning": "but, indeed",
+      "grammar": "indeclinable"
+    },
+    {
+      "word": "अनयोः",
+      "transliteration": "anayoḥ",
+      "meaning": "of these two",
+      "grammar": "genitive dual"
+    },
+    {
+      "word": "तत्त्वदर्शिभिः",
+      "transliteration": "tattvadarśibhiḥ",
+      "meaning": "by the seers of truth",
+      "grammar": "instrumental plural",
+      "root": "tattva (truth) + darśin (seer)"
+    }
+  ],
+  
+  "translations": [
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "The unreal has no being; the real has no non-being. The truth about both of these has been perceived by the seers of Truth.",
+      "style": "literal"
+    }
+  ],
+  
+  "bhashya": {
+    "sanskrit": "नासतः न सतः विपरीतलक्षणस्य असतः विकारजातस्य शीतोष्णादेः अविद्याकल्पितस्य भावः सत्ता विद्यते इत्यर्थः । नाभावः न अस्तित्वम् विद्यते सतः नित्यस्य वस्तुनः आत्मनः इत्यर्थः । उभयोरपि दृष्टः निर्णीतः अन्तः तत्त्वम् तु अनयोः सतोऽसतोश्च तत्त्वदर्शिभिः तत्त्वविवेकिभिः ॥",
+    "iast": "nāsataḥ na sataḥ viparītalakṣaṇasya asataḥ vikārajātasya śītoṣṇādeḥ avidyākalpitasya bhāvaḥ sattā vidyate ityarthaḥ | nābhāvaḥ na astitvam vidyate sataḥ nityasya vastunaḥ ātmanaḥ ityarthaḥ | ubhayorapi dṛṣṭaḥ nirṇītaḥ antaḥ tattvam tu anayoḥ sato'satośca tattvadarśibhiḥ tattvavivekibhiḥ ||",
+    "translation": "Na asataḥ—not of the unreal, which has characteristics opposite to the real, of the class of modifications like cold and heat, conjured up by ignorance (avidyā), does bhāvaḥ (being, existence) exist—this is the meaning. Na abhāvaḥ—non-existence does not belong to sataḥ, the eternal Reality, the Self (Ātman)—this is the meaning. Of both these (ubhayoḥ api), the truth (antaḥ, tattvam) has been seen (dṛṣṭaḥ), ascertained (nirṇītaḥ) by the seers of Truth (tattvadarśibhiḥ), those who discriminate the Real from the unreal (tattvavivekibhiḥ).",
+    "notes": "Śaṅkara Bhagavadpāda explains that the unreal (asat) refers to that which appears but has no ultimate reality, like the appearance of silver in a shell. These modifications (vikāras) such as heat and cold are products of ignorance (avidyā). The Real (sat), on the other hand, is the eternal Ātman which never ceases to exist. The seers of Truth are those who have discriminated between the eternal and the non-eternal through proper inquiry."
+  },
+  
+  "centralTeaching": "Contemplate the distinction between the Real (sat) which never ceases to exist, and the unreal (asat) which never comes into true existence. This verse establishes the fundamental nature of Brahman as eternal existence, and reveals that all change and modification belong only to the realm of the unreal.",
+  
+  "coreConcepts": [
+    {
+      "term": "सत्",
+      "transliteration": "sat",
+      "definition": "The Real, Existence, Being - that which eternally IS. Refers to Brahman/Ātman which is unchanging and ever-present.",
+      "importance": "primary"
+    },
+    {
+      "term": "असत्",
+      "transliteration": "asat",
+      "definition": "The unreal, non-existence - that which appears but lacks true being. Refers to all modifications and changes which are products of ignorance.",
+      "importance": "primary"
+    },
+    {
+      "term": "तत्त्वदर्शिन्",
+      "transliteration": "tattvadarśin",
+      "definition": "Seer of Truth, one who has realized the nature of Reality through discrimination between the eternal and non-eternal.",
+      "importance": "secondary"
+    },
+    {
+      "term": "भाव",
+      "transliteration": "bhāva",
+      "definition": "Being, existence - the state of having reality or substantiality.",
+      "importance": "secondary"
+    }
+  ],
+  
+  "relatedVerses": [
+    {
+      "verseId": "chandogya-6-2-1",
+      "reference": "Chāndogya Upaniṣad 6.2.1",
+      "text": "सदेव सोम्येदमग्र आसीत्",
+      "relationship": "parallel",
+      "note": "Establishes Sat (Being) as the primordial Reality before creation"
+    },
+    {
+      "verseId": "bg-2-20",
+      "reference": "Bhagavad Gītā 2.20",
+      "relationship": "elaboration",
+      "note": "Further describes the eternal, unborn nature of the Self"
+    },
+    {
+      "verseId": "katha-2-18",
+      "reference": "Kaṭha Upaniṣad 2.18",
+      "relationship": "parallel",
+      "note": "Parallel teaching on the immortal, unchanging nature of Ātman"
+    }
+  ],
+  
+  "themes": ["sat-asat-viveka", "nature-of-brahman", "discrimination"],
+  "difficulty": "intermediate"
+}

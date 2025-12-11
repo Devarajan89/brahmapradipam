@@ -1,0 +1,197 @@
+{
+  "id": "isha-03",
+  "reference": "Īśa Upaniṣad 3",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 3,
+  "original": {
+    "devanagari": "असुर्या नाम ते लोका अन्धेन तमसा वृताः ।\nतांस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः ॥ ३ ॥",
+    "iast": "asuryā nāma te lokā andhena tamasā vṛtāḥ |\ntāṃs te pretyābhigacchanti ye ke cātmahano janāḥ || 3 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "असुर्याः",
+      "transliteration": "asuryāḥ",
+      "meaning": "demoniac, sunless",
+      "grammar": "adjective nominative plural",
+      "root": "a (negation) + sūrya (sun/deity)"
+    },
+    {
+      "word": "नाम",
+      "transliteration": "nāma",
+      "meaning": "called, named",
+      "grammar": "indeclinable particle"
+    },
+    {
+      "word": "ते",
+      "transliteration": "te",
+      "meaning": "those",
+      "grammar": "demonstrative pronoun nominative plural"
+    },
+    {
+      "word": "लोकाः",
+      "transliteration": "lokāḥ",
+      "meaning": "worlds, realms",
+      "grammar": "masculine nominative plural of loka"
+    },
+    {
+      "word": "अन्धेन",
+      "transliteration": "andhena",
+      "meaning": "by blind, by darkness",
+      "grammar": "instrumental singular of andha"
+    },
+    {
+      "word": "तमसा",
+      "transliteration": "tamasā",
+      "meaning": "by darkness, by ignorance",
+      "grammar": "instrumental singular of tamas"
+    },
+    {
+      "word": "वृताः",
+      "transliteration": "vṛtāḥ",
+      "meaning": "covered, enveloped",
+      "grammar": "past passive participle from √vṛ"
+    },
+    {
+      "word": "तान्",
+      "transliteration": "tān",
+      "meaning": "those (worlds)",
+      "grammar": "accusative plural of tat"
+    },
+    {
+      "word": "ते",
+      "transliteration": "te",
+      "meaning": "they",
+      "grammar": "nominative plural pronoun"
+    },
+    {
+      "word": "प्रेत्य",
+      "transliteration": "pretya",
+      "meaning": "having died, after death",
+      "grammar": "absolutive from pra + √i",
+      "root": "pra + √i (to go forth)"
+    },
+    {
+      "word": "अभिगच्छन्ति",
+      "transliteration": "abhigacchanti",
+      "meaning": "they go to, they attain",
+      "grammar": "3rd person plural present from abhi + √gam"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who, those who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "के",
+      "transliteration": "ke",
+      "meaning": "any, whoever",
+      "grammar": "interrogative pronoun nominative plural"
+    },
+    {
+      "word": "च",
+      "transliteration": "ca",
+      "meaning": "and",
+      "grammar": "conjunction particle"
+    },
+    {
+      "word": "आत्महनः",
+      "transliteration": "ātmahanaḥ",
+      "meaning": "slayers of the Self, destroyers of the Self",
+      "grammar": "nominative plural compound",
+      "root": "ātman + √han (to kill)"
+    },
+    {
+      "word": "जनाः",
+      "transliteration": "janāḥ",
+      "meaning": "people, persons",
+      "grammar": "masculine nominative plural of jana"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "Sunless are those worlds called, covered by blinding darkness. To them go, after death, those people who are slayers of the Self.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "Demonic and enveloped in blinding darkness are those worlds, to which all those people who are slayers of the Self go after death.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "असुर्याः परमात्मभावमद्वयमपेक्ष्य देवादयोऽप्यसुराः । तेषां च स्वभूता लोका असुर्याः नाम । नामशब्दोऽनर्थको निपातः । ते लोकाः कर्मफलानि लोक्यन्ते दृश्यन्ते भुज्यन्त इति जन्मानि । अन्धेन अदर्शनात्मकेनाज्ञानेन तमसा आवृताः आच्छादिताः । तान् स्थावरान्तान् , प्रेत्य त्यक्त्वेमं देहम् अभिगच्छन्ति यथाकर्म यथाश्रुतम् । ये के च आत्महनः आत्मानं घ्नन्तीत्यात्महनः । के ? ते जनाः येऽविद्वांसः । कथं ते आत्मानं नित्यं हिंसन्ति ? अविद्यादोषेण विद्यमानस्यात्मनस्तिरस्करणात् । विद्यमानस्यात्मनो यत्कार्यं फलमजरामरत्वादिसंवेदनादिलक्षणम् , तत् हतस्येव तिरोभूतं भवतीति प्राकृता अविद्वांसो जना आत्महन इत्युच्यन्ते । तेन ह्यात्महननदोषेण संसरन्ति ते ॥\n\nयस्यात्मनो हननादविद्वांसः संसरन्ति, तद्विपर्ययेण विद्वांसो मुच्यन्तेऽनात्महनः, तत्कीदृशमात्मतत्त्वमित्युच्यते —",
+    "keyPoints": [
+      "Asurya (sunless/demoniac) refers to those devoid of the knowledge of non-dual Supreme Self",
+      "Even devas become asuras when lacking knowledge of Paramātman",
+      "The 'worlds' (lokas) are the results of karma - various births from plants to gods",
+      "These worlds are covered by the darkness of ignorance (avidyā)",
+      "Ātmahanas (slayers of the Self) are those ignorant ones who obscure the Self through ignorance",
+      "By the defect of avidyā, the true nature and fruit of the Self (immortality, etc.) remains hidden",
+      "The opposite - the wise who do not slay the Self - are liberated"
+    ],
+    "notes": "This mantra introduces the concept of ātmahanas - those who 'kill' or 'destroy' the Self not literally, but by obscuring it through ignorance. Śaṅkara Bhagavadpāda explains this is metaphorical: the Self being eternal cannot actually be killed, but its true nature and results (like immortality and bliss) become hidden from the ignorant. The commentary transitions from this negative description to introduce the positive description of the Self's true nature in the next mantra."
+  },
+  "centralTeaching": "Those who remain ignorant of their true Self (ātmahanas) - by obscuring the Self through avidyā - are destined for dark, lower births. This ignorance prevents them from experiencing the Self's true nature: immortality, bliss, and freedom. Liberation comes only through Self-knowledge.",
+  "coreConcepts": [
+    {
+      "term": "आत्महन्",
+      "transliteration": "ātmahan",
+      "definition": "Slayer of the Self; one who obscures the true nature of Ātman through ignorance (avidyā), making its fruits like immortality and bliss unavailable",
+      "importance": "primary"
+    },
+    {
+      "term": "असुर्य",
+      "transliteration": "asurya",
+      "definition": "Sunless, demoniac; devoid of knowledge of the non-dual Supreme Self (Paramātman)",
+      "importance": "primary"
+    },
+    {
+      "term": "लोक",
+      "transliteration": "loka",
+      "definition": "Worlds or births; results of karma ranging from plants to gods that are experienced and enjoyed",
+      "importance": "secondary"
+    },
+    {
+      "term": "अन्धतमस्",
+      "transliteration": "andhatamaḥ",
+      "definition": "Blinding darkness; ignorance (avidyā) that has the nature of non-perception, covering the Self",
+      "importance": "secondary"
+    },
+    {
+      "term": "तिरस्करण",
+      "transliteration": "tiraskaraṇa",
+      "definition": "Obscuration, concealment; the hiding of the Self's true nature through the defect of ignorance",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-04",
+      "reference": "Īśa Upaniṣad 4",
+      "relationship": "elaboration",
+      "note": "Describes the true nature of the Self which the ātmahanas fail to know"
+    },
+    {
+      "verseId": "katha-1-3-1",
+      "reference": "Kaṭha Upaniṣad 1.3.1",
+      "relationship": "parallel",
+      "note": "Describes the two paths (śreyas and preyas) and their different destinations"
+    },
+    {
+      "verseId": "bg-16-19",
+      "reference": "Bhagavad Gītā 16.19",
+      "relationship": "parallel",
+      "note": "Describes how ignorant demoniac persons are cast into lower births"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

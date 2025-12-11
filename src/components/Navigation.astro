@@ -1,0 +1,113 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '' } = Astro.props;
+---
+
+<aside class="w-80 bg-bg-white border-r border-border overflow-y-auto sticky top-0 h-screen hidden lg:block">
+  <div class="p-6">
+    <h2 class="text-xl font-semibold text-accent-saffron mb-6">
+      Sacred Texts
+    </h2>
+    
+    <!-- Prasthāna Trayī -->
+    <div class="space-y-4">
+      <!-- Upaniṣads -->
+      <details open class="group">
+        <summary class="cursor-pointer font-semibold text-text-primary hover:text-accent-saffron transition-colors mb-2 flex items-center gap-2">
+          <span class="text-xs">▶</span>
+          <span class="sanskrit-small">Upaniṣads</span>
+        </summary>
+        <div class="ml-4 space-y-2 mt-2">
+          <a href="/library/isha-upanishad" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('isha') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Īśa Upaniṣad
+          </a>
+          <a href="/library/kena" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('kena') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Kena Upaniṣad
+          </a>
+          <a href="/library/katha" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('katha') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Kaṭha Upaniṣad
+          </a>
+          <a href="/library/mundaka" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('mundaka') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Muṇḍaka Upaniṣad
+          </a>
+          <a href="/library/mandukya" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('mandukya') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Māṇḍūkya Upaniṣad
+          </a>
+          <a href="/library/taittiriya" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('taittiriya') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Taittirīya Upaniṣad
+          </a>
+          <a href="/library/chandogya" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('chandogya') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Chāndogya Upaniṣad
+          </a>
+          <a href="/library/brihadaranyaka" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('brihadaranyaka') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Bṛhadāraṇyaka Upaniṣad
+          </a>
+        </div>
+      </details>
+
+      <!-- Bhagavad Gītā -->
+      <details open class="group">
+        <summary class="cursor-pointer font-semibold text-text-primary hover:text-accent-saffron transition-colors mb-2 flex items-center gap-2">
+          <span class="text-xs">▶</span>
+          <span class="sanskrit-small">Bhagavad Gītā</span>
+        </summary>
+        <div class="ml-4 space-y-2 mt-2">
+          <a href="/library/bhagavad-gita/chapter-01" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('bhagavad-gita') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Chapter 1: Arjunaviṣādayoga
+          </a>
+          <a href="/library/bhagavad-gita/chapter-02" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('bhagavad-gita') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Chapter 2: Sāṅkhya Yoga
+          </a>
+          <span class="block py-1 px-3 text-text-muted text-sm italic">
+            (More chapters coming soon...)
+          </span>
+        </div>
+      </details>
+
+      <!-- Brahma Sūtras -->
+      <details class="group">
+        <summary class="cursor-pointer font-semibold text-text-primary hover:text-accent-saffron transition-colors mb-2 flex items-center gap-2">
+          <span class="text-xs">▶</span>
+          <span class="sanskrit-small">Brahma Sūtras</span>
+        </summary>
+        <div class="ml-4 mt-2">
+          <span class="block py-1 px-3 text-text-muted text-sm italic">
+            Coming soon...
+          </span>
+        </div>
+      </details>
+
+      <!-- Prakaraṇa Granthas -->
+      <details class="group">
+        <summary class="cursor-pointer font-semibold text-text-primary hover:text-accent-saffron transition-colors mb-2 flex items-center gap-2">
+          <span class="text-xs">▶</span>
+          <span class="sanskrit-small">Prakaraṇa Granthas</span>
+        </summary>
+        <div class="ml-4 space-y-2 mt-2">
+          <a href="/library/vivekachudamani" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('vivekachudamani') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Vivekacūḍāmaṇi
+          </a>
+          <a href="/library/tattvabodha" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('tattvabodha') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Tattvabodha
+          </a>
+          <a href="/library/atmabodha" class={`block py-1 px-3 rounded hover:bg-bg-sanskrit transition-colors ${currentPath.includes('atmabodha') ? 'bg-bg-sanskrit text-accent-saffron font-semibold' : 'text-text-secondary hover:text-accent-saffron'}`}>
+            Ātmabodha
+          </a>
+          <span class="block py-1 px-3 text-text-muted text-sm italic">
+            (More texts coming soon...)
+          </span>
+        </div>
+      </details>
+    </div>
+  </div>
+</aside>
+
+<style>
+  details[open] > summary span:first-child {
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+</style>

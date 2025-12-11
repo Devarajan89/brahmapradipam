@@ -1,0 +1,191 @@
+{
+  "id": "isha-06",
+  "reference": "Īśa Upaniṣad 6",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 6,
+  "original": {
+    "devanagari": "यस्तु सर्वाणि भूतानि आत्मन्येवानुपश्यति ।\nसर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥ ६ ॥",
+    "iast": "yas tu sarvāṇi bhūtāni ātmany evānupaśyati |\nsarvabhūteṣu cātmānaṃ tato na vijugupsate || 6 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "यः",
+      "transliteration": "yaḥ",
+      "meaning": "who, he who",
+      "grammar": "relative pronoun nominative singular masculine"
+    },
+    {
+      "word": "तु",
+      "transliteration": "tu",
+      "meaning": "indeed, but",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "सर्वाणि",
+      "transliteration": "sarvāṇi",
+      "meaning": "all",
+      "grammar": "neuter accusative plural of sarva"
+    },
+    {
+      "word": "भूतानि",
+      "transliteration": "bhūtāni",
+      "meaning": "beings, creatures",
+      "grammar": "neuter accusative plural of bhūta"
+    },
+    {
+      "word": "आत्मनि",
+      "transliteration": "ātmani",
+      "meaning": "in the Self",
+      "grammar": "locative singular of ātman"
+    },
+    {
+      "word": "एव",
+      "transliteration": "eva",
+      "meaning": "only, alone",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "अनुपश्यति",
+      "transliteration": "anupaśyati",
+      "meaning": "sees, perceives",
+      "grammar": "3rd person singular from anu + √paś",
+      "root": "anu + √paś (to see)"
+    },
+    {
+      "word": "सर्वभूतेषु",
+      "transliteration": "sarvabhūteṣu",
+      "meaning": "in all beings",
+      "grammar": "locative plural compound"
+    },
+    {
+      "word": "च",
+      "transliteration": "ca",
+      "meaning": "and",
+      "grammar": "conjunction particle"
+    },
+    {
+      "word": "आत्मानम्",
+      "transliteration": "ātmānam",
+      "meaning": "the Self",
+      "grammar": "accusative singular of ātman"
+    },
+    {
+      "word": "ततः",
+      "transliteration": "tataḥ",
+      "meaning": "from that, therefore",
+      "grammar": "ablative adverb"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "negative particle"
+    },
+    {
+      "word": "विजुगुप्सते",
+      "transliteration": "vijugupsate",
+      "meaning": "feels aversion, shrinks from",
+      "grammar": "3rd person singular desiderative from vi + √gup",
+      "root": "vi + √gup (to guard, protect - desiderative: to feel disgust)"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "But he who sees all beings in the Self alone, and the Self in all beings, he does not feel any aversion from that.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "But the person who perceives all beings in his own Self, and his own Self in all beings, does not feel any revulsion by reason of such a view.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "यस्तु परिव्राट् मुमुक्षुः सर्वाणि भूतानि अव्यक्तादीनि स्थावरान्तानि आत्मन्येव अनुपश्यति, आत्मव्यतिरिक्तानि न पश्यतीत्यर्थः । सर्वभूतेषु तेष्वेव च आत्मानं तेषामपि भूतानां स्वमात्मानमात्मत्वेन — यथास्य देहस्य कार्यकरणसङ्घातस्यात्मा अहं सर्वप्रत्ययसाक्षिभूतश्चेतयिता केवलो निर्गुणोऽनेनैव स्वरूपेणाव्यक्तादीनां स्थावरान्तानामहमेवात्मेति सर्वभूतेषु चात्मानं निर्विशेषं यस्त्वनुपश्यति, सः ततः तस्मादेव दर्शनात् न विजुगुप्सते विजुगुप्सां घृणां न करोति । प्राप्तस्यैवानुवादोऽयम् । सर्वा हि घृणा आत्मनोऽन्यद्दुष्टं पश्यतो भवति ; आत्मानमेवात्यन्तविशुद्धं निरन्तरं पश्यतो न घृणानिमित्तमर्थान्तरमस्तीति प्राप्तमेव — ततो न विजुगुप्सत इति ॥",
+    "keyPoints": [
+      "The renunciate (parivrāṭ) seeking liberation sees all beings from the unmanifest down to immobile things in the Self alone",
+      "He sees nothing as distinct from the Self",
+      "He sees the same Self in all beings - the witness of all cognitions, the conscious principle",
+      "This Self is alone (kevala), without qualities (nirguṇa), the same in all from the unmanifest to plants",
+      "Seeing the Self as absolutely pure and continuous, he feels no aversion",
+      "All aversion arises from seeing something other than the Self as defiled",
+      "When only the extremely pure Self is seen continuously, there is no other object to cause disgust",
+      "This is a restatement of what is already established - the natural result of Self-knowledge"
+    ],
+    "notes": "This mantra describes the vision of the realized sage (parivr��ṭ). Śaṅkara Bhagavadpāda emphasizes that this is not a prescription but a description (anuvāda) of what naturally follows from Self-knowledge. The key insight is that all aversion (ghṛṇā/vijugupsā) requires duality - seeing something other than oneself as defiled. When only the pure, non-dual Self is seen everywhere, there is no second thing to cause aversion. The commentary stresses that the Self is the witness-consciousness (sarvapratyayasākṣibhūta), the animating principle (cetayitā) that is alone and without qualities."
+  },
+  "centralTeaching": "The liberated sage sees all beings as non-different from the Self and sees the same Self in all beings. This vision of unity (ekatva-darśana) naturally results in the absence of all aversion or disgust. Since aversion requires seeing something other than oneself as defiled, when only the pure Self is seen everywhere, there is no basis for any repulsion.",
+  "coreConcepts": [
+    {
+      "term": "आत्मैकत्वदर्शन",
+      "transliteration": "ātmaikatva-darśana",
+      "definition": "Vision of the oneness of Self; seeing all beings as the one Self without any distinction",
+      "importance": "primary"
+    },
+    {
+      "term": "विजुगुप्सा",
+      "transliteration": "vijugupsā",
+      "definition": "Aversion, disgust, repulsion; the feeling of shrinking from something perceived as defiled or unpleasant",
+      "importance": "primary"
+    },
+    {
+      "term": "सर्वप्रत्ययसाक्षिन्",
+      "transliteration": "sarvapratyayasākṣin",
+      "definition": "Witness of all cognitions; the Self as the unchanging consciousness that witnesses all mental modifications",
+      "importance": "secondary"
+    },
+    {
+      "term": "केवल",
+      "transliteration": "kevala",
+      "definition": "Alone, isolated; the Self as the sole reality, without any second",
+      "importance": "secondary"
+    },
+    {
+      "term": "निर्गुण",
+      "transliteration": "nirguṇa",
+      "definition": "Without qualities; the Self as devoid of all attributes and modifications",
+      "importance": "secondary"
+    },
+    {
+      "term": "अनुवाद",
+      "transliteration": "anuvāda",
+      "definition": "Restatement, description; a statement describing an already established fact, not a new prescription",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-07",
+      "reference": "Īśa Upaniṣad 7",
+      "relationship": "elaboration",
+      "note": "Elaborates on this same theme - when oneness is seen, delusion and sorrow cease"
+    },
+    {
+      "verseId": "bg-6-29",
+      "reference": "Bhagavad Gītā 6.29",
+      "relationship": "parallel",
+      "note": "Sees the Self in all beings and all beings in the Self - identical teaching"
+    },
+    {
+      "verseId": "bg-6-32",
+      "reference": "Bhagavad Gītā 6.32",
+      "relationship": "parallel",
+      "note": "Sees equality everywhere through the example of the Self"
+    },
+    {
+      "verseId": "brhadaranyaka-4-4-23",
+      "reference": "Bṛhadāraṇyaka Upaniṣad 4.4.23",
+      "relationship": "parallel",
+      "note": "The Self is the witness, without qualities, alone"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

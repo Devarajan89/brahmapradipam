@@ -1,0 +1,389 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Core concepts from all verses (consolidated)
+const coreConceptsFromVerses = [
+  // Isha Upanishad 1
+  { term: "Īśvara", sanskrit: "ईश्वर", transliteration: "īśvara", definition: "The Supreme Lord who pervades and governs all existence", importance: "primary", source: "Isha 1" },
+  { term: "Tyāga", sanskrit: "त्याग", transliteration: "tyāga", definition: "Renunciation; abandonment of possessiveness and false identification", importance: "primary", source: "Isha 1" },
+  { term: "Jagat", sanskrit: "जगत्", transliteration: "jagat", definition: "The moving/changing universe; all that is in flux", importance: "secondary", source: "Isha 1" },
+  { term: "Bhoga", sanskrit: "भोग", transliteration: "bhoga", definition: "Enjoyment, experience through renunciation, not possession", importance: "secondary", source: "Isha 1" },
+  
+  // Isha Upanishad 2
+  { term: "Karma-yoga", sanskrit: "कर्मयोग", transliteration: "karma-yoga", definition: "The path of performing prescribed duties without attachment or desire for fruits", importance: "primary", source: "Isha 2" },
+  { term: "Karma-niṣṭhā", sanskrit: "कर्मनिष्ठा", transliteration: "karma-niṣṭhā", definition: "Steadfastness in the path of action; discipline of performing duties as prescribed", importance: "primary", source: "Isha 2" },
+  { term: "Jñāna-niṣṭhā", sanskrit: "ज्ञाननिष्ठा", transliteration: "jñāna-niṣṭhā", definition: "Steadfastness in the path of knowledge; discipline of direct realization", importance: "primary", source: "Isha 2" },
+  { term: "Pravṛtti-mārga", sanskrit: "प्रवृत्तिमार्ग", transliteration: "pravṛtti-mārga", definition: "Path of engagement in worldly duties and rituals; the path of action", importance: "primary", source: "Isha 2" },
+  { term: "Nivṛtti-mārga", sanskrit: "निवृत्तिमार्ग", transliteration: "nivṛtti-mārga", definition: "Path of withdrawal and renunciation; superior to pravṛtti-mārga", importance: "primary", source: "Isha 2" },
+  
+  // Isha Upanishad 3
+  { term: "Ātmahan", sanskrit: "आत्महन्", transliteration: "ātmahan", definition: "Slayer of the Self; one who obscures true nature of Ātman through ignorance", importance: "primary", source: "Isha 3" },
+  { term: "Asurya", sanskrit: "असुर्य", transliteration: "asurya", definition: "Sunless, demoniac; devoid of knowledge of the non-dual Supreme Self", importance: "primary", source: "Isha 3" },
+  { term: "Andhatamaḥ", sanskrit: "अन्धतमस्", transliteration: "andhatamaḥ", definition: "Blinding darkness; ignorance that covers the Self's true nature", importance: "secondary", source: "Isha 3" },
+  
+  // Isha Upanishad 4
+  { term: "Nirupādhika", sanskrit: "निरुपाधिक", transliteration: "nirupādhika", definition: "Without limiting adjuncts; the Self in Its essential, unconditioned nature", importance: "primary", source: "Isha 4" },
+  { term: "Sopādhika", sanskrit: "सोपाधिक", transliteration: "sopādhika", definition: "With limiting adjuncts; the Self appearing through mind, seeming to move", importance: "primary", source: "Isha 4" },
+  { term: "Upādhi", sanskrit: "उपाधि", transliteration: "upādhi", definition: "Limiting adjunct; the mind and instruments through which Self appears to function", importance: "primary", source: "Isha 4" },
+  { term: "Nityacaitanya", sanskrit: "नित्यचैतन्य", transliteration: "nityacaitanya", definition: "Eternal consciousness; nature of Self as perpetual awareness", importance: "primary", source: "Isha 4" },
+  
+  // Isha Upanishad 5
+  { term: "Prajñānaghana", sanskrit: "प्रज्ञानघन", transliteration: "prajñānaghana", definition: "Mass of consciousness; the Self as homogeneous, continuous consciousness", importance: "primary", source: "Isha 5" },
+  { term: "Sarvāntara", sanskrit: "सर्वान्तर", transliteration: "sarvāntara", definition: "Inner Self of all; the Self that dwells within all beings as their essence", importance: "primary", source: "Isha 5" },
+  
+  // Isha Upanishad 6
+  { term: "Ātmaikatva-darśana", sanskrit: "आत्मैकत्वदर्शन", transliteration: "ātmaikatva-darśana", definition: "Vision of oneness of Self; seeing all beings as one Self without distinction", importance: "primary", source: "Isha 6" },
+  { term: "Vijugupsā", sanskrit: "विजुगुप्सा", transliteration: "vijugupsā", definition: "Aversion, disgust; feeling of shrinking from something perceived as defiled", importance: "primary", source: "Isha 6" },
+  
+  // Isha Upanishad 7
+  { term: "Ekatva-darśana", sanskrit: "एकत्वदर्शन", transliteration: "ekatva-darśana", definition: "Vision of oneness; seeing all beings as one non-dual Self", importance: "primary", source: "Isha 7" },
+  { term: "Moha", sanskrit: "मोह", transliteration: "moha", definition: "Delusion, confusion; fundamental ignorance about reality leading to misidentification", importance: "primary", source: "Isha 7" },
+  { term: "Śoka", sanskrit: "शोक", transliteration: "śoka", definition: "Sorrow, grief; suffering arising from attachment and loss, rooted in ignorance", importance: "primary", source: "Isha 7" },
+  { term: "Saṃsāroccḥeda", sanskrit: "संसारोच्छेद", transliteration: "saṃsāroccḥeda", definition: "Complete cessation of saṃsāra; total destruction of cycle of birth and death", importance: "primary", source: "Isha 7" },
+  
+  // Isha Upanishad 8
+  { term: "Triśarīra-niṣedha", sanskrit: "त्रिशरीरनिषेध", transliteration: "triśarīra-niṣedha", definition: "Negation of three bodies - gross, subtle, causal - to establish pure Self", importance: "primary", source: "Isha 8" },
+  { term: "Svayambhū", sanskrit: "स्वयम्भू", transliteration: "svayambhū", definition: "Self-existent; that which exists by its own nature without depending on anything", importance: "secondary", source: "Isha 8" },
+  
+  // Isha Upanishad 9-10
+  { term: "Avidyā", sanskrit: "अविद्या", transliteration: "avidyā", definition: "Here means karma (Vedic rituals), not metaphysical ignorance; opposed to vidyā", importance: "primary", source: "Isha 9" },
+  { term: "Vidyā", sanskrit: "विद्या", transliteration: "vidyā", definition: "Here means knowledge/worship of deities, not supreme Brahman-knowledge", importance: "primary", source: "Isha 9" },
+  { term: "Samuccaya", sanskrit: "समुच्चय", transliteration: "samuccaya", definition: "Combination; teaching that karma and upāsanā should be combined", importance: "primary", source: "Isha 9-11" },
+  
+  // Isha Upanishad 11
+  { term: "Mṛtyu", sanskrit: "मृत्यु", transliteration: "mṛtyu", definition: "Death; here means natural karma and ignorance binding one to saṃsāra", importance: "primary", source: "Isha 11" },
+  { term: "Amṛta", sanskrit: "अमृत", transliteration: "amṛta", definition: "Immortality; here means identity with deity's nature, not supreme liberation", importance: "primary", source: "Isha 11" },
+  
+  // Isha Upanishad 12-13
+  { term: "Asambhūti", sanskrit: "असम्भूति", transliteration: "asambhūti", definition: "The unmanifest Prakṛti; the avyākṛta (unmanifest) cause, seed of desire and karma", importance: "primary", source: "Isha 12" },
+  { term: "Sambhūti", sanskrit: "सम्भूति", transliteration: "sambhūti", definition: "The manifest Hiraṇyagarbha; the vyākṛta (manifest) effect, cosmic person", importance: "primary", source: "Isha 12" },
+  { term: "Hiraṇyagarbha", sanskrit: "हिरण्यगर्भ", transliteration: "hiraṇyagarbha", definition: "Golden embryo; the cosmic person, first-born, kārya-brahman (effect Brahman)", importance: "secondary", source: "Isha 12" },
+  { term: "Aiśvarya", sanskrit: "ऐश्वर्य", transliteration: "aiśvarya", definition: "Supernatural powers, lordship; yogic powers like aṇimā (minuteness), mahimā, etc.", importance: "primary", source: "Isha 13" },
+  
+  // Isha Upanishad 15
+  { term: "Pravṛtti-lakṣaṇa", sanskrit: "प्रवृत्तिलक्षण", transliteration: "pravṛtti-lakṣaṇa", definition: "Characterized by engagement; Vedic teaching of duties for those in worldly life", importance: "primary", source: "Isha 15" },
+  { term: "Nivṛtti-lakṣaṇa", sanskrit: "निवृत्तिलक्षण", transliteration: "nivṛtti-lakṣaṇa", definition: "Characterized by withdrawal/renunciation; Vedic teaching of Self-knowledge", importance: "primary", source: "Isha 15" },
+  { term: "Sarvātma-bhāva", sanskrit: "सर्वात्मभाव", transliteration: "sarvātma-bhāva", definition: "Identity with all; supreme non-dual realization beyond all relative attainments", importance: "primary", source: "Isha 15" },
+  
+  // Isha Upanishad 16
+  { term: "So'ham", sanskrit: "सोऽहम्", transliteration: "so'ham", definition: "I am He; mahāvākya declaring identity between individual self and supreme Self", importance: "primary", source: "Isha 16" },
+  { term: "Kalyāṇatama", sanskrit: "कल्याणतम", transliteration: "kalyāṇatama", definition: "Most auspicious, supremely beautiful; ultimate form of Brahman beyond dazzling covering", importance: "primary", source: "Isha 16" },
+  
+  // Isha Upanishad 17
+  { term: "Sūtrātman", sanskrit: "सूत्रात्मन्", transliteration: "sūtrātman", definition: "Thread-soul; cosmic Hiraṇyagarbha connecting all beings like a thread", importance: "primary", source: "Isha 17" },
+  { term: "Liṅga-śarīra", sanskrit: "लिङ्गशरीर", transliteration: "liṅga-śarīra", definition: "Subtle body; transmigrating entity purified by knowledge and karma, departing at death", importance: "primary", source: "Isha 17" },
+  
+  // Isha Upanishad 18
+  { term: "Supatha", sanskrit: "सुपथ", transliteration: "supatha", definition: "Good path; northern path (devayāna) leading to non-return, vs rebirth path", importance: "primary", source: "Isha 18" },
+  { term: "Āpekṣika-amṛta", sanskrit: "आपेक्षिकअमृत", transliteration: "āpekṣika-amṛta", definition: "Relative immortality; limited immortality of deva-loka, not absolute mokṣa", importance: "primary", source: "Isha 18" },
+  
+  // Bhagavad Gita 2.16
+  { term: "Sat", sanskrit: "सत्", transliteration: "sat", definition: "The Real, Existence - that which eternally IS. Brahman/Ātman, unchanging and ever-present", importance: "primary", source: "BG 2.16" },
+  { term: "Asat", sanskrit: "असत्", transliteration: "asat", definition: "The unreal, non-existence - that which appears but lacks true being; all modifications", importance: "primary", source: "BG 2.16" },
+  { term: "Tattvadarśin", sanskrit: "तत्त्वदर्शिन्", transliteration: "tattvadarśin", definition: "Seer of Truth, one who realized Reality through discrimination between eternal and non-eternal", importance: "secondary", source: "BG 2.16" }
+];
+
+const glossaryTerms = [
+  {
+    term: "Advaita",
+    sanskrit: "अद्वैत",
+    definition: "Non-duality. The philosophical position that reality is ultimately one, without a second. The central teaching that Brahman (ultimate reality) and Atman (individual self) are identical."
+  },
+  {
+    term: "Atman",
+    sanskrit: "आत्मन्",
+    definition: "The Self. The true nature of the individual, which is identical with Brahman. Pure consciousness, eternal, unchanging, and beyond all limitations."
+  },
+  {
+    term: "Brahman",
+    sanskrit: "ब्रह्मन्",
+    definition: "The Absolute Reality. The infinite, eternal, unchanging truth which is the source and substratum of all existence. Described as Sat-Chit-Ananda (Existence-Consciousness-Bliss)."
+  },
+  {
+    term: "Maya",
+    sanskrit: "माया",
+    definition: "The cosmic illusion or appearance. The power by which Brahman appears as the manifold universe. Not real in the absolute sense, yet not entirely unreal—it is inexplicable (anirvachaniya)."
+  },
+  {
+    term: "Moksha",
+    sanskrit: "मोक्ष",
+    definition: "Liberation. Freedom from the cycle of birth and death (samsara). The realization of one's true nature as Brahman, resulting in the cessation of all suffering."
+  },
+  {
+    term: "Vidya",
+    sanskrit: "विद्या",
+    definition: "Knowledge, specifically spiritual knowledge. The direct realization of Brahman that leads to liberation. Contrast with avidya (ignorance)."
+  },
+  {
+    term: "Avidya",
+    sanskrit: "अविद्या",
+    definition: "Ignorance. The fundamental misapprehension of reality that causes one to see multiplicity where there is only unity. The root cause of bondage and suffering."
+  },
+  {
+    term: "Jnana",
+    sanskrit: "ज्ञान",
+    definition: "Knowledge or wisdom. In Advaita, refers to the liberating knowledge of the identity of Atman and Brahman. The direct means to moksha."
+  },
+  {
+    term: "Karma",
+    sanskrit: "कर्म",
+    definition: "Action and its results. The law of cause and effect governing rebirth. Also refers to ritual actions and duties prescribed by the Vedas."
+  },
+  {
+    term: "Bhakti",
+    sanskrit: "भक्ति",
+    definition: "Devotion. Love and devotion to the Divine. While secondary to jnana in Advaita, it plays an important role in purifying the mind for knowledge."
+  },
+  {
+    term: "Guru",
+    sanskrit: "गुरु",
+    definition: "Spiritual teacher. One who has realized Brahman and is qualified to guide disciples on the path to liberation. Essential for proper understanding of Advaita Vedanta."
+  },
+  {
+    term: "Shishya",
+    sanskrit: "शिष्य",
+    definition: "Disciple or student. One who seeks spiritual knowledge under the guidance of a guru in the traditional guru-shishya parampara."
+  },
+  {
+    term: "Shruti",
+    sanskrit: "श्रुति",
+    definition: "Revealed scripture. The Vedas and Upanishads, considered the highest authority in Vedanta. Literally means 'that which is heard.'"
+  },
+  {
+    term: "Smriti",
+    sanskrit: "स्मृति",
+    definition: "Remembered scripture. Includes texts like Bhagavad Gita, Puranas, Dharma Shastras. Secondary to shruti but still authoritative."
+  },
+  {
+    term: "Sadhana",
+    sanskrit: "साधना",
+    definition: "Spiritual practice. The disciplines and practices undertaken to prepare the mind for Self-knowledge."
+  },
+  {
+    term: "Sadhana Chatushtaya",
+    sanskrit: "साधन चतुष्टय",
+    definition: "The fourfold qualifications for a student of Vedanta: viveka (discrimination), vairagya (dispassion), shatsampat (six virtues), and mumukshutva (desire for liberation)."
+  },
+  {
+    term: "Viveka",
+    sanskrit: "विवेक",
+    definition: "Discrimination between the eternal and the non-eternal, the real and the unreal. The first of the fourfold qualifications."
+  },
+  {
+    term: "Vairagya",
+    sanskrit: "वैराग्य",
+    definition: "Dispassion or non-attachment to worldly and heavenly pleasures. The second of the fourfold qualifications."
+  },
+  {
+    term: "Mumukshutva",
+    sanskrit: "मुमुक्षुत्व",
+    definition: "Intense desire for liberation. The fourth and final qualification of a student of Vedanta."
+  },
+  {
+    term: "Samsara",
+    sanskrit: "संसार",
+    definition: "The cycle of birth, death, and rebirth. The world of constant change and suffering from which one seeks liberation."
+  },
+  {
+    term: "Jivanmukta",
+    sanskrit: "जीवन्मुक्त",
+    definition: "One who is liberated while still living in the body. A sage who has realized Brahman but continues to live until the body falls away."
+  },
+  {
+    term: "Sat-Chit-Ananda",
+    sanskrit: "सच्चिदानन्द",
+    definition: "Existence-Consciousness-Bliss. The three essential characteristics of Brahman, which are not separate qualities but its very nature."
+  },
+  {
+    term: "Neti Neti",
+    sanskrit: "नेति नेति",
+    definition: "Not this, not this. The method of negation used in Upanishads to indicate Brahman by denying all limiting attributes."
+  },
+  {
+    term: "Upanishads",
+    sanskrit: "उपनिषद्",
+    definition: "The concluding portions of the Vedas. Contains the philosophical teachings that form the foundation of Advaita Vedanta."
+  },
+  {
+    term: "Prasthana Trayi",
+    sanskrit: "प्रस्थान त्रयी",
+    definition: "The triple canon of Vedanta: Upanishads (shruti prasthana), Bhagavad Gita (smriti prasthana), and Brahma Sutras (nyaya prasthana)."
+  },
+  {
+    term: "Bhashya",
+    sanskrit: "भाष्य",
+    definition: "Commentary. Especially refers to Shankara's commentaries on the Prasthana Trayi and other key texts."
+  },
+  {
+    term: "Prakarana Grantha",
+    sanskrit: "प्रकरण ग्रन्थ",
+    definition: "Independent philosophical treatise. Texts like Vivekachudamani that systematically explain Advaita philosophy."
+  },
+  {
+    term: "Adhyaropa-Apavada",
+    sanskrit: "अध्यारोप-अपवाद",
+    definition: "Superimposition and its negation. A teaching method where concepts are first superimposed for understanding, then negated to reveal the absolute truth."
+  },
+  {
+    term: "Mahavakya",
+    sanskrit: "महावाक्य",
+    definition: "Great statement. The four principal Upanishadic declarations of identity between Atman and Brahman."
+  },
+  {
+    term: "Turiya",
+    sanskrit: "तुरीय",
+    definition: "The fourth state of consciousness. Beyond waking, dream, and deep sleep—the pure consciousness that witnesses all states."
+  }
+];
+---
+
+<BaseLayout title="Advaita Vedanta Glossary">
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <header class="mb-12 text-center">
+      <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
+        Advaita Vedanta Glossary
+      </h1>
+      <p class="text-text-secondary text-lg">
+        Essential terms and concepts in Advaita philosophy
+      </p>
+      <p class="text-sm text-text-muted mt-4 italic">
+        Study these concepts under the guidance of a qualified guru
+      </p>
+    </header>
+
+    <!-- Quick Navigation -->
+    <div class="mb-8 bg-bg-white border border-border rounded-lg p-4">
+      <p class="text-sm text-text-secondary mb-2"><strong>Quick Navigation:</strong></p>
+      <div class="flex flex-wrap gap-2">
+        <a href="#core-concepts" class="px-3 py-1 bg-accent-saffron text-white hover:opacity-90 rounded text-sm transition-colors font-semibold">Core Concepts</a>
+        <span class="text-text-muted">|</span>
+        <a href="#A" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">A</a>
+        <a href="#B" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">B</a>
+        <a href="#J" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">J</a>
+        <a href="#K" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">K</a>
+        <a href="#M" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">M</a>
+        <a href="#N" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">N</a>
+        <a href="#P" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">P</a>
+        <a href="#S" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">S</a>
+        <a href="#T" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">T</a>
+        <a href="#U" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">U</a>
+        <a href="#V" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">V</a>
+      </div>
+    </div>
+
+    <!-- Core Concepts from Verses Section -->
+    <section id="core-concepts" class="mb-12">
+      <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white border-2 border-accent-saffron rounded-xl p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-3xl font-bold text-accent-saffron">
+            Core Concepts from Verses
+          </h2>
+          <span class="text-sm text-text-muted italic">
+            तात्त्विक शब्द
+          </span>
+        </div>
+        
+        <p class="text-text-secondary mb-6 leading-relaxed">
+          These are the key philosophical terms taught in the verses currently available in our library. 
+          Each concept is directly from Shankara's bhashya and represents essential understanding for serious study.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          {coreConceptsFromVerses.map(concept => (
+            <div class={`rounded-lg p-5 border-2 transition-all hover:shadow-lg ${
+              concept.importance === 'primary'
+                ? 'bg-white border-accent-saffron'
+                : 'bg-bg-white border-border hover:border-accent-sandalwood'
+            }`}>
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-text-primary mb-1">
+                    {concept.term}
+                  </h3>
+                  <p class="text-sm text-text-muted italic">
+                    {concept.transliteration}
+                  </p>
+                </div>
+                <div class="text-right ml-4">
+                  <div class="sanskrit text-2xl text-accent-saffron mb-1">
+                    {concept.sanskrit}
+                  </div>
+                  {concept.importance === 'primary' && (
+                    <span class="inline-block px-2 py-0.5 bg-accent-saffron text-white text-xs rounded-full">
+                      Primary
+                    </span>
+                  )}
+                </div>
+              </div>
+              
+              <p class="text-text-secondary leading-relaxed mb-3">
+                {concept.definition}
+              </p>
+              
+              <div class="pt-3 border-t border-border">
+                <p class="text-xs text-text-muted flex items-center gap-1">
+                  <span>📖</span>
+                  <span>Taught in: <strong class="text-text-secondary">{concept.source}</strong></span>
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-6 p-4 bg-bg-white rounded-lg border border-border">
+          <p class="text-sm text-text-secondary italic">
+            💡 <strong>Study Tip:</strong> Primary concepts are fundamental to understanding Advaita Vedanta. 
+            Master these first before exploring secondary concepts and related teachings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="mb-12 flex items-center gap-4">
+      <div class="flex-1 border-t-2 border-accent-saffron"></div>
+      <h2 class="text-2xl font-bold text-accent-saffron">Complete Glossary</h2>
+      <div class="flex-1 border-t-2 border-accent-saffron"></div>
+    </div>
+
+    <!-- Glossary Terms -->
+    <div class="space-y-6">
+      {glossaryTerms.sort((a, b) => a.term.localeCompare(b.term)).map((item, index, arr) => {
+        const currentLetter = item.term[0].toUpperCase();
+        const previousLetter = index > 0 ? arr[index - 1].term[0].toUpperCase() : '';
+        const showLetterHeader = currentLetter !== previousLetter;
+        
+        return (
+          <>
+            {showLetterHeader && (
+              <div id={currentLetter} class="pt-8 pb-2 border-b-2 border-accent-saffron">
+                <h2 class="text-2xl font-bold text-accent-saffron">{currentLetter}</h2>
+              </div>
+            )}
+            <div class="bg-bg-white border border-border rounded-lg p-6 hover:border-accent-saffron transition-colors">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-semibold text-text-primary">
+                  {item.term}
+                </h3>
+                <span class="sanskrit text-lg text-accent-saffron ml-4">
+                  {item.sanskrit}
+                </span>
+              </div>
+              <p class="text-text-secondary leading-relaxed">
+                {item.definition}
+              </p>
+            </div>
+          </>
+        );
+      })}
+    </div>
+
+    <!-- Footer Note -->
+    <div class="mt-12 p-6 bg-bg-sanskrit border-l-4 border-accent-saffron rounded">
+      <p class="text-sm text-text-secondary leading-relaxed">
+        <strong>Note:</strong> These definitions are introductory. For deeper understanding and proper interpretation, 
+        study these concepts under the guidance of a qualified teacher in the traditional guru-shishya parampara.
+      </p>
+    </div>
+  </main>
+</BaseLayout>

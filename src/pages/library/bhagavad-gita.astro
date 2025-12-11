@@ -1,0 +1,288 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import metadata from '../../../content/bhagavad-gita/metadata.json' with { type: 'json' };
+---
+
+<BaseLayout title="Bhagavad Gītā">
+  <div class="flex min-h-screen">
+    <Navigation currentPath={Astro.url.pathname} />
+    
+    <main class="flex-1 px-4 py-8">
+      <div class="max-w-5xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-text-muted mb-6">
+          <a href="/library" class="hover:text-accent-saffron">Library</a>
+          <span class="mx-2">›</span>
+          <span class="text-text-primary">Bhagavad Gītā</span>
+        </nav>
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+          <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
+            {metadata.title}
+          </h1>
+          <p class="sanskrit text-2xl text-text-secondary mb-4">
+            {metadata.titleSanskrit}
+          </p>
+          <p class="text-xl text-text-muted mb-6 italic">
+            {metadata.subtitle}
+          </p>
+          <p class="text-text-secondary max-w-2xl mx-auto leading-relaxed">
+            {metadata.description}
+          </p>
+        </header>
+
+        <!-- Shankara's Introduction (Upodghata) -->
+        <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-2 border-accent-saffron p-8 mb-8">
+          <h2 class="text-2xl font-semibold text-accent-saffron mb-4 flex items-center gap-2">
+            <span>॥ उपोद्घातः ॥</span>
+            <span class="text-base font-normal text-text-secondary">Shankara's Introduction</span>
+          </h2>
+          
+          <div class="space-y-6">
+            <!-- Opening Verse -->
+            <div class="bg-bg-white rounded-lg p-6 border-l-4 border-accent-sandalwood">
+              <p class="sanskrit text-lg text-center leading-relaxed mb-3">
+                नारायणः परोऽव्यक्तात् अण्डमव्यक्तसम्भवम् ।<br/>
+                अण्डस्यान्तस्त्विमे लोकाः सप्तद्वीपा च मेदिनी ॥
+              </p>
+              <p class="text-sm text-text-secondary text-center italic">
+                Nārāyaṇa is beyond the Unmanifest; the cosmic egg arises from the Unmanifest.<br/>
+                Within the egg are these worlds and the earth with seven islands.
+              </p>
+            </div>
+
+            <!-- Main Introduction Text -->
+            <details class="bg-bg-white rounded-lg border border-border overflow-hidden">
+              <summary class="cursor-pointer px-6 py-4 font-semibold text-text-primary hover:bg-bg-sanskrit transition-colors flex justify-between items-center">
+                <span>Read Full Introduction (Sanskrit)</span>
+                <span class="text-accent-saffron">⊕</span>
+              </summary>
+              <div class="px-6 py-6 border-t border-border space-y-4">
+                <div class="sanskrit leading-loose text-text-primary">
+                  <p class="mb-4">सः भगवान् सृष्ट्वा-इदं जगत्, तस्य च स्थितिं चिकीर्षुः,
+मरीचि-आदीन्-अग्रे सृष्ट्वा प्रजापतीन्, प्रवृत्ति-लक्षणं धर्मं
+ग्राहयामास वेद-उक्तम् । ततः अन्याण् च सनक-सनन्दन-आदीन् उत्पाद्य,
+निवृत्ति-लक्षणं धर्मं ज्ञान-वैराग्य-लक्षणं ग्राहयामास ।
+द्विविधः हि वेदोक्तः धर्मः, प्रवृत्ति-लक्षणः
+निवृत्ति-लक्षणः च । जगतः स्थिति-कारणं ,
+प्राणिनां साक्षात्-अभ्युदय-निःश्रेयस-हेतुः
+यः सः धर्मः ब्राह्मणाद्यैः वर्णिभिः आश्रमिभिः च श्रेयोर्थिभिः
+अनुष्ठीयमानः ।</p>
+
+                  <p class="mb-4">दीर्घेण कालेन अनुष्ठातॄणां काम-उद्भवात्
+हीयमान-विवेक-विज्ञान-हेतुकेन अधर्मेण अभिभूयमाने धर्मे,
+प्रवर्धमाने च अधर्मे, जगतः स्थितिं परिपिपालयिषुः सः
+आदिकर्ता नारायण-आख्यः विष्णुः भौमस्य ब्रह्मणः ब्राह्मणत्वस्य
+रक्षणार्थं देवक्यां वसुदेवात्-अंशेन कृष्णः किल सम्बभूव ।
+ब्राह्मणत्वस्य हि रक्षणे रक्षितः स्यात् वैदिकः धर्मः, तत्-अधीनत्वात्
+वर्ण-आश्रम-भेदानाम् ॥</p>
+
+                  <p class="mb-4">सः च भगवान् ज्ञान-ऐश्वर्य-शक्ति-बल-वीर्य-तेजोभिः सदा
+सम्पन्नः त्रिगुण-आत्मिकां स्वां मायां मूल-प्रकृतिं वशीकृत्य, अजः
+अव्ययः भूतानाम्-ईश्वरः नित्य-शुद्ध-बुद्ध-मुक्त-स्वभावः अपि सन्,
+स्व-मायया देहवान् इव जातः इव च लोक-अनुग्रहं कुर्वन् लक्ष्यते ।</p>
+
+                  <p class="mb-4">स्वप्रयोजन-अभावेऽपि भूत-अनुजिघृक्षया वैदिकं धर्म-द्वयम्
+अर्जुनाय शोक-मोह-महा-उदधौ निमग्नाय उपदिदेश, गुण-अधिकैः
+हि गृहीतः अनुष्ठीयमानः च धर्मः प्रचयं गमिष्यतीति । तं
+धर्मं भगवता यथा-उपदिष्टं वेदव्यासः सर्वज्ञः भगवान्
+गीता-आख्यैः सप्तभिः श्लोक-शतैः उपनिबबन्ध ॥ तत् इदं
+गीता-शास्त्रं समस्त-वेदार्थ-सार-सङ्ग्रह-भूतं
+दुर्विज्ञेय-अर्थम्, तत्-अर्थ-आविष्करणाय
+अनेकैः विवृत-पद-पदार्थ-वाक्यार्थ-न्यायम्-अपि
+अत्यन्त-विरुद्ध-अनेक-अर्थवत्वेन लौकिकैः गृह्यमाणम्-उपलभ्य
+अहं विवेकतः अर्थ-निर्धारणार्थं सङ्क्षेपतः विवरणं करिष्यामि ॥</p>
+
+                  <p class="mb-4">तस्य अस्य गीता-शास्त्रस्य सङ्क्षेपतः प्रयोजनं परं
+निःश्रेयसं सहेतुकस्य संसारस्य अत्यन्त-उपरम-लक्षणम् । तत्
+च सर्व-कर्म-सन्न्यास-पूर्वकात्-आत्मज्ञान-निष्ठा-रूपात् धर्मात्
+भवति । तथा इमं एव गीतार्थं धर्मं उद्दिश्य भगवता एव उक्तं --
+''सः हि धर्मः सुपर्याप्तः ब्रह्मणः पद-वेदने'' (अश्व. १६-१२)
+इति अनुगीतासु । तत्र एव च उक्तं -- ''न एव धर्मी न च
+अधर्मी न च एव हि शुभ-अशुभी ।'' (अश्व. १९-७) ''यः
+स्यात्-एकासने लीनः तूष्णीं किञ्चित्-अचिन्तयन्'' (अश्व. १९-१)
+इति ॥ ''ज्ञानं सन्न्यास-लक्षणम्'' (अश्व. ४३-२६) इति च ।
+इह अपि च अन्ते उक्तं अर्जुनाय -- ``सर्व-धर्मान् परित्यज्य माम्
+एकं शरणं व्रज'' (भ. गी. १८-६६) इति । अभ्युदय-अर्थः अपि
+यः प्रवृत्ति-लक्षणः धर्मः वर्णान-आश्रमाण् च उद्दिश्य विहितः,
+सः देव-आदि-स्थान-प्राप्ति-हेतुः अपि सन्, ईश्वर-अर्पण-बुद्ध्या
+अनुष्ठीयमानः सत्त्व-शुद्धये भवति फल-अभिसन्धि-वर्जितः
+शुद्ध-सत्त्वस्य च ज्ञान-निष्ठा-योग्यता-प्राप्ति-द्वारेण
+ज्ञान-उत्पत्ति-हेतुत्वेन च निःश्रेयस-हेतुत्वं अपि प्रतिपद्यते ।
+तथा च इमम्-अर्थम्-अभिसन्धाय वक्ष्यति -- ``ब्रह्मणि-आधाय
+कर्माणि'' (भ. गी. ५-१०)``योगिनः कर्म कुर्वन्ति सङ्गं
+त्यक्त्वा-आत्मशुद्धये'' (भ. गी. ५-११) इति ॥</p>
+
+                  <p>इमं द्विप्रकारं धर्मं निःश्रेयस-प्रयोजनम्, परमार्थ-तत्त्वं च
+वासुदेव-आख्यं परं ब्रह्म-अभिधेयभूतं विशेषतः अभिव्यञ्जयत्
+विशिष्ट-प्रयोजन-सम्बन्ध-अभिधेयवद् गीता-शास्त्रम् । यतः
+तत्-अर्थ-विज्ञाने समस्त-पुरुषार्थ-सिद्धिः, अतः तत्-विवरणे यत्नः
+क्रियते मया ॥</p>
+                </div>
+              </div>
+            </details>
+
+            <!-- Key Points from Introduction -->
+            <div class="bg-bg-white rounded-lg p-6 border border-border">
+              <h3 class="text-lg font-semibold text-text-primary mb-4">
+                Essential Points from Shankara's Introduction
+              </h3>
+              <div class="space-y-3 text-text-secondary">
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">Two Types of Dharma:</strong> The Vedas teach both pravṛtti-lakṣaṇa dharma (path of action/engagement) and nivṛtti-lakṣaṇa dharma (path of renunciation/knowledge).</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">Purpose of Krishna's Incarnation:</strong> Bhagavān descended to protect Vedic dharma when it was declining due to rise of adharma born from desires.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">The Gita's Teaching:</strong> Taught to Arjuna who was drowning in the ocean of sorrow and delusion, the Gita contains the essence of all Vedic wisdom in 700 verses.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">Supreme Goal:</strong> The ultimate purpose (niḥśreyasa) is complete cessation of saṃsāra, achieved through ātmajñāna-niṣṭhā (steadfastness in Self-knowledge) preceded by renunciation of all actions.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">Path of Action:</strong> Pravṛtti dharma, when performed with Īśvara-arpaṇa-buddhi (offering to the Lord) without desire for fruits, purifies the mind and makes one fit for knowledge.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-accent-saffron mt-1">•</span>
+                  <p><strong class="text-text-primary">Ultimate Teaching:</strong> The culmination is "sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja" (BG 18.66) - abandon all dharmas and take refuge in Me alone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="bg-bg-white rounded-lg border border-border p-8 mb-8">
+          <h2 class="text-2xl font-semibold text-text-primary mb-4">
+            About the Bhagavad Gītā
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Total Chapters</p>
+              <p class="text-3xl font-bold text-accent-saffron">{metadata.structure.totalChapters}</p>
+            </div>
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Total Verses</p>
+              <p class="text-3xl font-bold text-accent-saffron">{metadata.structure.totalVerses}</p>
+            </div>
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Language</p>
+              <p class="text-3xl font-bold text-accent-saffron sanskrit-small">{metadata.structure.language}</p>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-r from-bg-sanskrit to-bg-white p-6 rounded-lg">
+            <h3 class="font-semibold text-text-primary mb-2">
+              Primary Commentary
+            </h3>
+            <p class="text-text-primary mb-1">{metadata.commentary.primary}</p>
+            <p class="sanskrit-small text-text-secondary">{metadata.commentary.primarySanskrit}</p>
+            <p class="text-sm text-text-muted mt-2">
+              {metadata.commentary.period} • {metadata.commentary.tradition}
+            </p>
+          </div>
+        </div>
+
+        <!-- Chapters List -->
+        <div>
+          <h2 class="text-2xl font-semibold text-text-primary mb-6">
+            All Chapters
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-4">
+          {metadata.chapters.map((chapter) => (
+            chapter.available ? (
+              <a 
+                href={`/library/bhagavad-gita/${chapter.slug}`}
+                class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex-1">
+                    <div class="flex items-baseline gap-3 mb-3">
+                      <span class="text-2xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                        Chapter {chapter.number}
+                      </span>
+                      <span class="text-sm text-text-muted">
+                        {chapter.verses} verses
+                      </span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">
+                      {chapter.title}
+                    </h3>
+                    <p class="sanskrit-small text-text-secondary mb-3">
+                      {chapter.titleSanskrit}
+                    </p>
+                    <p class="text-text-secondary leading-relaxed">
+                      {chapter.summary}
+                    </p>
+                  </div>
+                  <span class="text-accent-saffron text-2xl opacity-0 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </div>
+              </a>
+            ) : (
+              <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex-1">
+                    <div class="flex items-baseline gap-3 mb-3">
+                      <span class="text-2xl font-semibold text-text-primary">
+                        Chapter {chapter.number}
+                      </span>
+                      <span class="text-sm text-text-muted">
+                        {chapter.verses} verses
+                      </span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">
+                      {chapter.title}
+                    </h3>
+                    <p class="sanskrit-small text-text-secondary mb-3">
+                      {chapter.titleSanskrit}
+                    </p>
+                    <p class="text-text-secondary leading-relaxed mb-2">
+                      {chapter.summary}
+                    </p>
+                    <p class="text-sm text-text-muted italic">Coming soon...</p>
+                  </div>
+                </div>
+              </div>
+            )
+          ))}
+          </div>
+        </div>
+
+        <!-- Key Themes -->
+        <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-8 mt-8">
+          <h3 class="text-xl font-semibold text-accent-saffron mb-4">
+            Key Themes in the Bhagavad Gītā
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {metadata.themes.map(theme => (
+              <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+                {theme}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-center items-center mt-12 pt-8 border-t border-border">
+          <a 
+            href="/library"
+            class="text-accent-sandalwood hover:text-accent-saffron transition-colors"
+          >
+            ← Back to Library
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+</BaseLayout>

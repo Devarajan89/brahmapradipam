@@ -1,0 +1,178 @@
+{
+  "id": "isha-01",
+  "reference": "Īśa Upaniṣad 1",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 1,
+  "original": {
+    "devanagari": "ईशा वास्यमिदꣳ सर्वं यत्किञ्च जगत्यां जगत् । तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥",
+    "iast": "īśā vāsyam idaṁ sarvaṁ yatkiñca jagatyāṁ jagat | tena tyaktena bhuñjīthā mā gṛdhaḥ kasyasvid dhanam ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "ईशा",
+      "transliteration": "īśā",
+      "meaning": "by the Lord",
+      "grammar": "instrumental case, feminine",
+      "root": "īś (to rule)"
+    },
+    {
+      "word": "वास्यम्",
+      "transliteration": "vāsyam",
+      "meaning": "to be covered/pervaded",
+      "grammar": "gerundive",
+      "root": "vas (to dwell, pervade)"
+    },
+    {
+      "word": "इदम्",
+      "transliteration": "idam",
+      "meaning": "this",
+      "grammar": "pronoun, neuter nominative"
+    },
+    {
+      "word": "सर्वम्",
+      "transliteration": "sarvam",
+      "meaning": "all",
+      "grammar": "pronoun, neuter nominative"
+    },
+    {
+      "word": "यत्किञ्च",
+      "transliteration": "yatkiñca",
+      "meaning": "whatever",
+      "grammar": "compound pronoun"
+    },
+    {
+      "word": "जगत्याम्",
+      "transliteration": "jagatyām",
+      "meaning": "in the moving/changing world",
+      "grammar": "locative case",
+      "root": "gam (to go)"
+    },
+    {
+      "word": "जगत्",
+      "transliteration": "jagat",
+      "meaning": "world, universe",
+      "grammar": "neuter nominative"
+    },
+    {
+      "word": "तेन",
+      "transliteration": "tena",
+      "meaning": "by that",
+      "grammar": "instrumental case"
+    },
+    {
+      "word": "त्यक्तेन",
+      "transliteration": "tyaktena",
+      "meaning": "by renounced/abandoned",
+      "grammar": "past participle, instrumental",
+      "root": "tyaj (to abandon)"
+    },
+    {
+      "word": "भुञ्जीथाः",
+      "transliteration": "bhuñjīthāḥ",
+      "meaning": "you should enjoy/experience",
+      "grammar": "optative, 2nd person singular",
+      "root": "bhuj (to enjoy)"
+    },
+    {
+      "word": "मा",
+      "transliteration": "mā",
+      "meaning": "not, do not",
+      "grammar": "prohibitive particle"
+    },
+    {
+      "word": "गृधः",
+      "transliteration": "gṛdhaḥ",
+      "meaning": "covet, desire greedily",
+      "grammar": "imperative, 2nd person singular",
+      "root": "gṛdh (to be greedy)"
+    },
+    {
+      "word": "कस्यस्विद्",
+      "transliteration": "kasyasvid",
+      "meaning": "of anyone",
+      "grammar": "genitive case with particle"
+    },
+    {
+      "word": "धनम्",
+      "transliteration": "dhanam",
+      "meaning": "wealth, possession",
+      "grammar": "accusative case, neuter"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "All this—whatsoever exists in this changing universe—should be covered by the Lord. Through such renunciation, you should enjoy. Do not covet anyone's wealth.",
+      "style": "literal"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "ईशा ईष्टे इति ईट्, तेन ईशा । ईशिता परमेश्वरः परमात्मा सर्वस्य । स हि सर्वमीष्टे सर्वजन्तूनामात्मा सन् प्रत्यगात्मतया । तेन स्वेन रूपेणात्मना ईशा वास्यम् आच्छादनीयम् । किम्? इदं सर्वं यत्किं च यत्किंचित् जगत्यां पृथिव्यां जगत् तत्सर्वम् । स्वेनात्मना ईशेन प्रत्यगात्मतया अहमेवेदं सर्वमिति परमार्थसत्यरूपेणानृतमिदं सर्वं चराचरमाच्छादनीयं परमात्मना । यथा चन्दनागर्वादेरुदकादि-सम्बन्धजक्लेदादिजमौपाधिकं दौर्गन्ध्यं तत्स्वरूपनिघर्षणेनाच्छाद्यते स्वेन पारमार्थिकेन गन्धेन, तद्वदेव हि स्वात्मन्यध्यस्तं स्वाभाविकं कर्तृत्वभोक्तृत्वादिलक्षणं जगद्द्वैतरूपं पृथिव्यां, जगत्या-मित्युपलक्षणार्थत्वात्सर्वमेव नामरूपकर्माख्यं विकारजातं परमार्थसत्यात्मभावनया त्यक्तं स्यात् । एवमीश्वरात्मभावनया युक्तस्य पुत्राद्येषणात्रयसंन्यासे एवाधिकारः, न कर्मसु । तेन त्यक्तेन त्यागेनेत्यर्थः । न हि त्यक्तो मृतः पुत्रो भृत्यो वा आत्मसम्बन्धिताभावादात्मानं पालयति । अतस्त्यागेनेत्ययमेवार्थः । भुञ्जीथाः पालयेथाः । एवं त्यक्तैषणस्त्वं मा गृधः गृधिम् आकाङ्क्षां मा कार्षीः धनविषयाम् । कस्य स्वित् कस्यचित् परस्य स्वस्य वा धनं मा काङ्क्षीरित्यर्थः । स्विदित्यनर्थको निपातः । अथवा, मा गृधः । कस्मात्? कस्यस्विद्धनम् इत्याक्षेपार्थः । न कस्यचिद्धनमस्ति, यद्गृध्येत । आत्मैवेदं सर्वमितीश्वरभावनया सर्वं त्यक्तम् । अत आत्मन एवेदं सर्वम्, आत्मैव च सर्वम् । अतो मिथ्याविषयां गृधिं मा कार्षीरित्यर्थः ॥ एवमात्मविदः पुत्राद्येषणात्रयसंन्यासेनात्मज्ञाननिष्ठतया आत्मा रक्षितव्य इत्येष वेदार्थः । अथेतरस्य अनात्मज्ञतयात्मग्रहणाशक्तस्य इदमुपदिशति मन्त्रः -",
+    "iast": "īśā īṣṭe iti īṭ, tena īśā | īśitā parameśvaraḥ paramātmā sarvasya | sa hi sarvamīṣṭe sarvajanṭūnāmātmā san pratyagātmatayā | tena svena rūpeṇātmanā īśā vāsyam ācchādanīyam | kim? idaṁ sarvaṁ yatkiṁ ca yatkiṁcit jagatyāṁ pṛthivyāṁ jagat tatsarvam | svenātmanā īśena pratyagātmatayā ahamevaidaṁ sarvamiti paramārthasatyarūpeṇānṛtamidaṁ sarvaṁ carācaramācchādanīyaṁ paramātmanā | yathā candanāgarvāderudakādi-sambandhajakledādijamaupadhikaṁ daurganddhyaṁ tatsvarūpanigharṣaṇenācchādyate svena pāramārthikena gandhena, tadvadeva hi svātmanyadhyastaṁ svābhāvikaṁ kartṛtvabhoktṛtvādilakṣaṇaṁ jagaddvaitarūpaṁ pṛthivyāṁ, jagatyā-mityupalakṣaṇārthatvātsarvameva nāmarūpakarmākhyaṁ vikārajātaṁ paramārthasatyātmabhāvanayā tyaktaṁ syāt | evamīśvarātmabhāvanayā yuktasya putrādyeṣaṇātrayasaṁnyāse evādhikāraḥ, na karmasu | tena tyaktena tyāgenetyarthaḥ | na hi tyakto mṛtaḥ putro bhṛtyo vā ātmasambanddhitābhāvādātmānaṁ pālayati | atatyāgenetyayamevārthaḥ | bhuñjīthāḥ pālayethāḥ | evaṁ tyaktaiṣaṇastvaṁ mā gṛdhaḥ gṛdhim ākāṅkṣāṁ mā kārṣīḥ dhanaviṣayām | kasya svit kasyacit parasya svasya vā dhanaṁ mā kāṅkṣīrityarthaḥ | svidityanarthako nipātaḥ | athavā, mā gṛdhaḥ | kasmāt? kasyasviddhanam ityākṣepārthaḥ | na kasyaciddhanamasti, yadgṛdhyeta | ātmaivaidaṁ sarvamitīśvarabhāvanayā sarvaṁ tyaktam | ata ātmana evaidaṁ sarvam, ātmaiva ca sarvam | ato mithyāviṣayāṁ gṛdhiṁ mā kārṣīrityarthaḥ || evamātmavidaḥ putrādyeṣaṇātrayasaṁnyāsenātmajñānaniṣṭhatayā ātmā rakṣitavya ityeṣa vedārthaḥ | athetarasya anātmajñatayātmagrahaṇāśaktasya idamupadiśati mantraḥ -",
+    "translation": "Īśā: One who rules is called īṭ (ruler), therefore īśā. The ruler is the Supreme Lord, the Supreme Self of all. He indeed rules all, being the Self of all beings in the form of the inner Self (pratyagātman). By that—by the Self in its own form—īśā vāsyam—should be covered, enveloped. What? Idaṁ sarvam—all this, yatkiṁ ca—whatever, jagatyām—on the earth, jagat—moving world—all that. By one's own Self, the Lord, as the inner Self, with the realization 'I am indeed all this,' all this moving and unmoving (carācara) which is unreal should be covered by the Supreme Self which is absolutely real (paramārtha-satya). Just as the acquired foul smell of sandalwood paste etc., arising from contact with water etc., is covered by its own essential fragrance when rubbed, similarly indeed the superimposed (adhyasta) natural characteristics of agency, enjoyership etc., the duality of the world on earth—'jagatyām' being illustrative—all modifications known as name, form, and action should be renounced through the realization of the absolutely real Self. Thus, one who is endowed with the realization of the Self as the Lord has qualification only for the renunciation of the three desires beginning with desire for offspring, not for actions. Tena tyaktena—by that renunciation—this is the meaning. For a dead son or servant who has been abandoned does not protect oneself due to absence of relationship with the Self. Therefore, 'by renunciation' is indeed the meaning. Bhuñjīthāḥ—you should protect, maintain. Thus, having renounced desires, mā gṛdhaḥ—do not covet, do not make craving—in regard to wealth. Kasya svit—of anyone, of another or of oneself—do not desire wealth—this is the meaning. 'Svit' is a meaningless particle. Or alternatively, mā gṛdhaḥ—do not covet. Why? Kasyasviddhanam—whose wealth is it?—this is asked rhetorically. There is no one's wealth that should be coveted. Through the realization 'the Self alone is all this as the Lord,' everything is renounced. Therefore, all this belongs to the Self alone, and the Self alone is all. Therefore, do not make craving for what is unreal—this is the meaning. Thus for the knower of the Self, through renunciation of the three desires beginning with desire for offspring, through steadfastness in Self-knowledge, the Self should be protected—this is the meaning of the Veda. Now, for the other one who is unable to grasp the Self due to ignorance of the Self, the mantra teaches this:",
+    "keyPoints": [
+      "The entire universe is pervaded by the Lord (Īśvara) who is the inner Self (pratyagātman)",
+      "All duality, agency, and enjoyership are superimposed (adhyasta) on the Self",
+      "True renunciation (tyāga) is internal - the abandonment of false identification",
+      "One qualified for Self-knowledge must renounce the three desires (eṣaṇā-traya): desire for offspring, wealth, and worlds",
+      "The Self alone is real; the world of name-form-action is unreal (anṛta)",
+      "Protection of the Self means steadfastness in Self-knowledge, not ritual actions"
+    ],
+    "notes": "Śaṅkara's commentary is profound: he uses the analogy of sandalwood paste's acquired foul smell being covered by its essential fragrance to explain how the Self's true nature covers superimposed qualities. He emphasizes that the one who realizes 'I am all this' has qualification only for renunciation (saṁnyāsa), not for karma. The phrase 'tena tyaktena' (by that renounced) means 'by renunciation' itself, not 'by what is renounced'—for a dead son cannot protect you. This establishes that Self-knowledge and karma are opposed paths."
+  },
+  "centralTeaching": "The opening mantra of the Īśa Upaniṣad establishes the fundamental vision of Vedānta: the entire universe is pervaded by the Supreme Lord. True freedom and enjoyment come not through accumulation but through renunciation—seeing all things as belonging to Īśvara and using only what is necessary for sustaining life while on the spiritual path.",
+  "coreConcepts": [
+    {
+      "term": "Īśvara",
+      "transliteration": "īśvara",
+      "definition": "The Supreme Lord who pervades and governs all existence",
+      "importance": "primary"
+    },
+    {
+      "term": "Tyāga",
+      "transliteration": "tyāga",
+      "definition": "Renunciation; abandonment of possessiveness and false identification",
+      "importance": "primary"
+    },
+    {
+      "term": "Jagat",
+      "transliteration": "jagat",
+      "definition": "The moving/changing universe; all that is in flux",
+      "importance": "secondary"
+    },
+    {
+      "term": "Bhoga",
+      "transliteration": "bhoga",
+      "definition": "Enjoyment, experience through renunciation, not possession",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-07",
+      "reference": "Īśa Upaniṣad 7",
+      "relationship": "elaboration",
+      "note": "Expands on seeing the Self in all beings"
+    },
+    {
+      "verseId": "bg-5-10",
+      "reference": "Bhagavad Gītā 5.10",
+      "relationship": "parallel",
+      "note": "Acting while renouncing attachment to fruits"
+    },
+    {
+      "verseId": "katha-2-2-2",
+      "reference": "Kaṭha Upaniṣad 2.2.2",
+      "relationship": "contrast",
+      "note": "Choice between preyas (pleasure) and śreyas (good)"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Content Team",
+      "role": "translator",
+      "date": "2025-12-10"
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+---
+
+<BaseLayout title="Īśa Upaniṣad">
+  <div class="flex min-h-screen">
+    <Navigation currentPath={Astro.url.pathname} />
+    
+    <main class="flex-1 px-4 py-8">
+    <div class="max-w-5xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-text-muted mb-6">
+        <a href="/library" class="hover:text-accent-saffron">Library</a>
+        <span class="mx-2">›</span>
+        <a href="/library/upanishads" class="hover:text-accent-saffron">Upaniṣads</a>
+        <span class="mx-2">›</span>
+        <span class="text-text-primary">Īśa Upaniṣad</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
+          Īśa Upaniṣad
+        </h1>
+        <p class="sanskrit text-2xl text-text-secondary mb-4">
+          ईशोपनिषद्
+        </p>
+        <p class="text-text-secondary max-w-2xl mx-auto leading-relaxed">
+          Also known as Īśāvāsya Upaniṣad - "The Lord dwells in all". This is one of the shortest 
+          and most beautiful Upaniṣads, consisting of 18 mantras that reveal the nature of Brahman 
+          and the path to liberation.
+        </p>
+      </header>
+
+      <!-- Overview -->
+      <div class="bg-bg-white rounded-lg border border-border p-8 mb-8">
+        <h2 class="text-2xl font-semibold text-text-primary mb-4">
+          About This Upaniṣad
+        </h2>
+        <div class="space-y-4 text-text-secondary leading-relaxed">
+          <p>
+            The Īśa Upaniṣad belongs to the Śukla Yajurveda and is considered one of the principal 
+            Upaniṣads. Its very first mantra sets the tone for the entire teaching: "All this is 
+            pervaded by the Lord."
+          </p>
+          <p>
+            Śrī Śaṅkara Bhagavadpāda's commentary on this Upaniṣad is profound, explaining how 
+            action and knowledge work together in the pursuit of mokṣa.
+          </p>
+          <div class="bg-bg-sanskrit p-4 rounded mt-4">
+            <p class="text-sm text-text-primary">
+              <strong>Total Mantras:</strong> 18<br>
+              <strong>Belongs to:</strong> Śukla Yajurveda<br>
+              <strong>Key Themes:</strong> Non-duality, Renunciation in Action, Knowledge of Brahman
+            </p>
+          </div>
+        </div>
+
+        <!-- Shankara's Introduction -->
+        <div class="mt-8 border-t border-border pt-6">
+          <h3 class="text-xl font-semibold text-accent-saffron mb-4">
+            Śaṅkara Bhagavadpāda's Introduction to the Upaniṣad
+          </h3>
+          <div class="bg-gradient-to-r from-bg-sanskrit to-bg-white p-6 rounded-lg">
+            <p class="sanskrit text-text-primary leading-loose mb-4">
+              ईशावास्योपनिषत् श्रीमच्छङ्कराचार्यविरचितेनभाष्येणसहिता
+            </p>
+            <p class="sanskrit-small text-text-secondary leading-relaxed mb-6">
+              "ईशा वास्यम्" इत्यादयो मन्त्राः कर्मस्वविनियुक्ताः, तेषामकर्मशेषस्यात्मनो याथात्म्यप्रकाशकत्वात् । याथात्म्यं चात्मनः शुद्धत्वापापविद्धत्वैकत्व-नित्यत्वाशरीरत्वसर्वगतत्वादि वक्ष्यमाणम् । तच्च कर्मणा विरुध्यत इति युक्त एवैषां कर्मस्वविनियोगः । न ह्येवंलक्षणमात्मनो याथात्म्यम् उत्पाद्यं विकार्यम् आप्यं संस्कार्यं कर्तृभोक्तृरूपं वा येन कर्मशेषता स्यात्; सर्वासामुपनिषदामात्मयाथात्म्यनिरूपणेनैवोपक्षयात्, गीतानां मोक्षधर्माणां चैवंपरत्वात् । तस्मादात्मनोऽनेकत्वकर्तृत्वभोक्तृत्वादि च अशुद्धत्वपापविद्धत्वादि चोपादाय लोकबुद्धिसिद्धं कर्माणि विहितानि । यो हि कर्मफलेनार्थी दृष्टेन ब्रह्मवर्चसादिना अदृष्टेन स्वर्गादिना च द्विजातिरहं न काणत्वकुणित्वाद्यनधिकारप्रयोजकधर्मवानित्यात्मानं मन्यते सोऽधिक्रियते कर्मस्विति ह्यधिकारविदो वदन्ति । तस्मादेते मन्त्रा आत्मनो याथात्म्यप्रकाशनेन आत्मविषयं स्वाभाविककर्म्विज्ञानं निवर्तयन्तः शोकमोहादिसंसारधर्मविच्छित्तिसाधनमात्मैकत्वादिविज्ञानमुत्पादयन्तीति । एवमुक्ताधिकार्यभिधेयसम्बन्धप्रयोजनान्मन्त्रान्सङ्क्षेपतो व्याख्यास्यामः -
+            </p>
+            <div class="bg-bg-white p-4 rounded">
+              <p class="text-sm text-text-primary leading-relaxed">
+                <strong>Summary:</strong> Śaṅkara Bhagavadpāda explains that the mantras beginning with "Īśā vāsyam" reveal the true nature of the Self (Ātman) which is pure, sinless, one, eternal, bodiless, and all-pervading. This knowledge contradicts karma (action), as the Self cannot be produced, modified, attained, or purified through action—it has no agency or experienceship requiring karma. The Upaniṣad teaches that actions are prescribed based on the worldly notion of the Self as many, as doer and enjoyer, as impure and tainted. These mantras, by revealing the true nature of the Self, remove the natural ignorance regarding the Self and produce the knowledge of the oneness of Ātman, which cuts off sorrow, delusion, and other qualities of saṃsāra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mantra List -->
+      <div>
+        <h2 class="text-2xl font-semibold text-text-primary mb-6">
+          Mantras
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <a 
+            href="/verse/isha-01"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १. ईशा वास्यमिदं सर्वम्...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-02"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    २. कुर्वन्नेवेह कर्माणि...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-03"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ३. असुर्या नाम ते लोकाः...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-04"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ४. अनेजदेकं मनसो जवीयः...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-05"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ५. तदेजति तन्नैजति...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-06"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ६. यस्तु सर्वाणि भूतानि...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-07"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ७. यस्मिन्सर्वाणि भूतानि...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-08"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ८. स पर्यगाच्छुक्रमकायम्...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-09"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ९. अन्धं तमः प्रविशन्ति...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-10"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १०. अन्यदेवाहुर्विद्यया...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-11"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    ११. विद्यां चाविद्यां च...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-12"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १२. अन्धं तमः प्रविशन्ति...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-13"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १३. अन्यदेवाहुः सम्भवात्...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-14"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १४. सम्भूतिं च विनाशं च...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-15"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १५. हिरण्मयेन पात्रेण...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-16"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १६. पूषन्नेकर्षे यम...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-17"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १७. वायुरनिलममृतम्...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <a 
+            href="/verse/isha-18"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    १८. अग्ने नय सुपथा...
+                  </span>
+                </div>
+              </div>
+              <span class="text-accent-saffron text-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Teachings Preview -->
+      <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-8 mt-8">
+        <h3 class="text-xl font-semibold text-accent-saffron mb-4">
+          Key Teachings of Īśa Upaniṣad
+        </h3>
+        <ul class="space-y-3 text-text-primary">
+          <li class="flex items-start gap-3">
+            <span class="text-accent-saffron mt-1">•</span>
+            <span>All of creation is pervaded by the Lord (Īśvara)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent-saffron mt-1">•</span>
+            <span>One should renounce while enjoying - detachment in action</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent-saffron mt-1">•</span>
+            <span>Knowledge (vidyā) and ignorance (avidyā) must both be transcended</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent-saffron mt-1">•</span>
+            <span>The Self is everywhere - "He who sees all beings in the Self"</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent-saffron mt-1">•</span>
+            <span>Prayer for guidance: "Lead me from darkness to light"</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex justify-between items-center mt-12 pt-8 border-t border-border">
+        <a 
+          href="/library/upanishads"
+          class="text-text-muted italic"
+        >
+          ← All Upaniṣads
+        </a>
+        <a 
+          href="/library"
+          class="text-accent-sandalwood hover:text-accent-saffron transition-colors"
+        >
+          Back to Library
+        </a>
+        <a 
+          href="/library/kena"
+          class="text-accent-sandalwood hover:text-accent-saffron transition-colors"
+        >
+          Kena Upaniṣad →
+        </a>
+      </div>
+    </div>
+    </main>
+  </div>
+</BaseLayout>

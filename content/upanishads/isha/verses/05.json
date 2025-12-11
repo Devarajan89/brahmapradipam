@@ -1,0 +1,201 @@
+{
+  "id": "isha-05",
+  "reference": "Īśa Upaniṣad 5",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 5,
+  "original": {
+    "devanagari": "तदेजति तन्नैजति तद्दूरे तद्वन्तिके ।\nतदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः ॥ ५ ॥",
+    "iast": "tad ejati tan naijati tad dūre tad vantike |\ntad antarasya sarvasya tadu sarvasyāsya bāhyataḥ || 5 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That (the Self)",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "एजति",
+      "transliteration": "ejati",
+      "meaning": "moves, stirs",
+      "grammar": "3rd person singular from √ej",
+      "root": "√ej (to move, tremble)"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "negative particle"
+    },
+    {
+      "word": "एजति",
+      "transliteration": "ejati",
+      "meaning": "moves",
+      "grammar": "3rd person singular from √ej"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "दूरे",
+      "transliteration": "dūre",
+      "meaning": "far",
+      "grammar": "locative singular of dūra"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "अन्तिके",
+      "transliteration": "antike",
+      "meaning": "near",
+      "grammar": "locative singular of antika"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "अन्तरस्य",
+      "transliteration": "antarasya",
+      "meaning": "inside, within",
+      "grammar": "genitive singular of antara"
+    },
+    {
+      "word": "सर्वस्य",
+      "transliteration": "sarvasya",
+      "meaning": "of all",
+      "grammar": "genitive singular of sarva"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "That",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "उ",
+      "transliteration": "u",
+      "meaning": "indeed",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "सर्वस्य",
+      "transliteration": "sarvasya",
+      "meaning": "of all",
+      "grammar": "genitive singular of sarva"
+    },
+    {
+      "word": "अस्य",
+      "transliteration": "asya",
+      "meaning": "of this",
+      "grammar": "genitive singular of idam"
+    },
+    {
+      "word": "बाह्यतः",
+      "transliteration": "bāhyataḥ",
+      "meaning": "outside",
+      "grammar": "ablative adverb from bāhya"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "That moves and That moves not. That is far and That is near. That is within all this and That is also outside all this.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "That One moves, and It does not move. It is far, and the same is near. It is inside all this, and It is also outside all this.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "तत् आत्मतत्त्वं यत्प्रकृतम् एजति चलति तदेव च नैजति स्वतो नैव चलति, स्वतः अचलमेव सत् चलतीवेत्यर्थः । किञ्च, तद्दूरे वर्षकोटिशतैरप्यविदुषामप्राप्यत्वाद्दूर इव । तदु अन्तिके समीपे अत्यन्तमेव विदुषाम् , आत्मत्वात् न केवलं दूरे, अन्तिके च । तत् अन्तः अभ्यन्तरे अस्य सर्वस्य, 'य आत्मा सर्वान्तरः' इति श्रुतेः, अस्य सर्वस्य जगतो नामरूपक्रियात्मकस्य । तत् उ सर्वस्य अस्य बाह्यतः ; व्यापित्वादाकाशवन्निरतिशयसूक्ष्मत्वादन्तः ; 'प्रज्ञानघन एव' (बृ. उ. ४ । ५ । १३) इति शासनान्निरन्तरं च ॥",
+    "keyPoints": [
+      "The Self moves and does not move - seemingly contradictory but true from different perspectives",
+      "It appears to move through limiting adjuncts (upādhis) but is actually motionless in itself",
+      "It is far from the ignorant, unattainable even in hundreds of millions of years",
+      "It is extremely near to the wise, being their very Self",
+      "It is inside all this universe of name, form, and action",
+      "It is outside all this, pervading like space due to extreme subtlety",
+      "It is continuous, a mass of consciousness (prajñānaghana), as per Bṛhadāraṇyaka Upaniṣad"
+    ],
+    "notes": "This mantra continues the paradoxical description of Brahman from mantra 4. Śaṅkara Bhagavadpāda explains how the Self can be both moving and unmoving, far and near, inside and outside - all simultaneously. The key is understanding the distinction between the Self's essential nature (svarūpa) and its appearance through limiting conditions. The reference to 'prajñānaghana' from Bṛhadāraṇyaka emphasizes the Self as a homogeneous mass of consciousness."
+  },
+  "centralTeaching": "The Self (Ātman) transcends all dualities - it simultaneously moves and is motionless, is far yet near, is within and without all creation. These apparent contradictions are resolved by understanding that the Self is beyond all spatial and temporal limitations, being the infinite, all-pervading consciousness that is both immanent and transcendent.",
+  "coreConcepts": [
+    {
+      "term": "प्रज्ञानघन",
+      "transliteration": "prajñānaghana",
+      "definition": "Mass of consciousness; the Self as homogeneous, continuous consciousness without any gaps or interruptions",
+      "importance": "primary"
+    },
+    {
+      "term": "सर्वान्तर",
+      "transliteration": "sarvāntara",
+      "definition": "Inner Self of all; the Self that dwells within all beings as their essence",
+      "importance": "primary"
+    },
+    {
+      "term": "व्यापकत्व",
+      "transliteration": "vyāpakatva",
+      "definition": "All-pervasiveness; the quality of pervading everything like space, being both inside and outside",
+      "importance": "secondary"
+    },
+    {
+      "term": "निरतिशयसूक्ष्मत्व",
+      "transliteration": "niratiśayasūkṣmatva",
+      "definition": "Extreme subtlety; the incomparable fineness of the Self that allows it to pervade everything",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-04",
+      "reference": "Īśa Upaniṣad 4",
+      "relationship": "elaboration",
+      "note": "Continues the theme of paradoxical descriptions of the Self (motionless yet swift)"
+    },
+    {
+      "verseId": "bg-13-15",
+      "reference": "Bhagavad Gītā 13.15",
+      "relationship": "parallel",
+      "note": "Describes Brahman as both within and without, moving and unmoving"
+    },
+    {
+      "verseId": "katha-1-2-21",
+      "reference": "Kaṭha Upaniṣad 1.2.21",
+      "relationship": "parallel",
+      "note": "Similar paradoxical description: sitting it goes far, lying it goes everywhere"
+    },
+    {
+      "verseId": "brhadaranyaka-4-5-13",
+      "reference": "Bṛhadāraṇyaka Upaniṣad 4.5.13",
+      "relationship": "prerequisite",
+      "note": "Source of 'prajñānaghana' - the Self as mass of consciousness"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

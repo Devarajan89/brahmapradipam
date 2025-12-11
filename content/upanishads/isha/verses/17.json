@@ -1,0 +1,176 @@
+{
+  "id": "isha-17",
+  "reference": "Īśa Upaniṣad 17",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 17,
+  "original": {
+    "devanagari": "वायुरनिलममृतमथेदं भस्मान्तं शरीरम् ।\nओं क्रतो स्मर कृतं स्मर क्रतो स्मर कृतं स्मर ॥ १७ ॥",
+    "iast": "vāyur anilam amṛtam athedaṃ bhasmāntaṃ śarīram |\noṃ krato smara kṛtaṃ smara krato smara kṛtaṃ smara || 17 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "वायुः",
+      "transliteration": "vāyuḥ",
+      "meaning": "air, vital breath",
+      "grammar": "nominative singular"
+    },
+    {
+      "word": "अनिलम्",
+      "transliteration": "anilam",
+      "meaning": "the cosmic air, immortal Sūtrātman",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "अमृतम्",
+      "transliteration": "amṛtam",
+      "meaning": "immortal, the immortal one",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "अथ",
+      "transliteration": "atha",
+      "meaning": "now, and",
+      "grammar": "conjunction"
+    },
+    {
+      "word": "इदम्",
+      "transliteration": "idam",
+      "meaning": "this",
+      "grammar": "nominative neuter singular"
+    },
+    {
+      "word": "भस्मान्तम्",
+      "transliteration": "bhasmāntam",
+      "meaning": "ending in ashes",
+      "grammar": "accusative singular compound"
+    },
+    {
+      "word": "शरीरम्",
+      "transliteration": "śarīram",
+      "meaning": "body",
+      "grammar": "nominative/accusative singular neuter"
+    },
+    {
+      "word": "ओम्",
+      "transliteration": "om",
+      "meaning": "Om (sacred syllable)",
+      "grammar": "indeclinable"
+    },
+    {
+      "word": "क्रतो",
+      "transliteration": "krato",
+      "meaning": "O will, O resolve",
+      "grammar": "vocative singular from kratu"
+    },
+    {
+      "word": "स्मर",
+      "transliteration": "smara",
+      "meaning": "remember",
+      "grammar": "2nd person singular imperative from √smṛ"
+    },
+    {
+      "word": "कृतम्",
+      "transliteration": "kṛtam",
+      "meaning": "what was done, deeds",
+      "grammar": "accusative singular past passive participle"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "May the vital breath (prāṇa) go to the immortal cosmic air (Sūtrātman), and may this body end in ashes. Om! O will (Agni), remember; remember what was done. O will, remember; remember what was done.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "The vital air be merged in the immortal cosmic air, and this body reduced to ashes. Om, O mind, remember the deeds; O mind, remember the deeds; remember.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "अथेदानीं मम मरिष्यतो वायुः प्राणः अध्यात्मपरिच्छेदं हित्वा अधिदैवतात्मानं सर्वात्मकम् अनिलम् अमृतं सूत्रात्मानं प्रतिपद्यतामिति वाक्यशेषः । लिङ्गं चेदं ज्ञानकर्मसंस्कृतमुत्क्रामत्विति द्रष्टव्यम् , मार्गयाचनसामर्थ्यात् । अथ इदं शरीरमग्नौ हुतं भस्मान्तं भस्मावशेषं भूयात् । ओमिति यथोपासनम् ओम्प्रतीकात्मकत्वात्सत्यात्मकमग्न्याख्यं ब्रह्माभेदेनोच्यते । हे क्रतो सङ्कल्पात्मक स्मर यन्मम स्मर्तव्यं तस्य कालोऽयं प्रत्युपस्थितः, अतः स्मर एतावन्तं कालं भावितं कृतम् अग्ने स्मर यन्मया बाल्यप्रभृत्यनुष्ठितं कर्म तच्च स्मर । क्रतो स्मर कृतं स्मर इति पुनर्वचनमादरार्थम् ॥\nपुनरन्येन मन्त्रेण मार्गं याचते —",
+    "keyPoints": [
+      "Prayer at time of death (mama mariṣyataḥ)",
+      "Vāyu (prāṇa) should leave individual limitation (adhyātma-pariccheda)",
+      "Should merge into cosmic Anila - the all-encompassing Sūtrātman (sarvātmaka)",
+      "Anila is the immortal Sūtrātman (thread-soul connecting all)",
+      "Liṅga (subtle body) purified by knowledge and karma should depart",
+      "This is implied by the prayer for the path (mārga-yācana-sāmarthya)",
+      "Physical body should be cremated, ending in ashes",
+      "Om represents Brahman called Agni, identical with Truth, as per upāsanā",
+      "Kratu: Mind of the nature of resolve/will (saṅkalpa-ātmaka)",
+      "Prayer to remember what should be remembered at this crucial time",
+      "Remember all that was cultivated/practiced (bhāvita) during life",
+      "Remember all karma performed from childhood onwards",
+      "Repetition shows reverence and earnestness (ādara)"
+    ],
+    "notes": "This mantra is the dying person's prayer for the soul's journey after death. Śaṅkara Bhagavadpāda explains that vāyu (the individual prāṇa) should transcend its individual limitation and merge into the cosmic Anila (the Sūtrātman or cosmic thread connecting all beings). The subtle body (liṅga-śarīra), purified through knowledge and action, should depart on the upward path. The physical body is offered to fire to be reduced to ashes. The seeker then addresses the mind (kratu) as Agni, asking it to remember all the spiritual practices and karmas performed throughout life - this remembrance ensures the proper path after death. Om represents Brahman in the form of Agni/Truth. The repetition emphasizes the urgency and importance at this critical moment of transition."
+  },
+  "centralTeaching": "At the time of death, the qualified seeker prays: may the individual prāṇa merge into the cosmic Sūtrātman (immortal thread-soul), may the subtle body depart on the upward path, and may the physical body be cremated. The mind is invoked to remember all spiritual practices, ensuring the proper post-death journey to Brahman.",
+  "coreConcepts": [
+    {
+      "term": "सूत्रात्मन्",
+      "transliteration": "sūtrātman",
+      "definition": "Thread-soul; the cosmic Hiraṇyagarbha who connects all beings like a thread, into which individual prāṇa merges",
+      "importance": "primary"
+    },
+    {
+      "term": "लिङ्गशरीर",
+      "transliteration": "liṅga-śarīra",
+      "definition": "Subtle body; the transmigrating entity purified by knowledge and karma, which departs at death",
+      "importance": "primary"
+    },
+    {
+      "term": "क्रतु",
+      "transliteration": "kratu",
+      "definition": "Will, resolve, mind; here identified with Agni, the deity being addressed to remember practices",
+      "importance": "secondary"
+    },
+    {
+      "term": "अध्यात्मपरिच्छेद",
+      "transliteration": "adhyātma-pariccheda",
+      "definition": "Individual limitation; the confined nature of the individual self to be transcended at death",
+      "importance": "secondary"
+    },
+    {
+      "term": "अधिदैवतात्मन्",
+      "transliteration": "adhidaivata-ātman",
+      "definition": "Cosmic deity-self; the universal aspect (Sūtrātman) as opposed to individual aspect",
+      "importance": "secondary"
+    },
+    {
+      "term": "मार्गयाचन",
+      "transliteration": "mārga-yācana",
+      "definition": "Prayer for the path; the request for the proper route after death, implying departure of subtle body",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-16",
+      "reference": "Īśa Upaniṣad 16",
+      "relationship": "prerequisite",
+      "note": "After declaring identity with Puruṣa, this prayer addresses the mechanics of death"
+    },
+    {
+      "verseId": "isha-18",
+      "reference": "Īśa Upaniṣad 18",
+      "relationship": "continuation",
+      "note": "Further prayer to Agni for guidance on the good path"
+    },
+    {
+      "verseId": "brhadaranyaka-5-15-1",
+      "reference": "Bṛhadāraṇyaka Upaniṣad 5.15.1",
+      "relationship": "parallel",
+      "note": "Similar death prayer: 'Let my prāṇa go to the immortal air'"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

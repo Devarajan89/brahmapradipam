@@ -1,0 +1,224 @@
+{
+  "id": "isha-18",
+  "reference": "Īśa Upaniṣad 18",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 18,
+  "original": {
+    "devanagari": "अग्ने नय सुपथा राये अस्मान्विश्वानि देव वयुनानि विद्वान् ।\nयुयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमउक्तिं विधेम ॥ १८ ॥",
+    "iast": "agne naya supathā rāye asmān viśvāni deva vayunāni vidvān |\nyuyodhy asmaj juhurāṇam eno bhūyiṣṭhāṃ te nama-uktiṃ vidhema || 18 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "अग्ने",
+      "transliteration": "agne",
+      "meaning": "O Agni, O Fire",
+      "grammar": "vocative singular"
+    },
+    {
+      "word": "नय",
+      "transliteration": "naya",
+      "meaning": "lead, guide",
+      "grammar": "2nd person singular imperative from √nī"
+    },
+    {
+      "word": "सुपथा",
+      "transliteration": "supathā",
+      "meaning": "by the good path",
+      "grammar": "instrumental singular"
+    },
+    {
+      "word": "राये",
+      "transliteration": "rāye",
+      "meaning": "for wealth, for enjoyment",
+      "grammar": "dative singular from rāi"
+    },
+    {
+      "word": "अस्मान्",
+      "transliteration": "asmān",
+      "meaning": "us",
+      "grammar": "accusative plural pronoun"
+    },
+    {
+      "word": "विश्वानि",
+      "transliteration": "viśvāni",
+      "meaning": "all",
+      "grammar": "accusative plural neuter"
+    },
+    {
+      "word": "देव",
+      "transliteration": "deva",
+      "meaning": "O God, O shining one",
+      "grammar": "vocative singular"
+    },
+    {
+      "word": "वयुनानि",
+      "transliteration": "vayunāni",
+      "meaning": "actions, knowledge",
+      "grammar": "accusative plural neuter"
+    },
+    {
+      "word": "विद्वान्",
+      "transliteration": "vidvān",
+      "meaning": "knowing",
+      "grammar": "nominative singular present participle from √vid"
+    },
+    {
+      "word": "युयोधि",
+      "transliteration": "yuyodhi",
+      "meaning": "remove, separate",
+      "grammar": "2nd person singular imperative from √yuj (intensive)"
+    },
+    {
+      "word": "अस्मत्",
+      "transliteration": "asmat",
+      "meaning": "from us",
+      "grammar": "ablative pronoun"
+    },
+    {
+      "word": "जुहुराणम्",
+      "transliteration": "juhurāṇam",
+      "meaning": "crooked, deceitful",
+      "grammar": "accusative singular adjective"
+    },
+    {
+      "word": "एनः",
+      "transliteration": "enaḥ",
+      "meaning": "sin, fault",
+      "grammar": "accusative singular neuter"
+    },
+    {
+      "word": "भूयिष्ठाम्",
+      "transliteration": "bhūyiṣṭhām",
+      "meaning": "greatest, most abundant",
+      "grammar": "accusative singular superlative"
+    },
+    {
+      "word": "ते",
+      "transliteration": "te",
+      "meaning": "to you",
+      "grammar": "dative singular pronoun"
+    },
+    {
+      "word": "नमउक्तिम्",
+      "transliteration": "nama-uktim",
+      "meaning": "words of salutation",
+      "grammar": "accusative singular compound"
+    },
+    {
+      "word": "विधेम",
+      "transliteration": "vidhema",
+      "meaning": "may we offer",
+      "grammar": "1st person plural optative from √dhā"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "O Agni, lead us by the good path to prosperity, O God who knows all our actions. Remove from us crooked sin. We shall offer you our most abundant salutations.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "O Agni, lead us along the auspicious path to prosperity, O God who knows all ways. Remove from us the sin that leads us astray. To you we offer our salutations again and again.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "हे अग्ने नय गमय सुपथा शोभनेन मार्गेण । सुपथेति विशेषणं दक्षिणमार्गनिवृत्त्यर्थम् । निर्विण्णोऽहं दक्षिणेन मार्गेण गतागतलक्षणेन ; अतो याचे त्वां पुनः पुनः गमनागमनवर्जितेन शोभनेन पथा नय । राये धनाय, कर्मफलभोगायेत्यर्थः । अस्मान् यथोक्तधर्मफलविशिष्टान् विश्वानि सर्वाणि हे देव वयुनानि कर्माणि, प्रज्ञानानि वा विद्वान् जानन् । किञ्च, युयोधि वियोजय विनाशय अस्मत् अस्मत्तः जुहुराणं कुटिलं वञ्चनात्मकम् एनः पापम् । ततो वयं विशुद्धाः सन्तः इष्टं प्राप्स्याम इत्यभिप्रायः । किन्तु वयमिदानीं ते न शक्नुमः परिचर्यां कर्तुम् ; भूयिष्ठां बहुतरां ते तुभ्यं नमउक्तिं नमस्कारवचनं विधेम नमस्कारेण परिचरेम इत्यर्थः ॥\n\n[Śaṅkara's Concluding Discussion]\n'अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते' (ई. उ. ११) 'विनाशेन मृत्युं तीर्त्वा असम्भूत्यामृतमश्नुते' (ई. उ. १४) इति श्रुत्वा केचित्संशयं कुर्वन्ति । अतस्तन्निर्धारणार्थं सङ्क्षेपतो विचारणां करिष्यामः । तत्र तावत्किंनिमित्तः संशय इति, उच्यते — विद्याशब्देन मुख्या परमात्मविद्यैव कस्मान्न गृह्यते, अमृतत्वं च ? ननूक्तायाः परमात्मविद्यायाः कर्मणश्च विरोधात्समुच्चयानुपपत्तिः । सत्यम् । विरोधस्तु नावगम्यते, विरोधाविरोधयोः शास्त्रप्रमाणकत्वात् ; यथा अविद्यानुष्ठानं विद्योपासनं च शास्त्रप्रमाणकम् , तथा तद्विरोधाविरोधावपि । यथा च 'न हिंस्यात्सर्वा भूतानि' इति शास्त्रादवगतं पुनः शास्त्रेणैव बाध्यते 'अध्वरे पशुं हिंस्यात्' इति, एवं विद्याविद्ययोरपि स्यात् ; विद्याकर्मणोश्च समुच्चयः । न ; 'दूरमेते विपरीते विषूची अविद्या या च विद्येति ज्ञाता' (क. उ. १ । २ । ४) इति श्रुतेः । 'विद्यां चाविद्यां च' इति वचनादविरोध इति चेत् , न ; हेतुस्वरूपफलविरोधात् । विद्याविद्याविरोधाविरोधयोर्विकल्पासम्भवात् समुच्चयविधानादविरोध एवेति चेत् , न ; सहसम्भवानुपपत्तेः । क्रमेणैकाश्रये स्यातां विद्याविद्ये इति चेत् , न ; विद्योत्पत्तौ तदाश्रयेऽविद्यानुपपत्तेः ; न हि अग्निरुष्णः प्रकाशश्च इति विज्ञानोत्पत्तौ यस्मिन्नाश्रये तदुत्पन्नम् , तस्मिन्नेवाश्रये शीतोऽग्निरप्रकाशो वा इत्यविद्याया उत्पत्तिः । नापि संशयः अज्ञानं वा, 'यस्मिन्सर्वाणि भूतानि आत्मैवाभूद्विजानतः । तत्र को मोहः कः शोक एकत्वमनुपश्यतः' (ई. उ. ७) इति शोकमोहाद्यसम्भवश्रुतेः । अविद्यासम्भवात्तदुपादानस्य कर्मणोऽप्यनुपपत्तिमवोचाम । 'अमृतमश्नुते' इत्यापेक्षिकममृतम् ; विद्याशब्देन परमात्मविद्याग्रहणे 'हिरण्मयेन' (ई. उ. १५) इत्यादिना द्वारमार्गयाचनमनुपपन्नं स्यात् । तस्मात् यथाव्याख्यात एव मन्त्राणामर्थ इत्युपरम्यते ॥\n\nइति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छङ्करभगवतः कृतौ ईशावास्योपनिषद्भाष्यम् सम्पूर्णम् ॥",
+    "keyPoints": [
+      "Prayer to Agni to lead by the good path (supatha)",
+      "Supatha qualification to exclude the southern path (dakṣiṇa-mārga) of return",
+      "Seeker is weary of the path of going and coming (rebirth)",
+      "Requests the good path free from going and coming - the path of no return",
+      "Rāya: For wealth/enjoyment, meaning enjoyment of karma-phala",
+      "Agni knows all our karmas and knowledge (vayunāni)",
+      "Prayer to remove crooked, deceitful sin (juhurāṇa enaḥ) from us",
+      "Being purified, we shall attain what is desired",
+      "Unable to serve You now, offer most abundant salutations instead",
+      "Service through namaskāra (salutation)",
+      "CONCLUDING DISCUSSION: Objection - why not take vidyā as supreme Self-knowledge?",
+      "Answer: Supreme knowledge and karma contradict, cannot be combined",
+      "Even vidyā and avidyā oppose in cause, nature and result",
+      "Cannot exist simultaneously in same substrate - like fire being hot and cold",
+      "When knowledge arises, ignorance impossible in that very substrate",
+      "No doubt or ignorance possible with Self-knowledge per verse 7",
+      "Amṛta here is relative, not absolute liberation",
+      "If vidyā meant supreme knowledge, prayer for path would be inappropriate",
+      "Therefore the interpretation given is correct"
+    ],
+    "notes": "The final mantra is a prayer to Agni for guidance on the northern path (devayāna) that leads to non-return, as opposed to the southern path (pitṛyāna) of rebirth. The seeker, weary of repeated births and deaths, requests the auspicious path knowing Agni is aware of all deeds. After verse 18, Śaṅkara Bhagavadpāda adds a crucial philosophical discussion defending his interpretation that vidyā/avidyā in verses 9-14 refer to upāsanā and karma, not supreme Self-knowledge. He argues that supreme knowledge (paramātma-vidyā) and karma fundamentally contradict and cannot be combined - they oppose in their means, nature, and results. Just as fire cannot be simultaneously hot and cold in the same substrate, knowledge and ignorance cannot coexist. When Self-knowledge dawns, all ignorance, doubt, and sorrow become impossible (as stated in verse 7). Therefore, the amṛta mentioned must be relative immortality (deva-loka), not supreme liberation. This concludes the Īśa Upaniṣad bhāṣya."
+  },
+  "centralTeaching": "The final prayer requests Agni to lead by the good path (northern/devayāna path of non-return) to the enjoyment of karma fruits, knowing all our deeds, and removing our sins. Śaṅkara's conclusion establishes that vidyā here cannot mean supreme Self-knowledge, as that contradicts karma and requires no path-prayer - thus confirming the two-fold teaching structure of the Upaniṣad.",
+  "coreConcepts": [
+    {
+      "term": "सुपथ",
+      "transliteration": "supatha",
+      "definition": "Good path; the northern path (devayāna/uttara-mārga) leading to non-return, as opposed to dakṣiṇa-mārga of rebirth",
+      "importance": "primary"
+    },
+    {
+      "term": "गतागत",
+      "transliteration": "gatāgata",
+      "definition": "Going and coming; the cycle of birth, death and rebirth characteristic of saṃsāra",
+      "importance": "secondary"
+    },
+    {
+      "term": "जुहुराण",
+      "transliteration": "juhurāṇa",
+      "definition": "Crooked, deceitful; sin that misleads and causes deviation from the path",
+      "importance": "secondary"
+    },
+    {
+      "term": "हेतुस्वरूपफलविरोध",
+      "transliteration": "hetu-svarūpa-phala-virodha",
+      "definition": "Opposition in means, nature and results; vidyā and avidyā contradict in all three aspects",
+      "importance": "primary"
+    },
+    {
+      "term": "सहसम्भवानुपपत्ति",
+      "transliteration": "saha-sambhava-anupapatti",
+      "definition": "Impossibility of simultaneous existence; knowledge and ignorance cannot coexist in same substrate",
+      "importance": "primary"
+    },
+    {
+      "term": "आपेक्षिकअमृत",
+      "transliteration": "āpekṣika-amṛta",
+      "definition": "Relative immortality; the limited immortality of deva-loka, not absolute liberation (mokṣa)",
+      "importance": "primary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-17",
+      "reference": "Īśa Upaniṣad 17",
+      "relationship": "prerequisite",
+      "note": "Prayer for soul's journey; this completes it with request for the good path"
+    },
+    {
+      "verseId": "isha-07",
+      "reference": "Īśa Upaniṣad 7",
+      "relationship": "support",
+      "note": "Cited in conclusion - with Self-knowledge, no delusion or sorrow possible"
+    },
+    {
+      "verseId": "katha-1-2-4",
+      "reference": "Kaṭha Upaniṣad 1.2.4",
+      "relationship": "support",
+      "note": "Cited in conclusion - vidyā and avidyā are far apart and opposite"
+    },
+    {
+      "verseId": "isha-11",
+      "reference": "Īśa Upaniṣad 11",
+      "relationship": "clarification",
+      "note": "Conclusion clarifies this verse - vidyā here is not supreme knowledge"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

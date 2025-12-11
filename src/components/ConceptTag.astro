@@ -1,0 +1,43 @@
+---
+interface Concept {
+  term: string;
+  transliteration: string;
+  definition: string;
+  importance: 'primary' | 'secondary';
+}
+
+interface Props {
+  concepts: Concept[];
+}
+
+const { concepts } = Astro.props;
+---
+
+<div class="space-y-3">
+  <h4 class="text-lg font-semibold text-[var(--color-text-primary)]">
+    तात्त्विक शब्द (Core Concepts)
+  </h4>
+  <div class="flex flex-wrap gap-3">
+    {concepts.map(concept => (
+      <div class="group relative">
+        <div class={`px-4 py-2 rounded-full border-2 cursor-help transition-all ${
+          concept.importance === 'primary' 
+            ? 'border-[var(--color-accent-saffron)] text-[var(--color-accent-saffron)] bg-[var(--color-bg-sanskrit)]' 
+            : 'border-[var(--color-accent-sandalwood)] text-[var(--color-accent-sandalwood)] bg-[var(--color-bg-white)]'
+        } hover:shadow-md`}>
+          <span class="sanskrit-small font-medium">{concept.term}</span>
+          <span class="text-xs ml-2 opacity-75">({concept.transliteration})</span>
+        </div>
+        
+        <!-- Tooltip -->
+        <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block z-10 w-64">
+          <div class="bg-[var(--color-text-primary)] text-white p-3 rounded-lg shadow-xl text-sm">
+            <p class="font-semibold mb-1">{concept.transliteration}</p>
+            <p class="text-xs leading-relaxed">{concept.definition}</p>
+          </div>
+          <div class="w-3 h-3 bg-[var(--color-text-primary)] transform rotate-45 absolute left-1/2 -translate-x-1/2 -bottom-1"></div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

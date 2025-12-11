@@ -1,0 +1,254 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Navigation from '../../../components/Navigation.astro';
+---
+
+<BaseLayout title="Bhagavad Gītā - Chapter 2">
+  <div class="flex min-h-screen">
+    <Navigation currentPath={Astro.url.pathname} />
+    
+    <main class="flex-1 px-4 py-8">
+    <div class="max-w-5xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+        <a href="/library" class="hover:text-[var(--color-accent-saffron)]">Library</a>
+        <span class="mx-2">›</span>
+        <a href="/library/bhagavad-gita" class="hover:text-[var(--color-accent-saffron)]">Bhagavad Gītā</a>
+        <span class="mx-2">›</span>
+        <span class="text-[var(--color-text-primary)]">Chapter 2</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-semibold text-[var(--color-accent-saffron)] mb-3">
+          Chapter 2: Sāṅkhya Yoga
+        </h1>
+        <p class="sanskrit text-2xl text-[var(--color-text-secondary)] mb-4">
+          सांख्ययोग
+        </p>
+        <p class="text-[var(--color-text-secondary)] max-w-2xl mx-auto leading-relaxed">
+          The Yoga of Knowledge - In this chapter, Śrī Kṛṣṇa begins His instruction to Arjuna by 
+          revealing the distinction between the eternal Self and the temporary body-mind complex.
+        </p>
+      </header>
+
+      <!-- Chapter Overview -->
+      <div class="bg-[var(--color-bg-white)] rounded-lg border border-[var(--color-border)] p-8 mb-8">
+        <h2 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-4">
+          Chapter Overview
+        </h2>
+        <p class="text-[var(--color-text-secondary)] leading-relaxed mb-4">
+          This foundational chapter establishes the core teachings of the Bhagavad Gītā. 
+          It introduces the nature of the eternal Self (Ātman), the distinction between 
+          the Real and unreal, and the path of Self-knowledge.
+        </p>
+        <div class="bg-[var(--color-bg-sanskrit)] p-4 rounded">
+          <p class="text-sm text-[var(--color-text-primary)]">
+            <strong>Total Verses:</strong> 72 (Sample verse 16 available below)
+          </p>
+        </div>
+      </div>
+
+      <!-- Verse List -->
+      <div>
+        <h2 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-6">
+          Verses in This Chapter
+        </h2>
+
+        <div class="space-y-8 mb-8">
+          <!-- Verses 2.1-2.9 (No Bhashya) -->
+          <div class="bg-gradient-to-br from-[var(--color-bg-sanskrit)] to-[var(--color-bg-white)] rounded-lg border-2 border-[var(--color-accent-saffron)] p-6">
+            <h3 class="text-xl font-semibold text-[var(--color-accent-saffron)] mb-4">
+              Verses 2.1 - 2.9
+            </h3>
+            <p class="text-sm text-[var(--color-text-muted)] mb-6 italic">
+              These verses set the context for Krishna's teachings. Shankara did not provide detailed verse-by-verse commentary for this opening section.
+            </p>
+            
+            <div class="space-y-6">
+              <!-- Verse 2.1 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.1</span>
+                  <span class="text-xs px-2 py-1 bg-[var(--color-bg-sanskrit)] rounded text-[var(--color-text-secondary)]">सञ्जय उवाच</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  तं तथा कृपयाविष्टं अश्रुपूर्णाकुलेक्षणम् ।<br/>
+                  विषीदन्तमिदं वाक्यं उवाच मधुसूदनः ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.2 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.2</span>
+                  <span class="text-xs px-2 py-1 bg-[var(--color-bg-sanskrit)] rounded text-[var(--color-text-secondary)]">श्रीभगवानुवाच</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।<br/>
+                  अनार्यजुष्टमस्वर्ग्यं अकीर्तिकरमर्जुन ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.3 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.3</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते ।<br/>
+                  क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.4 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.4</span>
+                  <span class="text-xs px-2 py-1 bg-[var(--color-bg-sanskrit)] rounded text-[var(--color-text-secondary)]">अर्जुन उवाच</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  कथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन ।<br/>
+                  इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.5 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.5</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  गुरूनहत्वा हि महानुभावान् श्रेयो भोक्तुं भैक्षमपीह लोके ।<br/>
+                  हत्वार्थकामांस्तु गुरूनिहैव भुञ्जीय भोगान्रुधिरप्रदिग्धान् ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.6 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.6</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  न चैतद्विद्मः कतरन्नो गरीयः यद्वा जयेम यदि वा नो जयेयुः ।<br/>
+                  यानेव हत्वा न जिजीविषामः तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.7 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.7</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः ।<br/>
+                  यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.8 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.8</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  न हि प्रपश्यामि ममापनुद्यात्-यच्छोकमुच्छोषणमिन्द्रियाणाम् ।<br/>
+                  अवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम् ॥
+                </p>
+              </div>
+
+              <!-- Verse 2.9 -->
+              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.9</span>
+                  <span class="text-xs px-2 py-1 bg-[var(--color-bg-sanskrit)] rounded text-[var(--color-text-secondary)]">सञ्जय उवाच</span>
+                </div>
+                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                  एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप ।<br/>
+                  न योत्स्य इति गोविन्दं उक्त्वा तूष्णीं बभूव ह ॥
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+        <!-- Sample - Verse 16 (Actual) -->
+        <a 
+          href="/verse/bg-2-16"
+          class="block bg-[var(--color-bg-white)] border border-[var(--color-border)] rounded-lg p-6 hover:shadow-lg hover:border-[var(--color-accent-saffron)] transition-all group"
+        >
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-baseline gap-3 mb-3">
+                <span class="text-2xl font-semibold text-[var(--color-accent-saffron)] group-hover:text-[var(--color-accent-sandalwood)] transition-colors">
+                  2.16
+                </span>
+                <span class="text-sm text-[var(--color-text-muted)]">
+                  नासतो विद्यते भावः...
+                </span>
+              </div>
+              <p class="text-[var(--color-text-primary)] leading-relaxed mb-2">
+                "The unreal has no being; the real has no non-being..."
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="text-xs px-3 py-1 bg-[var(--color-bg-sanskrit)] rounded-full text-[var(--color-text-secondary)]">
+                  sat-asat viveka
+                </span>
+                <span class="text-xs px-3 py-1 bg-[var(--color-bg-sanskrit)] rounded-full text-[var(--color-text-secondary)]">
+                  nature of Brahman
+                </span>
+              </div>
+            </div>
+            <span class="text-[var(--color-accent-saffron)] text-2xl opacity-0 group-hover:opacity-100 transition-opacity">
+              →
+            </span>
+          </div>
+        </a>
+
+        <!-- Placeholder verses -->
+        <div class="bg-[var(--color-bg-white)] border border-[var(--color-border)] rounded-lg p-6 opacity-60">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xl font-semibold text-[var(--color-text-primary)] mr-3">2.10 - 2.15</span>
+              <span class="text-sm text-[var(--color-text-muted)] italic">Coming soon...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[var(--color-bg-white)] border border-[var(--color-border)] rounded-lg p-6 opacity-60">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xl font-semibold text-[var(--color-text-primary)] mr-3">2.17 - 2.72</span>
+              <span class="text-sm text-[var(--color-text-muted)] italic">Coming soon...</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex justify-between items-center mt-12 pt-8 border-t border-[var(--color-border)]">
+        <a 
+          href="/library/bhagavad-gita/chapter-01"
+          class="text-[var(--color-accent-sandalwood)] hover:text-[var(--color-accent-saffron)] transition-colors"
+        >
+          ← Chapter 1
+        </a>
+        <a 
+          href="/library"
+          class="text-[var(--color-accent-sandalwood)] hover:text-[var(--color-accent-saffron)] transition-colors"
+        >
+          Back to Library
+        </a>
+        <a 
+          href="/library/bhagavad-gita/chapter-03"
+          class="text-[var(--color-text-muted)] italic"
+        >
+          Chapter 3 (Coming soon) →
+        </a>
+      </div>
+    </div>
+    </main>
+  </div>
+</BaseLayout>

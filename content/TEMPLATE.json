@@ -1,0 +1,60 @@
+{
+  "id": "text-chapter-verse",
+  "reference": "Text Name Chapter.Verse",
+  "text": "text-identifier",
+  "chapter": 1,
+  "verse": 1,
+  "original": {
+    "devanagari": "Sanskrit text in Devanagari",
+    "iast": "IAST transliteration of the verse (NOT for bhāṣya)"
+  },
+  "wordAnalysis": [
+    {
+      "word": "देवनागरी",
+      "transliteration": "devanāgarī",
+      "meaning": "meaning in English",
+      "grammar": "grammatical information (case, number, etc.)",
+      "root": "etymological root (optional)"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Name or 'Traditional'",
+      "text": "English translation of the verse",
+      "style": "literal or contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "Complete Śaṅkara Bhāṣya in Devanagari. NO IAST transliteration. NO English translation needed.",
+    "keyPoints": [
+      "Key teaching point extracted from the bhāṣya",
+      "Another key teaching point",
+      "Third key point"
+    ],
+    "notes": "Additional contextual notes explaining technical terms or context (optional)"
+  },
+  "centralTeaching": "One paragraph (2-4 sentences) summarizing the central teaching of this verse",
+  "coreConcepts": [
+    {
+      "term": "Sanskrit term",
+      "transliteration": "IAST transliteration",
+      "definition": "Clear definition of the concept",
+      "importance": "primary or secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "text-chapter-verse-id",
+      "reference": "Human-readable reference (e.g., 'Bhagavad Gītā 2.16')",
+      "relationship": "parallel, elaboration, contrast, or prerequisite",
+      "note": "Brief explanation of how this verse relates"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Contributor Full Name",
+      "role": "translator, proofreader, editor, or scholar",
+      "date": "YYYY-MM-DD"
+    }
+  ]
+}

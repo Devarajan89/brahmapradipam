@@ -1,0 +1,181 @@
+{
+  "id": "isha-15",
+  "reference": "Īśa Upaniṣad 15",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 15,
+  "original": {
+    "devanagari": "हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम् ।\nतत्त्वं पूषन्नपावृणु सत्यधर्माय दृष्टये ॥ १५ ॥",
+    "iast": "hiraṇmayena pātreṇa satyasyāpihitaṃ mukham |\ntat tvaṃ pūṣann apāvṛṇu satyadharmāya dṛṣṭaye || 15 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "हिरण्मयेन",
+      "transliteration": "hiraṇmayena",
+      "meaning": "by the golden (disc), luminous",
+      "grammar": "instrumental singular from hiraṇmaya"
+    },
+    {
+      "word": "पात्रेण",
+      "transliteration": "pātreṇa",
+      "meaning": "by the vessel, disc",
+      "grammar": "instrumental singular from pātra"
+    },
+    {
+      "word": "सत्यस्य",
+      "transliteration": "satyasya",
+      "meaning": "of the Truth, of Brahman",
+      "grammar": "genitive singular from satya"
+    },
+    {
+      "word": "अपिहितम्",
+      "transliteration": "apihitam",
+      "meaning": "covered, concealed",
+      "grammar": "past passive participle from api + √dhā"
+    },
+    {
+      "word": "मुखम्",
+      "transliteration": "mukham",
+      "meaning": "face, entrance, door",
+      "grammar": "nominative/accusative singular neuter"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "that",
+      "grammar": "accusative pronoun"
+    },
+    {
+      "word": "त्वम्",
+      "transliteration": "tvam",
+      "meaning": "you",
+      "grammar": "nominative singular pronoun"
+    },
+    {
+      "word": "पूषन्",
+      "transliteration": "pūṣan",
+      "meaning": "O Nourisher, O Sun",
+      "grammar": "vocative singular"
+    },
+    {
+      "word": "अपावृणु",
+      "transliteration": "apāvṛṇu",
+      "meaning": "remove, uncover",
+      "grammar": "2nd person singular imperative from apa + √vṛ"
+    },
+    {
+      "word": "सत्यधर्माय",
+      "transliteration": "satyadharmāya",
+      "meaning": "for one of truthful dharma",
+      "grammar": "dative singular compound"
+    },
+    {
+      "word": "दृष्टये",
+      "transliteration": "dṛṣṭaye",
+      "meaning": "for vision, for seeing",
+      "grammar": "dative singular from dṛṣṭi"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "The face of Truth is covered with a golden disc. That, O Pūṣan (Nourisher/Sun), do remove for one who is of truthful conduct, for the vision (of Truth).",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "The face of Truth is covered with a golden disc. O Pūṣan, remove that for the vision of one devoted to truth.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "हिरण्मयेन पात्रेण हिरण्मयमिव हिरण्मयम् , ज्योतिर्मयमित्येतत् , तेन पात्रेणेव अपिधानभूतेन सत्यस्य आदित्यमण्डलस्थस्य ब्रह्मणः अपिहितम् आच्छादितं मुखं द्वारम् ; तत् त्वं हे पूषन् अपावृणु अपसारय सत्यधर्माय तव सत्यस्योपासनात्सत्यं धर्मो यस्य मम सोऽहं सत्यधर्मा तस्मै मह्यम् ; अथवा, यथाभूतस्य धर्मस्यानुष्ठात्रे, दृष्टये तव सत्यात्मन उपलब्धये ॥",
+    "keyPoints": [
+      "Results attainable through human and divine means extend up to prakṛti-laya - this is saṃsāra's extent",
+      "Beyond this is the supreme goal: sarvātma-bhāva (identity with all) - fruit of jñāna-niṣṭhā with renunciation",
+      "Two types of Vedic teaching revealed: pravṛtti (engagement) and nivṛtti (withdrawal)",
+      "Pravṛtti section (injunctions/prohibitions) explained in Brāhmaṇas up to Pravargya",
+      "Nivṛtti section explained from that point in Bṛhadāraṇyaka onwards",
+      "The qualified person performs karma from conception to cremation with knowledge of lower Brahman",
+      "At death, such a qualified practitioner prays for vision of the true Self",
+      "Hiraṇmaya pātra means luminous disc (jyotirmaya), the covering/lid",
+      "Face of satya (Truth/Brahman in the solar disc) is covered by this golden disc",
+      "Prayer to Pūṣan (Sun) to remove the covering",
+      "For satya-dharma: either one whose dharma is worship of Truth, or performer of righteous duties",
+      "For dṛṣṭi: vision/realization of You who are of the nature of Truth"
+    ],
+    "notes": "This verse marks a major transition in the Upaniṣad. Śaṅkara Bhagavadpāda's introduction establishes that the teaching up to prakṛti-laya represents the extent of saṃsāra and worldly attainments. Beyond this begins the supreme teaching of Self-knowledge (sarvātma-bhāva) for renunciates. The commentary then divides all Vedic teaching into pravṛtti-lakṣaṇa (characterized by engagement in duties) and nivṛtti-lakṣaṇa (characterized by withdrawal/renunciation). This verse is the prayer of a qualified seeker who has performed prescribed karmas with upāsanā throughout life. At death, recognizing the limitation of relative attainments, such a person prays to the Sun deity (Pūṣan) to remove the luminous disc covering the face of supreme Truth (Brahman in the solar orb), seeking direct vision of the Self. This begins the section on supreme Self-knowledge for those ready for liberation."
+  },
+  "centralTeaching": "The supreme Truth (Brahman) dwelling in the solar disc is covered by a golden luminous disc. At the time of death, the qualified seeker who has practiced karma and upāsanā prays to Pūṣan to remove this covering and grant direct vision of the supreme Self - this prayer marks the transition from relative attainments to supreme liberation.",
+  "coreConcepts": [
+    {
+      "term": "प्रवृत्तिलक्षण",
+      "transliteration": "pravṛtti-lakṣaṇa",
+      "definition": "Characterized by engagement; the Vedic teaching of duties, injunctions and prohibitions for those in worldly life",
+      "importance": "primary"
+    },
+    {
+      "term": "निवृत्तिलक्षण",
+      "transliteration": "nivṛtti-lakṣaṇa",
+      "definition": "Characterized by withdrawal/renunciation; the Vedic teaching of Self-knowledge for sannyāsins",
+      "importance": "primary"
+    },
+    {
+      "term": "सर्वात्मभाव",
+      "transliteration": "sarvātma-bhāva",
+      "definition": "Identity with all; the supreme non-dual realization beyond all relative attainments",
+      "importance": "primary"
+    },
+    {
+      "term": "पूषन्",
+      "transliteration": "pūṣan",
+      "definition": "The Nourisher; epithet of the Sun deity who nourishes all and is invoked here as gatekeeper to supreme Truth",
+      "importance": "secondary"
+    },
+    {
+      "term": "सत्यधर्म",
+      "transliteration": "satya-dharma",
+      "definition": "One of truthful dharma; either a worshipper of Truth or one who performs righteous duties",
+      "importance": "secondary"
+    },
+    {
+      "term": "आदित्यमण्डल",
+      "transliteration": "āditya-maṇḍala",
+      "definition": "Solar disc/orb; the seat of Brahman being meditated upon, covered by the luminous disc",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-01",
+      "reference": "Īśa Upaniṣad 1",
+      "relationship": "contrast",
+      "note": "Taught jñāna-niṣṭhā with renunciation; verses 9-14 taught karma-niṣṭhā; now returns to supreme path"
+    },
+    {
+      "verseId": "isha-07",
+      "reference": "Īśa Upaniṣad 7",
+      "relationship": "elaboration",
+      "note": "Sarvātma-bhāva mentioned there is the supreme fruit; this verse begins the path to it"
+    },
+    {
+      "verseId": "brhadaranyaka-5-5-2",
+      "reference": "Bṛhadāraṇyaka Upaniṣad 5.5.2",
+      "relationship": "support",
+      "note": "Source of meditation on Person in the solar disc cited in bhāṣya"
+    },
+    {
+      "verseId": "isha-16",
+      "reference": "Īśa Upaniṣad 16",
+      "relationship": "continuation",
+      "note": "Continues the prayer to Pūṣan"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

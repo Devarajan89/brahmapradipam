@@ -1,0 +1,192 @@
+{
+  "title": "Bhagavad Gītā",
+  "titleSanskrit": "भगवद्गीता",
+  "subtitle": "The Song of the Lord",
+  "description": "A dialogue between Lord Kṛṣṇa and Arjuna on dharma, karma, jñāna, and bhakti, forming the foundation of Vedāntic philosophy.",
+  "structure": {
+    "totalChapters": 18,
+    "totalVerses": 700,
+    "language": "संस्कृत"
+  },
+  "commentary": {
+    "primary": "Śrī Śaṅkarācārya's Bhāṣya",
+    "primarySanskrit": "श्रीशङ्कराचार्यभाष्यम्",
+    "period": "8th Century CE",
+    "tradition": "Advaita Vedānta"
+  },
+  "themes": [
+    "Brahman",
+    "Ātman",
+    "Karma Yoga",
+    "Jñāna Yoga",
+    "Bhakti Yoga",
+    "Dharma",
+    "Mokṣa",
+    "Saṃsāra",
+    "Māyā"
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "The Yoga of Arjuna's Dejection",
+      "titleSanskrit": "अर्जुनविषादयोग:",
+      "slug": "chapter-01",
+      "verses": 47,
+      "summary": "Arjuna's moral dilemma on the battlefield of Kurukṣetra, setting the stage for Kṛṣṇa's teachings.",
+      "available": true
+    },
+    {
+      "number": 2,
+      "title": "The Yoga of Knowledge",
+      "titleSanskrit": "साङ्ख्ययोग:",
+      "slug": "chapter-02",
+      "verses": 72,
+      "summary": "The foundational chapter introducing the immortal Ātman, the path of knowledge, and equanimity in action.",
+      "available": true
+    },
+    {
+      "number": 3,
+      "title": "The Yoga of Action",
+      "titleSanskrit": "कर्मयोग:",
+      "slug": "chapter-03",
+      "verses": 43,
+      "summary": "The importance of selfless action (niṣkāma karma) without attachment to results.",
+      "available": false
+    },
+    {
+      "number": 4,
+      "title": "The Yoga of Knowledge and Renunciation of Action",
+      "titleSanskrit": "ज्ञानकर्मसन्न्यासयोग:",
+      "slug": "chapter-04",
+      "verses": 42,
+      "summary": "The divine incarnations, the nature of true knowledge, and the synthesis of knowledge and action.",
+      "available": false
+    },
+    {
+      "number": 5,
+      "title": "The Yoga of Renunciation of Action",
+      "titleSanskrit": "कर्मसन्न्यासयोग:",
+      "slug": "chapter-05",
+      "verses": 29,
+      "summary": "The path of renunciation and its relationship to action performed without attachment.",
+      "available": false
+    },
+    {
+      "number": 6,
+      "title": "The Yoga of Meditation",
+      "titleSanskrit": "ध्यानयोग:",
+      "slug": "chapter-06",
+      "verses": 47,
+      "summary": "The practice of meditation, control of the mind, and the characteristics of a true yogi.",
+      "available": false
+    },
+    {
+      "number": 7,
+      "title": "The Yoga of Knowledge and Wisdom",
+      "titleSanskrit": "ज्ञानविज्ञानयोग:",
+      "slug": "chapter-07",
+      "verses": 30,
+      "summary": "The distinction between lower and higher nature, and knowing the Lord through wisdom.",
+      "available": false
+    },
+    {
+      "number": 8,
+      "title": "The Yoga of the Imperishable Brahman",
+      "titleSanskrit": "अक्षरब्रह्मयोग:",
+      "slug": "chapter-08",
+      "verses": 28,
+      "summary": "The nature of Brahman, the imperishable, and the path to liberation at the time of death.",
+      "available": false
+    },
+    {
+      "number": 9,
+      "title": "The Yoga of Sovereign Knowledge and Sovereign Secret",
+      "titleSanskrit": "राजविद्याराजगुह्ययोग:",
+      "slug": "chapter-09",
+      "verses": 34,
+      "summary": "The supreme secret of devotion and the Lord's manifestation in all beings.",
+      "available": false
+    },
+    {
+      "number": 10,
+      "title": "The Yoga of Divine Manifestations",
+      "titleSanskrit": "विभूतियोग:",
+      "slug": "chapter-10",
+      "verses": 42,
+      "summary": "The glories and manifestations of the Divine in the world.",
+      "available": false
+    },
+    {
+      "number": 11,
+      "title": "The Yoga of the Vision of the Universal Form",
+      "titleSanskrit": "विश्वरूपदर्शनयोग:",
+      "slug": "chapter-11",
+      "verses": 55,
+      "summary": "Arjuna's vision of Kṛṣṇa's cosmic form (Viśvarūpa) and the awe it inspires.",
+      "available": false
+    },
+    {
+      "number": 12,
+      "title": "The Yoga of Devotion",
+      "titleSanskrit": "भक्तियोग:",
+      "slug": "chapter-12",
+      "verses": 20,
+      "summary": "The path of devotion and the qualities of a true devotee.",
+      "available": false
+    },
+    {
+      "number": 13,
+      "title": "The Yoga of Discrimination between the Field and the Knower of the Field",
+      "titleSanskrit": "क्षेत्रक्षेत्रज्ञविभागयोग:",
+      "slug": "chapter-13",
+      "verses": 35,
+      "summary": "The distinction between the body (field) and the soul (knower of the field).",
+      "available": false
+    },
+    {
+      "number": 14,
+      "title": "The Yoga of the Division of the Three Guṇas",
+      "titleSanskrit": "गुणत्रयविभागयोग:",
+      "slug": "chapter-14",
+      "verses": 27,
+      "summary": "The three qualities of nature (sattva, rajas, tamas) and transcending them.",
+      "available": false
+    },
+    {
+      "number": 15,
+      "title": "The Yoga of the Supreme Person",
+      "titleSanskrit": "पुरुषोत्तमयोग:",
+      "slug": "chapter-15",
+      "verses": 20,
+      "summary": "The metaphor of the cosmic tree and the nature of the Supreme Puruṣa.",
+      "available": false
+    },
+    {
+      "number": 16,
+      "title": "The Yoga of the Division between the Divine and Demoniacal",
+      "titleSanskrit": "दैवासुरसम्पद्विभागयोग:",
+      "slug": "chapter-16",
+      "verses": 24,
+      "summary": "The qualities of divine and demoniacal natures in human beings.",
+      "available": false
+    },
+    {
+      "number": 17,
+      "title": "The Yoga of the Division of the Three Kinds of Faith",
+      "titleSanskrit": "श्रद्धात्रयविभागयोग:",
+      "slug": "chapter-17",
+      "verses": 28,
+      "summary": "The three types of faith corresponding to the three guṇas.",
+      "available": false
+    },
+    {
+      "number": 18,
+      "title": "The Yoga of Liberation through Renunciation",
+      "titleSanskrit": "मोक्षसन्न्यासयोग:",
+      "slug": "chapter-18",
+      "verses": 78,
+      "summary": "The culmination of all teachings: true renunciation, surrender, and final liberation.",
+      "available": false
+    }
+  ]
+}

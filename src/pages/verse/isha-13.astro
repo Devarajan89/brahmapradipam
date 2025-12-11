@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import VerseDisplay from '../../components/VerseDisplay.astro';
+import Navigation from '../../components/Navigation.astro';
+
+// Import the verse data
+import verseDataRaw from '../../../content/upanishads/isha/verses/13.json' with { type: 'json' };
+const verseData = verseDataRaw as any;
+
+---
+
+<BaseLayout title={verseData.reference}>
+  <div class="flex min-h-screen">
+    <Navigation currentPath={Astro.url.pathname} />
+    
+    <main class="flex-1">
+      <VerseDisplay 
+        verse={verseData}
+        prevVerseId="isha-12"
+        nextVerseId="isha-14"
+      />
+    </main>
+  </div>
+</BaseLayout>

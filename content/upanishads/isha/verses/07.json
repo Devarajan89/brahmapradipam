@@ -1,0 +1,195 @@
+{
+  "id": "isha-07",
+  "reference": "Īśa Upaniṣad 7",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 7,
+  "original": {
+    "devanagari": "यस्मिन्सर्वाणि भूतानि आत्मैवाभूद्विजानतः ।\nतत्र को मोहः कः शोक एकत्वमनुपश्यतः ॥ ७ ॥",
+    "iast": "yasmin sarvāṇi bhūtāni ātmaivābhūd vijānataḥ |\ntatra ko mohaḥ kaḥ śoka ekatvam anupaśyataḥ || 7 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "यस्मिन्",
+      "transliteration": "yasmin",
+      "meaning": "in which, in whom, when",
+      "grammar": "locative singular of relative pronoun yat"
+    },
+    {
+      "word": "सर्वाणि",
+      "transliteration": "sarvāṇi",
+      "meaning": "all",
+      "grammar": "neuter nominative plural of sarva"
+    },
+    {
+      "word": "भूतानि",
+      "transliteration": "bhūtāni",
+      "meaning": "beings",
+      "grammar": "neuter nominative plural of bhūta"
+    },
+    {
+      "word": "आत्मा",
+      "transliteration": "ātmā",
+      "meaning": "the Self",
+      "grammar": "nominative singular of ātman"
+    },
+    {
+      "word": "एव",
+      "transliteration": "eva",
+      "meaning": "only, indeed",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "अभूत्",
+      "transliteration": "abhūt",
+      "meaning": "became, has become",
+      "grammar": "3rd person singular perfect from √bhū"
+    },
+    {
+      "word": "विजानतः",
+      "transliteration": "vijānataḥ",
+      "meaning": "of one who knows, for the knower",
+      "grammar": "genitive singular present participle from vi + √jñā",
+      "root": "vi + √jñā (to know, discriminate)"
+    },
+    {
+      "word": "तत्र",
+      "transliteration": "tatra",
+      "meaning": "there, then",
+      "grammar": "locative adverb"
+    },
+    {
+      "word": "कः",
+      "transliteration": "kaḥ",
+      "meaning": "what, which",
+      "grammar": "interrogative pronoun nominative singular"
+    },
+    {
+      "word": "मोहः",
+      "transliteration": "mohaḥ",
+      "meaning": "delusion, confusion",
+      "grammar": "nominative singular of moha"
+    },
+    {
+      "word": "कः",
+      "transliteration": "kaḥ",
+      "meaning": "what",
+      "grammar": "interrogative pronoun nominative singular"
+    },
+    {
+      "word": "शोकः",
+      "transliteration": "śokaḥ",
+      "meaning": "sorrow, grief",
+      "grammar": "nominative singular of śoka"
+    },
+    {
+      "word": "एकत्वम्",
+      "transliteration": "ekatvam",
+      "meaning": "oneness, unity",
+      "grammar": "accusative singular of ekatva"
+    },
+    {
+      "word": "अनुपश्यतः",
+      "transliteration": "anupaśyataḥ",
+      "meaning": "of one who sees",
+      "grammar": "genitive singular present participle from anu + √paś"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "When to the knower all beings have verily become the Self, then what delusion and what sorrow can there be for that seer of oneness?",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "When, to one who knows, all beings have become one with his own Self, then what delusion and what sorrow can be for that seer of oneness?",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "यस्मिन्सर्वाणि भूतानि यस्मिन् काले यथोक्तात्मनि वा, तान्येव भूतानि सर्वाणि परमार्थात्मदर्शनात् आत्मैवाभूत् आत्मैव संवृत्तः परमार्थवस्तु विजानतः, तत्र तस्मिन्काले तत्रात्मनि वा, को मोहः कः शोकः । शोकश्च मोहश्च कामकर्मबीजमजानतो भवति, न त्वात्मैकत्वं विशुद्धं गगनोपमं पश्यतः । को मोहः कः शोक इति शोकमोहयोरविद्याकार्ययोराक्षेपेणासम्भवप्रकाशनात् सकारणस्य संसारस्यात्यन्तमेवोच्छेदः प्रदर्शितो भवति ॥",
+    "keyPoints": [
+      "When all beings have become the Self alone for the knower of reality",
+      "Either at that time (of realization) or in that Self (as locus)",
+      "What delusion and what sorrow can there be?",
+      "Sorrow and delusion arise from ignorance, being the seeds of desire and karma",
+      "They do not exist for one who sees the pure oneness of Self, like space",
+      "By rhetorically denying delusion and sorrow (effects of ignorance), the complete cessation of saṃsāra with its cause is demonstrated",
+      "This shows the total annihilation of the entire causal chain of saṃsāra"
+    ],
+    "notes": "This mantra is the culmination of mantras 5 and 6, emphasizing the complete freedom from all suffering that comes from Self-knowledge. Śaṅkara Bhagavadpāda's commentary is particularly significant here: by rhetorically asking 'what delusion? what sorrow?' (ko mohaḥ kaḥ śokaḥ), the mantra negates not just these two but their entire causal chain. Since moha and śoka are effects of avidyā and are themselves the seeds (bīja) of desire and action, their impossibility means the total destruction (atyantam eva ucchedaḥ) of saṃsāra with all its causes. The comparison to space (gaganopama) emphasizes the Self's pure, undivided, all-pervading nature."
+  },
+  "centralTeaching": "For the one who has realized the oneness of the Self - seeing all beings as the Self alone - there can be no delusion or sorrow whatsoever. Since moha and śoka are products of ignorance and are themselves the seeds of desire and karma, their impossibility in Self-knowledge demonstrates the complete and permanent cessation of saṃsāra along with its entire causal chain.",
+  "coreConcepts": [
+    {
+      "term": "एकत्वदर्शन",
+      "transliteration": "ekatva-darśana",
+      "definition": "Vision of oneness; seeing all beings as the one non-dual Self without any differentiation",
+      "importance": "primary"
+    },
+    {
+      "term": "मोह",
+      "transliteration": "moha",
+      "definition": "Delusion, confusion; the fundamental ignorance about the nature of reality that leads to misidentification",
+      "importance": "primary"
+    },
+    {
+      "term": "शोक",
+      "transliteration": "śoka",
+      "definition": "Sorrow, grief; the suffering that arises from attachment and loss, rooted in ignorance",
+      "importance": "primary"
+    },
+    {
+      "term": "कामकर्मबीज",
+      "transliteration": "kāmakarma-bīja",
+      "definition": "Seeds of desire and action; moha and śoka function as the causal factors that generate desire and karma",
+      "importance": "secondary"
+    },
+    {
+      "term": "गगनोपम",
+      "transliteration": "gaganopama",
+      "definition": "Like space; the Self compared to space in its purity, undividedness, and all-pervasiveness",
+      "importance": "secondary"
+    },
+    {
+      "term": "संसारोच्छेद",
+      "transliteration": "saṃsāroccḥeda",
+      "definition": "Complete cessation of saṃsāra; the total destruction of the cycle of birth and death along with all its causes",
+      "importance": "primary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-06",
+      "reference": "Īśa Upaniṣad 6",
+      "relationship": "prerequisite",
+      "note": "This mantra elaborates on the result described in mantra 6 - seeing oneness leads to freedom from all negative emotions"
+    },
+    {
+      "verseId": "chandogya-7-1-3",
+      "reference": "Chāndogya Upaniṣad 7.1.3",
+      "relationship": "parallel",
+      "note": "Describes how sorrow belongs only to one who sees duality"
+    },
+    {
+      "verseId": "bg-2-11",
+      "reference": "Bhagavad Gītā 2.11",
+      "relationship": "parallel",
+      "note": "The wise do not grieve for either the living or the dead"
+    },
+    {
+      "verseId": "bg-18-54",
+      "reference": "Bhagavad Gītā 18.54",
+      "relationship": "parallel",
+      "note": "One who is established in Brahman neither grieves nor desires"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+---
+import SanskritText from './SanskritText.astro';
+import Bhashya from './Bhashya.astro';
+import ConceptTag from './ConceptTag.astro';
+import RelatedVerses from './RelatedVerses.astro';
+
+interface VerseData {
+  id: string;
+  text: string;
+  chapter?: number;
+  verse: number;
+  reference: string;
+  original: {
+    devanagari: string;
+    iast: string;
+  };
+  wordAnalysis: Array<{
+    word: string;
+    transliteration: string;
+    meaning: string;
+    grammar: string;
+    root?: string;
+  }>;
+  translations: Array<{
+    translator: string;
+    text: string;
+    style?: string;
+  }>;
+  bhashya: {
+    sanskrit: string;
+    iast: string;
+    translation: string;
+    notes?: string;
+  };
+  centralTeaching: string;
+  coreConcepts: Array<{
+    term: string;
+    transliteration: string;
+    definition: string;
+    importance: 'primary' | 'secondary';
+  }>;
+  relatedVerses: Array<{
+    verseId: string;
+    reference: string;
+    text?: string;
+    relationship: 'parallel' | 'elaboration' | 'contrast' | 'prerequisite';
+    note: string;
+  }>;
+}
+
+interface Props {
+  verse: VerseData;
+  prevVerseId?: string;
+  nextVerseId?: string;
+}
+
+const { verse, prevVerseId, nextVerseId } = Astro.props;
+---
+
+<article class="max-w-4xl mx-auto px-4 py-8">
+  <!-- Breadcrumb -->
+  <nav class="text-sm text-[var(--color-text-muted)] mb-6">
+    <a href="/library" class="hover:text-[var(--color-accent-saffron)]">Library</a>
+    <span class="mx-2">›</span>
+    <a href={`/library/${verse.text}`} class="hover:text-[var(--color-accent-saffron)]">{verse.text}</a>
+    <span class="mx-2">›</span>
+    <span class="text-[var(--color-text-primary)]">{verse.reference}</span>
+  </nav>
+
+  <!-- Section 1: Original Verse -->
+  <header class="mb-8">
+    <h1 class="text-3xl font-semibold text-accent-saffron mb-6 text-center">
+      {verse.reference}
+    </h1>
+    <SanskritText 
+      devanagari={verse.original.devanagari} 
+      size="large" 
+      center={true}
+      words={verse.wordAnalysis}
+      interactive={true}
+    />
+  </header>
+
+  <div class="space-y-6">
+    <!-- Section 2: IAST Transliteration -->
+    <details class="bg-bg-white rounded-lg border border-border overflow-hidden">
+      <summary class="cursor-pointer px-6 py-4 font-semibold text-text-primary hover:bg-bg-sanskrit transition-colors flex justify-between items-center">
+        <span>IAST Transliteration</span>
+        <span class="text-accent-saffron">⊕</span>
+      </summary>
+      <div class="px-6 py-4 border-t border-border">
+        <p class="font-mono text-text-primary leading-relaxed">
+          {verse.original.iast}
+        </p>
+      </div>
+    </details>
+
+    <!-- Section 3: Translation -->
+    <section class="bg-bg-white rounded-lg border border-border p-6">
+      <h3 class="text-lg font-semibold text-text-primary mb-4">
+        अनुवाद (Translation)
+      </h3>
+      {verse.translations.map(translation => (
+        <div class="mb-4 last:mb-0">
+          <p class="text-text-primary leading-relaxed mb-2">
+            "{translation.text}"
+          </p>
+          <p class="text-sm text-text-muted italic">
+            — {translation.translator}
+          </p>
+        </div>
+      ))}
+    </section>
+
+    <!-- Section 4: Śaṅkara Bhagavadpāda's Commentary (MOST IMPORTANT) -->
+    <Bhashya content={verse.bhashya} />
+
+    <!-- Section 5: Central Teaching -->
+    <section class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-6">
+      <h3 class="text-lg font-semibold text-accent-saffron mb-3">
+        मुख्य बोध (Central Teaching)
+      </h3>
+      <p class="text-text-primary leading-relaxed text-lg">
+        {verse.centralTeaching}
+      </p>
+    </section>
+
+    <!-- Section 6: Core Concepts -->
+    <ConceptTag concepts={verse.coreConcepts} />
+
+    <!-- Section 7: Related Verses -->
+    <RelatedVerses verses={verse.relatedVerses} />
+  </div>
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center mt-12 pt-8 border-t border-border">
+    <div>
+      {prevVerseId ? (
+        <a 
+          href={`/verse/${prevVerseId}`}
+          class="flex items-center gap-2 text-[var(--color-accent-saffron)] hover:text-[var(--color-accent-sandalwood)] transition-colors"
+        >
+          <span>←</span>
+          <span>Previous</span>
+        </a>
+      ) : (
+        <span class="text-text-muted">← Previous</span>
+      )}
+    </div>
+    
+    <a 
+      href="/library" 
+      class="text-text-secondary hover:text-accent-saffron transition-colors"
+    >
+      Back to Library
+    </a>
+    
+    <div>
+      {nextVerseId ? (
+        <a 
+          href={`/verse/${nextVerseId}`}
+          class="flex items-center gap-2 text-[var(--color-accent-saffron)] hover:text-[var(--color-accent-sandalwood)] transition-colors"
+        >
+          <span>Next</span>
+          <span>→</span>
+        </a>
+      ) : (
+        <span class="text-text-muted">Next →</span>
+      )}
+    </div>
+  </nav>
+</article>
+
+<style>
+  details[open] summary span:last-child::before {
+    content: '⊖';
+  }
+  details[open] summary span:last-child {
+    display: none;
+  }
+  details[open] summary::after {
+    content: '⊖';
+    color: var(--color-accent-saffron);
+  }
+</style>

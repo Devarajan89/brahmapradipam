@@ -1,0 +1,215 @@
+{
+  "id": "isha-08",
+  "reference": "Īśa Upaniṣad 8",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 8,
+  "original": {
+    "devanagari": "स पर्यगाच्छुक्रमकायमव्रणमस्नाविरं शुद्धमपापविद्धम् ।\nकविर्मनीषी परिभूः स्वयम्भूर्याथातथ्यतोऽर्थान्व्यदधाच्छाश्वतीभ्यः समाभ्यः ॥ ८ ॥",
+    "iast": "sa paryagāc chukram akāyam avraṇam asnāviraṃ śuddham apāpaviddham |\nkavir manīṣī paribhūḥ svayambhūr yāthātathyato 'rthān vyadadhāc chāśvatībhyaḥ samābhyaḥ || 8 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "सः",
+      "transliteration": "saḥ",
+      "meaning": "He, That",
+      "grammar": "nominative singular pronoun"
+    },
+    {
+      "word": "पर्यगात्",
+      "transliteration": "paryagāt",
+      "meaning": "pervaded, encompassed all around",
+      "grammar": "3rd person singular perfect from pari + √gam",
+      "root": "pari + √gam (to go around, pervade)"
+    },
+    {
+      "word": "शुक्रम्",
+      "transliteration": "śukram",
+      "meaning": "bright, pure, radiant",
+      "grammar": "accusative singular adjective"
+    },
+    {
+      "word": "अकायम्",
+      "transliteration": "akāyam",
+      "meaning": "bodiless, without body",
+      "grammar": "accusative singular from a + kāya"
+    },
+    {
+      "word": "अव्रणम्",
+      "transliteration": "avraṇam",
+      "meaning": "without wound, flawless",
+      "grammar": "accusative singular from a + vraṇa"
+    },
+    {
+      "word": "अस्नाविरम्",
+      "transliteration": "asnāviram",
+      "meaning": "without sinews, without vessels",
+      "grammar": "accusative singular compound"
+    },
+    {
+      "word": "शुद्धम्",
+      "transliteration": "śuddham",
+      "meaning": "pure, untainted",
+      "grammar": "accusative singular adjective"
+    },
+    {
+      "word": "अपापविद्धम्",
+      "transliteration": "apāpaviddham",
+      "meaning": "untouched by evil, sinless",
+      "grammar": "accusative singular compound"
+    },
+    {
+      "word": "कविः",
+      "transliteration": "kaviḥ",
+      "meaning": "seer, omniscient",
+      "grammar": "nominative singular"
+    },
+    {
+      "word": "मनीषी",
+      "transliteration": "manīṣī",
+      "meaning": "thinker, wise one, lord of mind",
+      "grammar": "nominative singular"
+    },
+    {
+      "word": "परिभूः",
+      "transliteration": "paribhūḥ",
+      "meaning": "supreme, surpassing all",
+      "grammar": "nominative singular compound"
+    },
+    {
+      "word": "स्वयम्भूः",
+      "transliteration": "svayambhūḥ",
+      "meaning": "self-existent, self-born",
+      "grammar": "nominative singular compound"
+    },
+    {
+      "word": "याथातथ्यतः",
+      "transliteration": "yāthātathyataḥ",
+      "meaning": "according to reality, as it truly is",
+      "grammar": "adverb from yathā + tathya"
+    },
+    {
+      "word": "अर्थान्",
+      "transliteration": "arthān",
+      "meaning": "objects, duties, purposes",
+      "grammar": "accusative plural of artha"
+    },
+    {
+      "word": "व्यदधात्",
+      "transliteration": "vyadadhāt",
+      "meaning": "distributed, assigned, ordained",
+      "grammar": "3rd person singular imperfect from vi + ā + √dhā"
+    },
+    {
+      "word": "शाश्वतीभ्यः",
+      "transliteration": "śāśvatībhyaḥ",
+      "meaning": "for the eternal ones",
+      "grammar": "dative plural from śāśvata"
+    },
+    {
+      "word": "समाभ्यः",
+      "transliteration": "samābhyaḥ",
+      "meaning": "for the years, for Prajāpatis",
+      "grammar": "dative plural of samā"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "He pervaded all - bright, bodiless, without wound, without sinews, pure, untouched by evil. The Seer, the Thinker, the All-pervading, the Self-existent - He has duly assigned duties to the eternal Prajāpatis for their respective years.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "That Self is all-pervading, radiant, bodiless, without scar, without sinews, pure, untouched by sin. The Seer, the Thinker, the all-pervading, the self-existent has duly distributed the eternal duties to the various years (or eternal Creators).",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "स पर्यगात् , सः यथोक्त आत्मा पर्यगात् परि समन्तात् अगात् गतवान् , आकाशवद्व्यापीत्यर्थः । शुक्रं शुभ्रं ज्योतिष्मत् दीप्तिमानित्यर्थः । अकायम् अशरीरं लिङ्गशरीरवर्जित इत्यर्थः । अव्रणम् अक्षतम् । अस्नाविरम् स्नावाः सिरा यस्मिन्न विद्यन्त इत्यस्नाविरम् । अव्रणमस्नाविरमित्येताभ्यां स्थूलशरीरप्रतिषेधः । शुद्धं निर्मलमविद्यामलरहितमिति कारणशरीरप्रतिषेधः । अपापविद्धं धर्माधर्मादिपापवर्जितम् । शुक्रमित्यादीनि वचांसि पुंलिङ्गत्वेन परिणेयानि, स पर्यगात् इत्युपक्रम्य कविर्मनीषी इत्यादिना पुंलिङ्गत्वेनोपसंहारात् ।\n\nकविः क्रान्तदर्शी सर्वदृक् , 'नान्योऽतोऽस्ति द्रष्टा' (बृ. उ. ३ । ७ । २३) इत्यादिश्रुतेः । मनीषी मनस ईषिता, सर्वज्ञ ईश्वर इत्यर्थः । परिभूः सर्वेषां परि उपरि भवतीति परिभूः । स्वयम्भूः स्वयमेव भवतीति, येषामुपरि भवति यश्चोपरि भवति स सर्वः स्वयमेव भवतीति स्वयम्भूः । स नित्यमुक्त ईश्वरः याथातथ्यतः सर्वज्ञत्वात् यथातथाभावो याथातथ्यं तस्मात् यथाभूतकर्मफलसाधनतः अर्थान् कर्तव्यपदार्थान् व्यदधात् विहितवान् , यथानुरूपं व्यभजदित्यर्थः । शाश्वतीभ्यः नित्याभ्यः समाभ्यः संवत्सराख्येभ्यः प्रजापतिभ्य इत्यर्थः ॥\n\n\n[Section Introduction]\nअत्राद्येन मन्त्रेण सर्वैषणापरित्यागेन ज्ञाननिष्ठोक्ता प्रथमो वेदार्थः 'ईशावास्यमिदं सर्वम्. . . मा गृधः कस्य स्विद्धनम्' (ई. उ. १) इति । अज्ञानां जिजीविषूणां ज्ञाननिष्ठासम्भवे 'कुर्वन्नेवेह कर्माणि जिजीविषेत्' (ई. उ. २) इति कर्मनिष्ठोक्ता द्वितीयो वेदार्थः । अनयोश्च निष्ठयोर्विभागो मन्त्रद्वयप्रदर्शितयोर्बृहदारण्यकेऽपि दर्शितः — 'सोऽकामयत जाया मे स्यात्' (बृ. उ. १ । ४ । १७) इत्यादिना अज्ञस्य कामिनः कर्माणीति । 'मन एवास्यात्मा वाग्जाया' (बृ. उ. १ । ४ । १७), (बृ. उ. १ । ५ । २) इत्यादिवचनात् अज्ञत्वं कामित्वं च कर्मनिष्ठस्य निश्चितमवगम्यते । तथा च तत्फलं सप्तान्नसर्गस्तेष्वात्मभावेनात्मस्वरूपावस्थानम् । जायाद्येषणात्रयसंन्यासेन चात्मविदां कर्मनिष्ठाप्रातिकूल्येन आत्मस्वरूपनिष्ठैव दर्शिता — 'किं प्रजया करिष्यामो येषां नोऽयमात्मायं लोकः' (बृ. उ. ४ । ४ । २२) इत्यादिना । ये तु ज्ञाननिष्ठाः संन्यासिनस्तेभ्यः 'असुर्या नाम ते' (ई. उ. ३) इत्यादिना अविद्वन्निन्दाद्वारेणात्मनो याथात्म्यम् 'स पर्यगात्' (ई. उ. ८) इत्येतदन्तैर्मन्त्रैरुपदिष्टम् । ते ह्यत्राधिकृता न कामिन इति । तथा च श्वेताश्वतराणां मन्त्रोपनिषदि — 'अत्याश्रमिभ्यः परमं पवित्रं प्रोवाच सम्यगृषिसङ्घजुष्टम्' (श्वे. उ. ६ । २१) इत्यादि विभज्योक्तम् । ये तु कामिनः कर्मनिष्ठाः कर्म कुर्वन्त एव जिजीविषवः, तेभ्य इदमुच्यते — 'अन्धं तमः' (ई. उ. ९) इत्यादि ।\n\nकथं पुनरेवमवगम्यते, न तु सर्वेषाम् इति ? उच्यते — अकामिनः साध्यसाधनभेदोपमर्देन 'यस्मिन्सर्वाणि भूतानि आत्मैवाभूद्विजानतः । तत्र को मोहः कः शोक एकत्वमनुपश्यतः' (ई. उ. ७) इति यत् आत्मैकत्वविज्ञानम् , तन्न केनचित्कर्मणा ज्ञानान्तरेण वा ह्यमूढः समुच्चिचीषति । इह तु समुच्चिचीषया अविद्वदादिनिन्दा क्रियते । तत्र च यस्य येन समुच्चयः सम्भवति न्यायतः शास्त्रतो वा तदिहोच्यते । तद्दैवं वित्तं देवताविषयं ज्ञानं कर्मसम्बन्धित्वेनोपन्यस्तं न परमात्मज्ञानम् , 'विद्यया देवलोकः' (बृ. उ. १ । ५ । १६) इति पृथक्फलश्रवणात् । तयोर्ज्ञानकर्मणोरिहैकैकानुष्ठाननिन्दा समुच्चिचीषया, न निन्दापरैव एकैकस्य, पृथक्फलश्रवणात् — 'विद्यया तदारोहन्ति' 'विद्यया देवलोकः' (बृ. उ. १ । ५ । १६) 'न तत्र दक्षिणा यान्ति' 'कर्मणा पितृलोकः' (बृ. उ. १ । ५ । १६) इति । न हि शास्त्रविहितं किञ्चिदकर्तव्यतामियात् । तत्र —",
+    "keyPoints": [
+      "The Self pervades all like space (ākāśavat vyāpī)",
+      "Śukra (bright) means luminous, self-effulgent",
+      "Akāya (bodiless) negates even the subtle body (liṅga-śarīra)",
+      "Avraṇa and asnāvira negate the gross physical body",
+      "Śuddha (pure) negates the causal body by negating ignorance",
+      "Apāpaviddha means free from dharma, adharma and all sins",
+      "Kavi means the all-seeing seer - there is no other seer besides It",
+      "Manīṣī means lord of mind, omniscient Īśvara",
+      "Paribhūḥ means supreme over all",
+      "Svayambhū means self-existent - what is supreme over all and all over which It is supreme, all that is self-existent",
+      "As the eternally free Īśvara, being omniscient, He has assigned duties appropriately to the eternal Prajāpatis",
+      "Two paths in Veda: jñāna-niṣṭhā (mantra 1) for renunciates, karma-niṣṭhā (mantra 2) for householders",
+      "Division shown in Bṛhadāraṇyaka: ignorant desirous ones follow karma-niṣṭhā, knowers renounce three desires",
+      "Mantras 3-8 teach ātma-jñāna to qualified renunciates (ātya-āśramins), not to desirous ones",
+      "From mantra 9 onwards: teaching for desirous householders on karma-niṣṭhā"
+    ],
+    "notes": "This crucial mantra systematically negates all three bodies (gross, subtle, causal) to establish the pure nature of the Self. Śaṅkara Bhagavadpāda's commentary explains how different epithets negate different levels of embodiment: avraṇa and asnāvira negate the gross body, akāya negates the subtle body, and śuddha negates the causal body by removing the taint of ignorance. The mantra then describes the Self's positive attributes as the omniscient, self-existent Lord who has ordained the cosmic order. The reference to assigning duties to Prajāpatis establishes Īśvara's role in creation and cosmic governance.\n\nThe extended commentary at the end of this mantra serves as a crucial introduction to the following section (mantras 9-14), establishing that there are two paths taught in the Veda: jñāna-niṣṭhā (path of knowledge) for renunciates who have given up all desires, and karma-niṣṭhā (path of action) for householders who still have desires. The Self-knowledge described from mantra 3-8 is meant for those qualified renunciates (ātya-āśramins), not for householders with desires. The following mantras will address the combination of karma and upāsanā appropriate for such householders."
+  },
+  "centralTeaching": "The Self is all-pervading, bodiless (transcending gross, subtle and causal bodies), pure consciousness untouched by sin or ignorance. As the omniscient, self-existent Lord (Īśvara), It has ordained all duties and the cosmic order appropriately. This mantra comprehensively describes the nature of the Self that the ātmahanas (mentioned in verse 3) fail to know.",
+  "coreConcepts": [
+    {
+      "term": "त्रिशरीरनिषेध",
+      "transliteration": "triśarīra-niṣedha",
+      "definition": "Negation of the three bodies - gross (sthūla), subtle (liṅga/sūkṣma), and causal (kāraṇa) - to establish the pure Self",
+      "importance": "primary"
+    },
+    {
+      "term": "कवि",
+      "transliteration": "kavi",
+      "definition": "The omniscient seer; one who sees all - past, present and future; there is no other seer besides this Self",
+      "importance": "secondary"
+    },
+    {
+      "term": "स्वयम्भू",
+      "transliteration": "svayambhū",
+      "definition": "Self-existent; that which exists by its own nature without depending on anything else",
+      "importance": "secondary"
+    },
+    {
+      "term": "नित्यमुक्त",
+      "transliteration": "nityamukta",
+      "definition": "Eternally free; Īśvara who is never bound, unlike jīvas who attain liberation",
+      "importance": "secondary"
+    },
+    {
+      "term": "याथातथ्य",
+      "transliteration": "yāthātathya",
+      "definition": "According to reality, as things truly are; the omniscient knowledge that sees everything correctly",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-03",
+      "reference": "Īśa Upaniṣad 3",
+      "relationship": "elaboration",
+      "note": "After describing ātmahanas, this mantra reveals the true nature of the Self they fail to know"
+    },
+    {
+      "verseId": "katha-1-2-18",
+      "reference": "Kaṭha Upaniṣad 1.2.18",
+      "relationship": "parallel",
+      "note": "Describes the Self as unborn, eternal, ancient, not killed when body is killed"
+    },
+    {
+      "verseId": "mundaka-2-1-2",
+      "reference": "Muṇḍaka Upaniṣad 2.1.2",
+      "relationship": "parallel",
+      "note": "Describes Brahman as self-luminous, bodiless, all-pervading"
+    },
+    {
+      "verseId": "brhadaranyaka-3-7-23",
+      "reference": "Bṛhadāraṇyaka Upaniṣad 3.7.23",
+      "relationship": "prerequisite",
+      "note": "Source of 'there is no other seer' - establishing the Self as the ultimate witness"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

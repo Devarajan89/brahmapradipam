@@ -1,0 +1,185 @@
+{
+  "id": "isha-14",
+  "reference": "Īśa Upaniṣad 14",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 14,
+  "original": {
+    "devanagari": "सम्भूतिं च विनाशं च यस्तद्वेदोभयं सह ।\nविनाशेन मृत्युं तीर्त्वा सम्भूत्यामृतमश्नुते ॥ १४ ॥",
+    "iast": "sambhūtiṃ ca vināśaṃ ca yas tad vedobhayaṃ saha |\nvināśena mṛtyuṃ tīrtvā sambhūtyāmṛtam aśnute || 14 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "सम्भूतिम्",
+      "transliteration": "sambhūtim",
+      "meaning": "sambhūti, the manifest",
+      "grammar": "accusative singular feminine"
+    },
+    {
+      "word": "च",
+      "transliteration": "ca",
+      "meaning": "and",
+      "grammar": "conjunction"
+    },
+    {
+      "word": "विनाशम्",
+      "transliteration": "vināśam",
+      "meaning": "destruction, vināśa",
+      "grammar": "accusative singular masculine"
+    },
+    {
+      "word": "यः",
+      "transliteration": "yaḥ",
+      "meaning": "who, one who",
+      "grammar": "relative pronoun nominative singular"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "that",
+      "grammar": "accusative pronoun"
+    },
+    {
+      "word": "वेद",
+      "transliteration": "veda",
+      "meaning": "knows, understands",
+      "grammar": "3rd person singular from √vid"
+    },
+    {
+      "word": "उभयम्",
+      "transliteration": "ubhayam",
+      "meaning": "both",
+      "grammar": "accusative dual"
+    },
+    {
+      "word": "सह",
+      "transliteration": "saha",
+      "meaning": "together",
+      "grammar": "adverb"
+    },
+    {
+      "word": "विनाशेन",
+      "transliteration": "vināśena",
+      "meaning": "through vināśa, by destruction",
+      "grammar": "instrumental singular"
+    },
+    {
+      "word": "मृत्युम्",
+      "transliteration": "mṛtyum",
+      "meaning": "death",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "तीर्त्वा",
+      "transliteration": "tīrtvā",
+      "meaning": "having crossed",
+      "grammar": "absolutive from √tṝ"
+    },
+    {
+      "word": "सम्भूत्या",
+      "transliteration": "sambhūtyā",
+      "meaning": "through sambhūti, by the manifest",
+      "grammar": "instrumental singular"
+    },
+    {
+      "word": "अमृतम्",
+      "transliteration": "amṛtam",
+      "meaning": "immortality",
+      "grammar": "accusative singular neuter"
+    },
+    {
+      "word": "अश्नुते",
+      "transliteration": "aśnute",
+      "meaning": "attains, enjoys",
+      "grammar": "3rd person singular from √aś"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "He who knows both sambhūti and vināśa together - having crossed death through vināśa, he attains immortality through sambhūti.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "He who knows both sambhūti and destruction together - crosses death through destruction and attains immortality through sambhūti.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "सम्भूतिं च विनाशं च यस्तद्वेदोभयं सह, विनाशेन, विनाशो धर्मो यस्य कार्यस्य स तेन धर्मिणा अभेदेनोच्यते 'विनाशः' इति । तेन तदुपासनेनानैश्वर्यमधर्मकामादिदोषजातं च मृत्युं तीर्त्वा, हिरण्यगर्भोपासनेन ह्यणिमादिप्राप्तिः फलम् , तेनानैश्वर्यादिमृत्युमतीत्य, असम्भूत्या अव्याकृतोपासनया अमृतं प्रकृतिलयलक्षणम् अश्नुते । 'सम्भूतिं च विनाशं च' इत्यत्रावर्णलोपेन निर्देशो द्रष्टव्यः, प्रकृतिलयफलश्रुत्यनुरोधात् ॥ \n\n मानुषदैववित्तसाध्यं फलं शास्त्रलक्षणं प्रकृतिलयान्तम् ; एतावती संसारगतिः । अतः परं पूर्वोक्तम् 'आत्मैवाभूद्विजानतः' इति सर्वात्मभाव एव सर्वैषणासंन्यासज्ञाननिष्ठाफलम् । एवं द्विप्रकारः प्रवृत्तिनिवृत्तिलक्षणो वेदार्थोऽत्र प्रकाशितः । तत्र प्रवृत्तिलक्षणस्य वेदार्थस्य विधिप्रतिषेधलक्षणस्य कृत्स्नस्य प्रकाशने प्रवर्ग्यान्तं ब्राह्मणमुपयुक्तम् । निवृत्तिलक्षणस्य प्रकाशने अत ऊर्ध्वं बृहदारण्यकम् । तत्र निषेकादिश्मशानान्तं कर्म कुर्वन् जिजीविषेद्यो विद्यया सहापरब्रह्मविषयया, तदुक्तम् — 'विद्यां चाविद्यां च यस्तद्वेदोभयं सह । अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते' (ई. उ. १) इति, तत्र सोऽधिकारी केन मार्गेणामृतत्वमश्नुते इत्युच्यते — 'तद्यत्तत्सत्यमसौ स आदित्यो य एष एतस्मिन्मण्डले पुरुषो यश्चायं दक्षिणेऽक्षन्पुरुषः' (बृ. उ. ५ । ५ । २) एतदुभयं सत्यं ब्रह्मोपासीनः यथोक्तकर्मकृच्च यः, सोऽन्तकाले प्राप्ते सत्यात्मानमात्मनः प्राप्तिद्वारं याचते —\n\n",
+    "keyPoints": [
+      "Combination (samuccaya) of sambhūti and asambhūti meditation is appropriate",
+      "Both serve single person's goals (ekaikapuruṣārtha)",
+      "Vināśa is the quality (dharma) of the effect (kārya); used non-separately with its substrate",
+      "Through vināśa meditation, one crosses death consisting of lack of powers and defects",
+      "Death includes anaiśvarya (lack of lordship), adharma, kāma (desire) and other defects",
+      "Through Hiraṇyagarbha meditation, one attains aṇimā and other powers",
+      "Having crossed death of powerlessness through sambhūti, one attains amṛta",
+      "Amṛta characterized as prakṛti-laya through avyākṛta (Prakṛti) meditation",
+      "Textual note: 'asambhūti' understood through elision (avarṇa-lopa) in the verse",
+      "Consistent with śruti teaching prakṛti-laya as the fruit"
+    ],
+    "notes": "This mantra parallels verse 11, prescribing the combination of sambhūti and vināśa/asambhūti meditations. Śaṅkara Bhagavadpāda explains that vināśa is a quality of the effect (kārya) and refers to asambhūti by implication. Through meditation on what has vināśa as its quality (i.e., asambhūti/Prakṛti), one crosses the death of powerlessness and defects. Then through sambhūti (Hiraṇyagarbha) meditation, one attains supernatural powers. Finally, through avyākṛta (Prakṛti) meditation, one reaches the relative immortality of prakṛti-laya. The commentary notes that 'asambhūti' should be understood through grammatical elision (avarṇa-lopa) where vināśa stands for that which has vināśa as its quality."
+  },
+  "centralTeaching": "One who understands that sambhūti and vināśa (asambhūti) should be practiced together achieves results in sequence: crossing death (powerlessness and defects) through vināśa meditation, then attaining relative immortality (prakṛti-laya) through continued practice including sambhūti meditation.",
+  "coreConcepts": [
+    {
+      "term": "विनाश",
+      "transliteration": "vināśa",
+      "definition": "Destruction, perishability; quality (dharma) of the effect (kārya), used to indicate asambhūti through metonymy",
+      "importance": "primary"
+    },
+    {
+      "term": "अनैश्वर्य",
+      "transliteration": "anaiśvarya",
+      "definition": "Lack of lordship/power; one aspect of mṛtyu (death) to be crossed through meditation",
+      "importance": "secondary"
+    },
+    {
+      "term": "एकैकपुरुषार्थ",
+      "transliteration": "ekaikapuruṣārtha",
+      "definition": "Single person's goals; both meditations serve the sequential goals of one individual practitioner",
+      "importance": "primary"
+    },
+    {
+      "term": "अवर्णलोप",
+      "transliteration": "avarṇa-lopa",
+      "definition": "Elision of letter/sound; grammatical explanation for how 'vināśa' stands for 'asambhūti'",
+      "importance": "secondary"
+    },
+    {
+      "term": "धर्मिन्",
+      "transliteration": "dharmin",
+      "definition": "The substrate/possessor of a quality; that which has a dharma (quality)",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-11",
+      "reference": "Īśa Upaniṣad 11",
+      "relationship": "parallel",
+      "note": "Similar teaching using vidyā/avidyā - crossing death, attaining immortality"
+    },
+    {
+      "verseId": "isha-12",
+      "reference": "Īśa Upaniṣad 12",
+      "relationship": "prerequisite",
+      "note": "Condemned exclusive practice of sambhūti/asambhūti"
+    },
+    {
+      "verseId": "isha-13",
+      "reference": "Īśa Upaniṣad 13",
+      "relationship": "prerequisite",
+      "note": "Established different results justifying combination"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

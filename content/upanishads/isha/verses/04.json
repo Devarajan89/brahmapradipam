@@ -1,0 +1,227 @@
+{
+  "id": "isha-04",
+  "reference": "Īśa Upaniṣad 4",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 4,
+  "original": {
+    "devanagari": "अनेजदेकं मनसो जवीयो नैनद्देवा आप्नुवन्पूर्वमर्षत् ।\nतद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति ॥ ४ ॥",
+    "iast": "anejad ekaṃ manaso javīyo nainad devā āpnuvan pūrvam arṣat |\ntad dhāvato 'nyān atyeti tiṣṭhat tasmin apo mātariśvā dadhāti || 4 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "अनेजत्",
+      "transliteration": "anejat",
+      "meaning": "unmoving, motionless",
+      "grammar": "negative compound from a + √ej",
+      "root": "√ej (to move, tremble)"
+    },
+    {
+      "word": "एकम्",
+      "transliteration": "ekam",
+      "meaning": "one, alone",
+      "grammar": "neuter nominative singular"
+    },
+    {
+      "word": "मनसः",
+      "transliteration": "manasaḥ",
+      "meaning": "than the mind",
+      "grammar": "ablative singular of manas"
+    },
+    {
+      "word": "जवीयः",
+      "transliteration": "javīyaḥ",
+      "meaning": "swifter, faster",
+      "grammar": "comparative from √jū"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "negative particle"
+    },
+    {
+      "word": "एनत्",
+      "transliteration": "enat",
+      "meaning": "this, it",
+      "grammar": "pronoun accusative singular"
+    },
+    {
+      "word": "देवाः",
+      "transliteration": "devāḥ",
+      "meaning": "the senses, shining ones",
+      "grammar": "masculine nominative plural"
+    },
+    {
+      "word": "आप्नुवन्",
+      "transliteration": "āpnuvan",
+      "meaning": "reaching, attaining",
+      "grammar": "present participle from ā + √āp"
+    },
+    {
+      "word": "पूर्वम्",
+      "transliteration": "pūrvam",
+      "meaning": "first, before",
+      "grammar": "adverb"
+    },
+    {
+      "word": "अर्षत्",
+      "transliteration": "arṣat",
+      "meaning": "it goes, it reaches",
+      "grammar": "3rd person singular imperfect from √ṛṣ"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "that",
+      "grammar": "pronoun nominative singular"
+    },
+    {
+      "word": "धावतः",
+      "transliteration": "dhāvataḥ",
+      "meaning": "of those running, moving",
+      "grammar": "genitive plural from √dhāv"
+    },
+    {
+      "word": "अन्यान्",
+      "transliteration": "anyān",
+      "meaning": "others",
+      "grammar": "accusative plural of anya"
+    },
+    {
+      "word": "अत्येति",
+      "transliteration": "atyeti",
+      "meaning": "surpasses, transcends",
+      "grammar": "3rd person singular from ati + √i"
+    },
+    {
+      "word": "तिष्ठत्",
+      "transliteration": "tiṣṭhat",
+      "meaning": "standing, remaining still",
+      "grammar": "present participle from √sthā"
+    },
+    {
+      "word": "तस्मिन्",
+      "transliteration": "tasmin",
+      "meaning": "in that",
+      "grammar": "locative singular of tat"
+    },
+    {
+      "word": "अपः",
+      "transliteration": "apaḥ",
+      "meaning": "activities, actions",
+      "grammar": "feminine accusative plural"
+    },
+    {
+      "word": "मातरिश्वा",
+      "transliteration": "mātariśvā",
+      "meaning": "the vital air, cosmic life-force",
+      "grammar": "masculine nominative singular",
+      "root": "mātari (in the mother/atmosphere) + śvā (moving)"
+    },
+    {
+      "word": "दधाति",
+      "transliteration": "dadhāti",
+      "meaning": "places, supports, sustains",
+      "grammar": "3rd person singular from √dhā"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "It is unmoving, one, swifter than the mind. The senses cannot reach It, for It moves ahead. Though standing still, It overtakes others who run. In It, Mātariśvā (the cosmic air) sustains all activities.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "That One, though never stirring, is swifter than the mind. The senses cannot reach It, since It has gone ahead. While remaining static, It outstrips all that run. On It the Vital Force supports all activities.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "अनेजत् न एजत् । 'एजृ कम्पने', कम्पनं चलनं स्वावस्थाप्रच्युतिः, तद्वर्जितम् , सर्वदा एकरूपमित्यर्थः । तच्च एकं सर्वभूतेषु । मनसः सङ्कल्पादिलक्षणात् जवीयो जववत्तरम् । कथं विरुद्धमुच्यते — ध्रुवं निश्चलमिदम् , मनसो जवीय इति च ? नैष दोषः, निरुपाध्युपाधिमत्त्वेनोपपत्तेः । तत्र निरुपाधिकेन स्वेन रूपेणोच्यते — अनेजदेकम् इति । मनसः अन्तःकरणस्य सङ्कल्पविकल्पलक्षणस्योपाधेरनुवर्तनात् । इह देहस्थस्य मनसो ब्रह्मलोकादिदूरस्थसङ्कल्पनं क्षणमात्राद्भवतीत्यतो मनसो जविष्ठत्वं लोकप्रसिद्धम् । तस्मिन्मनसि ब्रह्मलोकादीन् द्रुतं गच्छति सति, प्रथमप्राप्त इवात्मचैतन्याभासो गृह्यते । अतः मनसो जवीयः इत्याह ।\n\nनैनद्देवाः, द्योतनाद्देवाः चक्षुरादीनीन्द्रियाणि, एनत् प्रकृतमात्मतत्त्वं नाप्नुवन् न प्राप्तवन्तः । तेभ्यो मनो जवीयः । मनोव्यापारव्यवहितत्वादाभासमात्रमप्यात्मनो नैव देवानां विषयीभवति ; यस्माज्जवनान्मनसोऽपि पूर्वमर्षत् पूर्वमेव गतम् , व्योमवद्व्यापित्वात् ।\n\nसर्वव्यापि तदात्मतत्त्वं सर्वसंसारधर्मवर्जितं स्वेन निरुपाधिकेन स्वरूपेणाविक्रियमेव सत् , उपाधिकृताः सर्वाः संसारविक्रिया अनुभवतीवाविवेकिनां मूढानामनेकमिव च प्रतिदेहं प्रत्यवभासत इत्येतदाह — तत् धावतः द्रुतं गच्छतः अन्यान् आत्मविलक्षणान्मनोवागिन्द्रियप्रभृतीन् अत्येति अतीत्य गच्छतीव । इवार्थं स्वयमेव दर्शयति — तिष्ठदिति, स्वयमविक्रियमेव सदित्यर्थः ।\n\nतस्मिन् आत्मतत्त्वे सति नित्यचैतन्यस्वभावे, मातरिश्वा मातरि अन्तरिक्षे श्वयति गच्छतीति मातरिश्वा वायुः सर्वप्राणभृत्क्रियात्मकः, यदाश्रयाणि कार्यकरणजातानि यस्मिन्नोतानि प्रोतानि च, यत्सूत्रसंज्ञकं सर्वस्य जगतो विधारयितृ, स मातरिश्वा, अपः कर्माणि प्राणिनां चेष्टालक्षणानि अग्न्यादित्यपर्जन्यादीनां ज्वलनदहनप्रकाशाभिवर्षणादिलक्षणानि, दधाति विभजतीत्यर्थः, धारयतीति वा ; 'भीषास्माद्वातः पवते' इत्यादिश्रुतिभ्यः । सर्वा हि कार्यकरणविक्रिया नित्यचैतन्यात्मस्वरूपे सर्वास्पदभूते सत्येव भवन्तीत्यर्थः ॥\n\nन मन्त्राणां जामितास्तीति पूर्वमन्त्रोक्तमप्यर्थं पुनराह —",
+    "keyPoints": [
+      "The Self is unmoved (anejat) - always of one form, free from all change and displacement",
+      "Yet It is swifter than mind - this apparent contradiction is resolved by distinguishing nirupādhika (unconditioned) and sopādhika (conditioned) aspects",
+      "In Its own unconditioned nature, the Self is motionless and one",
+      "Through the limiting adjunct (upādhi) of mind, It appears swift because consciousness illuminates mental operations instantly",
+      "The senses (devas) cannot reach the Self as It is beyond even the mind",
+      "The Self is all-pervading like space (vyomavat vyāpti)",
+      "While remaining changeless, It appears to undergo all saṃsāric changes to the ignorant",
+      "Mātariśvā (cosmic vital force) and all activities depend on the Self as their substratum"
+    ],
+    "notes": "This is one of the most profound mantras describing the paradoxical nature of Brahman. Śaṅkara Bhagavadpāda resolves the apparent contradiction between being motionless and faster than mind by using the distinction between nirupādhika (without limiting adjuncts) and sopādhika (with limiting adjuncts). The Self is truly changeless, but through the mind as upādhi, It illuminates all mental activities instantly. The commentary emphasizes that all cosmic and individual activities rest upon the Self as their unchanging substrate."
+  },
+  "centralTeaching": "The Self (Ātman) is simultaneously motionless in Its essential nature yet appears swifter than mind through Its reflection in the mental faculty. This paradox is resolved by distinguishing the Self's unconditioned (nirupādhika) nature from Its conditioned (sopādhika) appearance. The Self is the unchanging substratum upon which all activities of the mind, senses, and cosmic forces depend.",
+  "coreConcepts": [
+    {
+      "term": "निरुपाधिक",
+      "transliteration": "nirupādhika",
+      "definition": "Without limiting adjuncts or conditions; the Self in Its essential, unconditioned nature as unmoving and changeless",
+      "importance": "primary"
+    },
+    {
+      "term": "सोपाधिक",
+      "transliteration": "sopādhika",
+      "definition": "With limiting adjuncts; the Self as appearing through the mind and other upādhis, thus seeming to move and change",
+      "importance": "primary"
+    },
+    {
+      "term": "उपाधि",
+      "transliteration": "upādhi",
+      "definition": "Limiting adjunct; the mind and other instruments through which the changeless Self appears to function and move",
+      "importance": "primary"
+    },
+    {
+      "term": "व्यापकत्व",
+      "transliteration": "vyāpakatva",
+      "definition": "All-pervasiveness; the Self pervades everything like space, being everywhere already present",
+      "importance": "secondary"
+    },
+    {
+      "term": "मातरिश्वा",
+      "transliteration": "mātariśvā",
+      "definition": "Cosmic vital force (vāyu); the principle of all life-sustaining activities, functioning as the thread (sūtra) supporting the entire universe",
+      "importance": "secondary"
+    },
+    {
+      "term": "नित्यचैतन्य",
+      "transliteration": "nityacaitanya",
+      "definition": "Eternal consciousness; the nature of the Self as perpetual awareness, the substratum of all activity",
+      "importance": "primary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-03",
+      "reference": "Īśa Upaniṣad 3",
+      "relationship": "prerequisite",
+      "note": "After describing ātmahanas, this mantra reveals the true nature of the Self they fail to know"
+    },
+    {
+      "verseId": "katha-1-2-21",
+      "reference": "Kaṭha Upaniṣad 1.2.21",
+      "relationship": "parallel",
+      "note": "Similarly describes the Self as both near and far, within and without"
+    },
+    {
+      "verseId": "bg-13-15",
+      "reference": "Bhagavad Gītā 13.15",
+      "relationship": "parallel",
+      "note": "Describes how Brahman is both within and without, moving and unmoving"
+    },
+    {
+      "verseId": "kena-1-4",
+      "reference": "Kena Upaniṣad 1.4",
+      "relationship": "parallel",
+      "note": "Describes how the Self is swifter than mind and beyond the senses"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

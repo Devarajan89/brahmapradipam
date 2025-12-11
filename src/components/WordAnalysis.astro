@@ -1,0 +1,63 @@
+---
+interface WordItem {
+  word: string;
+  transliteration: string;
+  meaning: string;
+  grammar: string;
+  root?: string;
+}
+
+interface Props {
+  words: WordItem[];
+}
+
+const { words } = Astro.props;
+---
+
+<details class="bg-bg-white rounded-lg border border-border overflow-hidden">
+  <summary class="cursor-pointer px-6 py-4 font-semibold text-text-primary hover:bg-bg-sanskrit transition-colors flex justify-between items-center">
+    <span>पदच्छेद (Word-by-Word Analysis)</span>
+    <span class="text-accent-saffron">⊕</span>
+  </summary>
+  
+  <div class="px-6 py-4 border-t border-border">
+    <div class="space-y-4">
+      {words.map(word => (
+        <div class="pb-4 border-b border-border last:border-b-0">
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="sanskrit-small text-lg text-text-primary font-semibold">
+              {word.word}
+            </span>
+            <span class="text-sm text-text-muted italic">
+              ({word.transliteration})
+            </span>
+          </div>
+          <p class="text-text-primary mb-1">
+            <strong>Meaning:</strong> {word.meaning}
+          </p>
+          <p class="text-sm text-text-secondary">
+            <strong>Grammar:</strong> {word.grammar}
+          </p>
+          {word.root && (
+            <p class="text-sm text-text-secondary italic">
+              <strong>Root:</strong> {word.root}
+            </p>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</details>
+
+<style>
+  details[open] summary span:last-child::before {
+    content: '⊖';
+  }
+  details[open] summary span:last-child {
+    display: none;
+  }
+  details[open] summary::after {
+    content: '⊖';
+    color: var(--color-accent-saffron);
+  }
+</style>

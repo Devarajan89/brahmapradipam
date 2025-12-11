@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds */
+  --color-bg-primary: #FBF8F3;
+  --color-bg-white: #FFFFFF;
+  --color-bg-sanskrit: #FFF9F0;
+  --color-bg-bhashya: #F8F6F3;
+  
+  /* Text Colors */
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #9CA3AF;
+  
+  /* Accents */
+  --color-accent-saffron: #D97706;
+  --color-accent-sandalwood: #92724F;
+  
+  /* Borders & Shadows */
+  --color-border: #E5E7EB;
+  
+  /* Font Families */
+  --font-family-sanskrit: 'Noto Sans Devanagari', 'Siddhanta', serif;
+  --font-family-body: 'Inter', system-ui, sans-serif;
+  
+  /* Font Sizes */
+  --font-size-verse: 2rem;
+  --font-size-heading: 1.5rem;
+  --font-size-body: 1.125rem;
+  --font-size-commentary: 1.0625rem;
+  --font-size-small: 0.875rem;
+  
+  /* Line Heights */
+  --line-height-verse: 1.8;
+  --line-height-body: 1.75;
+  --line-height-commentary: 1.8;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1A1A1A;
+    --color-bg-white: #242424;
+    --color-bg-sanskrit: #2A2520;
+    --color-bg-bhashya: #2D2826;
+    --color-text-primary: #E5E5E5;
+    --color-text-secondary: #A3A3A3;
+    --color-text-muted: #737373;
+  }
+}
+
+/* Font Face for Sanskrit (using Google Fonts as fallback) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+body {
+  font-family: var(--font-family-body);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-body);
+}
+
+/* Sanskrit text styling */
+.sanskrit {
+  font-family: var(--font-family-sanskrit);
+  font-size: var(--font-size-verse);
+  line-height: var(--line-height-verse);
+  font-weight: 500;
+}
+
+.sanskrit-small {
+  font-family: var(--font-family-sanskrit);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Remove default margins */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

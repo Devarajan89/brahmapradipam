@@ -1,0 +1,171 @@
+{
+  "id": "isha-13",
+  "reference": "Īśa Upaniṣad 13",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 13,
+  "original": {
+    "devanagari": "अन्यदेवाहुः सम्भवादन्यदाहुरसम्भवात् ।\nइति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे ॥ १३ ॥",
+    "iast": "anyad evāhuḥ sambhavād anyad āhur asambhavāt |\niti śuśruma dhīrāṇāṃ ye nas tad vicacakṣire || 13 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "अन्यत्",
+      "transliteration": "anyat",
+      "meaning": "different, other",
+      "grammar": "accusative neuter pronoun"
+    },
+    {
+      "word": "एव",
+      "transliteration": "eva",
+      "meaning": "indeed, certainly",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "आहुः",
+      "transliteration": "āhuḥ",
+      "meaning": "they say",
+      "grammar": "3rd person plural from √ah"
+    },
+    {
+      "word": "सम्भवात्",
+      "transliteration": "sambhavāt",
+      "meaning": "from sambhava, from sambhūti",
+      "grammar": "ablative singular"
+    },
+    {
+      "word": "असम्भवात्",
+      "transliteration": "asambhavāt",
+      "meaning": "from asambhava, from asambhūti",
+      "grammar": "ablative singular"
+    },
+    {
+      "word": "इति",
+      "transliteration": "iti",
+      "meaning": "thus",
+      "grammar": "quotative particle"
+    },
+    {
+      "word": "शुश्रुम",
+      "transliteration": "śuśruma",
+      "meaning": "we have heard",
+      "grammar": "1st person plural perfect from √śru"
+    },
+    {
+      "word": "धीराणाम्",
+      "transliteration": "dhīrāṇām",
+      "meaning": "of the wise ones",
+      "grammar": "genitive plural from dhīra"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "नः",
+      "transliteration": "naḥ",
+      "meaning": "to us",
+      "grammar": "dative/genitive plural pronoun"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "that",
+      "grammar": "accusative pronoun"
+    },
+    {
+      "word": "विचचक्षिरे",
+      "transliteration": "vicacakṣire",
+      "meaning": "have explained, expounded",
+      "grammar": "3rd person plural perfect from vi + √cakṣ"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "Different indeed, they say, is the result from sambhava (meditation on Hiraṇyagarbha); different, they say, is the result from asambhava (meditation on Prakṛti). Thus have we heard from the wise who explained that to us.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "Different, indeed, they say, is (the result) from sambhūti; and different, they say, is (the result) from asambhūti. Thus have we heard from the wise who explained it to us.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "अन्यदेव पृथगेव आहुः फलं सम्भवात् सम्भूतेः कार्यब्रह्मोपासनात् अणिमाद्यैश्वर्यलक्षणम् आख्यातवन्त इत्यर्थः । तथा च अन्यदाहुरसम्भवात् असम्भूतेः अव्याकृतात् अव्याकृतोपासनात् यदुक्तम् 'अन्धं तमः प्रविशन्ति' (ई. उ. ९) इति, प्रकृतिलय इति च पौराणिकैरुच्यते । इति एवं शुश्रुम धीराणां वचनं ये नस्तद्विचचक्षिरे व्याकृताव्याकृतोपासनफलं व्याख्यातवन्त इत्यर्थः ॥ \n\nयत एवम् , अतः समुच्चयः सम्भूत्यसम्भूत्युपासनयोर्युक्तः एकैकपुरुषार्थत्वाच्चेत्याह —\n\n",
+    "keyPoints": [
+      "Different result from sambhava (sambhūti) - meditation on kārya-brahman (Hiraṇyagarbha)",
+      "Result from Hiraṇyagarbha meditation: aṇimā and other supernatural powers (aiśvarya)",
+      "Different result from asambhava (asambhūti) - meditation on avyākṛta (Prakṛti)",
+      "Result from Prakṛti meditation: prakṛti-laya (dissolution into Prakṛti)",
+      "This prakṛti-laya is mentioned by Paurāṇikas (Purāṇic authorities)",
+      "Reference to 'entering blind darkness' from verse 9 for Prakṛti meditation",
+      "Teaching received from the wise (dhīra) who explained fruits of vyākṛta and avyākṛta upāsanās",
+      "Establishes distinct results justifying combination of both meditations"
+    ],
+    "notes": "This mantra parallels verse 10, establishing that sambhūti meditation (on manifest Hiraṇyagarbha) and asambhūti meditation (on unmanifest Prakṛti) have different results. Śaṅkara Bhagavadpāda specifies that Hiraṇyagarbha upāsanā yields aṇimā and other yogic powers (the eight aiśvaryas), while Prakṛti upāsanā leads to prakṛti-laya - dissolution into material nature. The latter is the 'blind darkness' mentioned earlier and is described in the Purāṇas. Since both have distinct valid results, both should be combined by qualified seekers, not practiced exclusively. This verse provides scriptural authority for the combination (samuccaya) teaching."
+  },
+  "centralTeaching": "Meditation on sambhūti (Hiraṇyagarbha) and asambhūti (Prakṛti) yield different results according to the wise teachers. Hiraṇyagarbha meditation gives supernatural powers, while Prakṛti meditation leads to dissolution in Prakṛti. This difference in fruits justifies their combination.",
+  "coreConcepts": [
+    {
+      "term": "अणिमादि",
+      "transliteration": "aṇimādi",
+      "definition": "The eight supernatural powers beginning with aṇimā (ability to become atomic); yogic siddhis attained through Hiraṇyagarbha upāsanā",
+      "importance": "primary"
+    },
+    {
+      "term": "ऐश्वर्य",
+      "transliteration": "aiśvarya",
+      "definition": "Supernatural powers, lordship; the yogic powers like aṇimā (minuteness), mahimā (expansion), etc.",
+      "importance": "primary"
+    },
+    {
+      "term": "प्रकृतिलय",
+      "transliteration": "prakṛti-laya",
+      "definition": "Dissolution into Prakṛti; merging with material nature, mentioned in Purāṇas as result of Prakṛti meditation",
+      "importance": "primary"
+    },
+    {
+      "term": "कार्यब्रह्मन्",
+      "transliteration": "kārya-brahman",
+      "definition": "Effect Brahman; Hiraṇyagarbha, the cosmic being who is the effect/manifestation, not supreme Brahman",
+      "importance": "secondary"
+    },
+    {
+      "term": "पौराणिक",
+      "transliteration": "paurāṇika",
+      "definition": "Authorities of the Purāṇas; those versed in Purāṇic literature who describe prakṛti-laya",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-10",
+      "reference": "Īśa Upaniṣad 10",
+      "relationship": "parallel",
+      "note": "Similar structure establishing different results, using vidyā/avidyā terminology"
+    },
+    {
+      "verseId": "isha-12",
+      "reference": "Īśa Upaniṣad 12",
+      "relationship": "prerequisite",
+      "note": "Condemned exclusive practice; this explains the different results"
+    },
+    {
+      "verseId": "isha-14",
+      "reference": "Īśa Upaniṣad 14",
+      "relationship": "elaboration",
+      "note": "Shows how to combine sambhūti and vināśa/asambhūti meditations"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

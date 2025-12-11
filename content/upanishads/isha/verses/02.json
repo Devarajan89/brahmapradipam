@@ -1,0 +1,207 @@
+{
+  "id": "isha-02",
+  "reference": "Īśa Upaniṣad 2",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 2,
+  "original": {
+    "devanagari": "कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः ।\nएवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥ २ ॥",
+    "iast": "kurvann eveha karmāṇi jijīviṣec chataṃ samāḥ |\nevaṃ tvayi nānyatheto 'sti na karma lipyate nare || 2 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "कुर्वन्",
+      "transliteration": "kurvan",
+      "meaning": "performing, doing",
+      "grammar": "present participle from √kṛ",
+      "root": "√kṛ (to do)"
+    },
+    {
+      "word": "एव",
+      "transliteration": "eva",
+      "meaning": "indeed, only",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "इह",
+      "transliteration": "iha",
+      "meaning": "here, in this world",
+      "grammar": "indeclinable adverb"
+    },
+    {
+      "word": "कर्माणि",
+      "transliteration": "karmāṇi",
+      "meaning": "actions, prescribed duties",
+      "grammar": "neuter plural accusative of karman"
+    },
+    {
+      "word": "जिजीविषेत्",
+      "transliteration": "jijīviṣet",
+      "meaning": "one should wish to live",
+      "grammar": "desiderative optative from √jīv",
+      "root": "√jīv (to live)"
+    },
+    {
+      "word": "शतम्",
+      "transliteration": "śatam",
+      "meaning": "hundred",
+      "grammar": "numeral accusative"
+    },
+    {
+      "word": "समाः",
+      "transliteration": "samāḥ",
+      "meaning": "years",
+      "grammar": "feminine plural accusative of samā"
+    },
+    {
+      "word": "एवम्",
+      "transliteration": "evam",
+      "meaning": "thus, in this manner",
+      "grammar": "indeclinable adverb"
+    },
+    {
+      "word": "त्वयि",
+      "transliteration": "tvayi",
+      "meaning": "in you",
+      "grammar": "locative of tvam"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "negative particle"
+    },
+    {
+      "word": "अन्यथा",
+      "transliteration": "anyathā",
+      "meaning": "otherwise, in another way",
+      "grammar": "indeclinable adverb"
+    },
+    {
+      "word": "इतः",
+      "transliteration": "itaḥ",
+      "meaning": "from this, than this",
+      "grammar": "ablative adverb"
+    },
+    {
+      "word": "अस्ति",
+      "transliteration": "asti",
+      "meaning": "is, exists",
+      "grammar": "3rd person singular present of √as"
+    },
+    {
+      "word": "न",
+      "transliteration": "na",
+      "meaning": "not",
+      "grammar": "negative particle"
+    },
+    {
+      "word": "कर्म",
+      "transliteration": "karma",
+      "meaning": "action",
+      "grammar": "neuter nominative singular"
+    },
+    {
+      "word": "लिप्यते",
+      "transliteration": "lipyate",
+      "meaning": "adheres, sticks, taints",
+      "grammar": "3rd person singular passive present of √lip"
+    },
+    {
+      "word": "नरे",
+      "transliteration": "nare",
+      "meaning": "in man, in a person",
+      "grammar": "masculine locative singular of nara"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "Performing actions here indeed, one should wish to live a hundred years. Thus, for you, O man, there is no other way than this by which action does not adhere to you.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "One should indeed wish to live in this world for a hundred years, but only by performing actions. For you as a man, there is no other way by which action will not cling to you.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "कुर्वन्नेव निर्वर्तयन्नेव इह कर्माणि अग्निहोत्रादीनि जिजीविषेत् जीवितुमिच्छेत् शतं शतसङ्ख्याकाः समाः संवत्सरान् । तावद्धि पुरुषस्य परमायुर्निरूपितम् । तथा च प्राप्तानुवादेन यज्जिजीविषेच्छतं वर्षाणि तत्कुर्वन्नेव कर्माणीत्येतद्विधीयते । एवम् एवंप्रकारे त्वयि जिजीविषति नरे नरमात्राभिमानिनि इतः एतस्मादग्निहोत्रादीनि कर्माणि कुर्वतो वर्तमानात्प्रकारात् अन्यथा प्रकारान्तरं नास्ति, येन प्रकारेणाशुभं कर्म न लिप्यते ; कर्मणा न लिप्यस इत्यर्थः । अतः शास्त्रविहितानि कर्माण्यग्निहोत्रादीनि कुर्वन्नेव जिजीविषेत् ॥\n\nकथं पुनरिदमवगम्यते — पूर्वेण मन्त्रेण संन्यासिनो ज्ञाननिष्ठोक्ता, द्वितीयेन तदशक्तस्य कर्मनिष्ठेति ? उच्यते — ज्ञानकर्मणोर्विरोधं पर्वतवदकम्प्यं यथोक्तं न स्मरसि किम् ? इहाप्युक्तम् — यो हि जिजीविषेत्स कर्माणि कुर्वन्नेव इति ; 'ईशा वास्यमिदं सर्वम्', 'तेन त्यक्तेन भुञ्जीथाः मा गृधः कस्य स्विद्धनम्' इति च । 'न जीविते मरणे वा गृधिं कुर्वीतारण्यमियात् इति पदं ततो न पुनरेयात्' ( ? ) इति च संन्यासशासनात् । उभयोः फलभेदं च वक्ष्यति । 'इमौ द्वावेव पन्थानावनुनिष्क्रान्ततरौ भवतः क्रियापथश्चैव पुरस्तात्संन्यासश्च' ( ? ) ; तयोः संन्यास एवातिरेचयति — 'न्यास एवात्यरेचयत्' (तै. नारा. ७८) इति तैत्तिरीयके । 'द्वाविमावथ पन्थानौ यत्र वेदाः प्रतिष्ठिताः । प्रवृत्तिलक्षणो धर्मो निवृत्तिश्च विभाषितः' (मो. ध. २४१ । ६) इत्यादि पुत्राय विचार्य निश्चितमुक्तं व्यासेन वेदाचार्येण भगवता । विभागं चानयोः प्रदर्शयिष्यामः ॥\n\nअथेदानीमविद्वन्निन्दार्थोऽयं मन्त्र आरभ्यते —",
+    "keyPoints": [
+      "For those unable to renounce, the path of karma is prescribed",
+      "One should perform scriptural duties like agnihotra throughout life",
+      "Performing actions in this manner prevents karma from binding",
+      "Śaṅkara Bhagavadpāda clarifies the relationship between the first two mantras: the first teaches jñāna-niṣṭhā (path of knowledge) for sannyāsins, the second teaches karma-niṣṭhā (path of action) for those unable to renounce",
+      "The fundamental opposition between knowledge and action is emphasized - firm as a mountain",
+      "Two paths are mentioned: pravṛtti (path of action) and nivṛtti (path of renunciation), with renunciation being superior"
+    ],
+    "notes": "This mantra addresses householders and those not yet qualified for renunciation. Śaṅkara Bhagavadpāda's commentary includes an important objection and response about the relationship between the two paths. He clarifies that these are two distinct paths for different qualifications, not a combination. The commentary references other Upaniṣadic passages and Mahābhārata to establish the superiority of the path of renunciation while acknowledging karma-yoga as valid for the unqualified."
+  },
+  "centralTeaching": "For those who wish to live in the world and are not ready for renunciation, performing prescribed Vedic duties without attachment is the means to avoid karmic bondage. This establishes karma-yoga as a distinct but subordinate path to jñāna (knowledge), meant for those not yet qualified for sannyāsa.",
+  "coreConcepts": [
+    {
+      "term": "कर्मयोग",
+      "transliteration": "karma-yoga",
+      "definition": "The path of performing prescribed duties without attachment or desire for fruits, meant for householders and those not ready for renunciation",
+      "importance": "primary"
+    },
+    {
+      "term": "कर्मनिष्ठा",
+      "transliteration": "karma-niṣṭhā",
+      "definition": "Steadfastness in the path of action; the discipline of performing one's duties as prescribed by the scriptures",
+      "importance": "primary"
+    },
+    {
+      "term": "ज्ञाननिष्ठा",
+      "transliteration": "jñāna-niṣṭhā",
+      "definition": "Steadfastness in the path of knowledge; the discipline of direct realization taught in mantra 1",
+      "importance": "primary"
+    },
+    {
+      "term": "अग्निहोत्र",
+      "transliteration": "agnihotra",
+      "definition": "The daily fire ritual; representative of all Vedic prescribed duties (nitya-karma)",
+      "importance": "secondary"
+    },
+    {
+      "term": "प्रवृत्तिमार्ग",
+      "transliteration": "pravṛtti-mārga",
+      "definition": "Path of engagement in worldly duties and rituals; the path of action",
+      "importance": "primary"
+    },
+    {
+      "term": "निवृत्तिमार्ग",
+      "transliteration": "nivṛtti-mārga",
+      "definition": "Path of withdrawal and renunciation; superior to pravṛtti-mārga",
+      "importance": "primary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-01",
+      "reference": "Īśa Upaniṣad 1",
+      "relationship": "contrast",
+      "note": "First mantra teaches jñāna-niṣṭhā for sannyāsins; this mantra teaches karma-niṣṭhā for those unable to renounce"
+    },
+    {
+      "verseId": "bg-3-19",
+      "reference": "Bhagavad Gītā 3.19",
+      "relationship": "parallel",
+      "note": "Teaches performing duty without attachment: 'tasmād asaktaḥ satataṃ kāryaṃ karma samācara'"
+    },
+    {
+      "verseId": "bg-18-45",
+      "reference": "Bhagavad Gītā 18.45",
+      "relationship": "elaboration",
+      "note": "One attains perfection by being devoted to one's own duty"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

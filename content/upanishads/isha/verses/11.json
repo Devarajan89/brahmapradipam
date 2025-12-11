@@ -1,0 +1,183 @@
+{
+  "id": "isha-11",
+  "reference": "Īśa Upaniṣad 11",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 11,
+  "original": {
+    "devanagari": "विद्यां चाविद्यां च यस्तद्वेदोभयं सह ।\nअविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते ॥ ११ ॥",
+    "iast": "vidyāṃ cāvidyāṃ ca yas tad vedobhayaṃ saha |\navidyayā mṛtyuṃ tīrtvā vidyayāmṛtam aśnute || 11 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "विद्याम्",
+      "transliteration": "vidyām",
+      "meaning": "knowledge, vidyā",
+      "grammar": "accusative singular feminine"
+    },
+    {
+      "word": "च",
+      "transliteration": "ca",
+      "meaning": "and",
+      "grammar": "conjunction"
+    },
+    {
+      "word": "अविद्याम्",
+      "transliteration": "avidyām",
+      "meaning": "ignorance, karma",
+      "grammar": "accusative singular feminine"
+    },
+    {
+      "word": "यः",
+      "transliteration": "yaḥ",
+      "meaning": "who, one who",
+      "grammar": "relative pronoun nominative singular"
+    },
+    {
+      "word": "तत्",
+      "transliteration": "tat",
+      "meaning": "that",
+      "grammar": "accusative pronoun"
+    },
+    {
+      "word": "वेद",
+      "transliteration": "veda",
+      "meaning": "knows, understands",
+      "grammar": "3rd person singular from √vid"
+    },
+    {
+      "word": "उभयम्",
+      "transliteration": "ubhayam",
+      "meaning": "both",
+      "grammar": "accusative dual"
+    },
+    {
+      "word": "सह",
+      "transliteration": "saha",
+      "meaning": "together",
+      "grammar": "adverb"
+    },
+    {
+      "word": "अविद्यया",
+      "transliteration": "avidyayā",
+      "meaning": "through avidyā, by karma",
+      "grammar": "instrumental singular"
+    },
+    {
+      "word": "मृत्युम्",
+      "transliteration": "mṛtyum",
+      "meaning": "death",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "तीर्त्वा",
+      "transliteration": "tīrtvā",
+      "meaning": "having crossed",
+      "grammar": "absolutive from √tṝ"
+    },
+    {
+      "word": "विद्यया",
+      "transliteration": "vidyayā",
+      "meaning": "through vidyā, by knowledge",
+      "grammar": "instrumental singular"
+    },
+    {
+      "word": "अमृतम्",
+      "transliteration": "amṛtam",
+      "meaning": "immortality",
+      "grammar": "accusative singular neuter"
+    },
+    {
+      "word": "अश्नुते",
+      "transliteration": "aśnute",
+      "meaning": "attains, enjoys",
+      "grammar": "3rd person singular from √aś"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "He who knows both vidyā and avidyā together - having crossed death through avidyā, he attains immortality through vidyā.",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "He who knows both knowledge and ignorance together - crosses death through ignorance and attains immortality through knowledge.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "विद्यां च अविद्यां च देवताज्ञानं कर्म चेत्यर्थः । यस्तत् एतदुभयं सह एकेन पुरुषेण अनुष्ठेयं वेद तस्यैवं समुच्चयकारिण एकैकपुरुषार्थसम्बन्धः क्रमेण स्यादित्युच्यते — अविद्यया कर्मणा अग्निहोत्रादिना मृत्युम् , स्वाभाविकं कर्म ज्ञानं च मृत्युशब्दवाच्यम् , तदुभयं तीर्त्वा अतिक्रम्य विद्यया देवताज्ञानेन अमृतं देवतात्मभावम् अश्नुते प्राप्नोति । तद्ध्यमृतमुच्यते, यद्देवतात्मगमनम् ॥ \n\n अधुना व्याकृताव्याकृतोपासनयोः समुच्चिचीषया प्रत्येकं निन्दोच्यते —\n\n",
+    "keyPoints": [
+      "Vidyā means deity-knowledge (devatājñāna), avidyā means karma (rituals like agnihotra)",
+      "One person (ekena puruṣeṇa) should practice both together (samuccaya)",
+      "The results come in sequence (krameṇa) for one who combines both",
+      "Mṛtyu (death) means natural karma and ignorance - both are crossed by karma",
+      "By crossing death through karma (avidyā), one purifies and qualifies for higher knowledge",
+      "Amṛta (immortality) means identity with the deity (devatātma-bhāva)",
+      "Through vidyā (deity-meditation), one attains this relative immortality",
+      "This is the path of gradual ascent through combined practice"
+    ],
+    "notes": "This crucial mantra prescribes the actual combination (samuccaya) of vidyā and avidyā for a single person. Śaṅkara Bhagavadpāda clarifies that mṛtyu refers to natural karma and ignorance that must be crossed/transcended through performance of prescribed rituals (avidyā/karma). Having thus purified oneself and crossed this 'death,' one becomes qualified for vidyā (deity-meditation), which leads to amṛta - identification with the deity's nature (devatātma-bhāva). This is not supreme liberation (mokṣa), but a progressive path where karma purifies and prepares one for upāsanā, which in turn leads to the deity's world. The teaching is for householders who cannot yet renounce, showing them how to progress through sequential combination of both paths."
+  },
+  "centralTeaching": "One who understands that vidyā and avidyā should be practiced together achieves results in sequence: first crossing death (natural ignorance and its effects) through karma, then attaining relative immortality (identity with deities) through upāsanā. This is the path of combined practice for qualified householders.",
+  "coreConcepts": [
+    {
+      "term": "समुच्चय",
+      "transliteration": "samuccaya",
+      "definition": "Combination practiced by one person (ekena puruṣeṇa); both vidyā and avidyā performed together in proper sequence",
+      "importance": "primary"
+    },
+    {
+      "term": "मृत्यु",
+      "transliteration": "mṛtyu",
+      "definition": "Death; here means natural karma and ignorance (svābhāvika karma-jñāna) that binds one to saṃsāra",
+      "importance": "primary"
+    },
+    {
+      "term": "अमृत",
+      "transliteration": "amṛta",
+      "definition": "Immortality; here means identity with the deity's nature (devatātma-bhāva), not supreme liberation",
+      "importance": "primary"
+    },
+    {
+      "term": "देवतात्मभाव",
+      "transliteration": "devatātma-bhāva",
+      "definition": "Identity with the deity; becoming one with the deity one meditates upon, attaining their world",
+      "importance": "secondary"
+    },
+    {
+      "term": "क्रम",
+      "transliteration": "krama",
+      "definition": "Sequence, progression; the results come in order - first from karma, then from vidyā",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-09",
+      "reference": "Īśa Upaniṣad 9",
+      "relationship": "prerequisite",
+      "note": "Condemned exclusive practice; this shows the proper combination"
+    },
+    {
+      "verseId": "isha-10",
+      "reference": "Īśa Upaniṣad 10",
+      "relationship": "prerequisite",
+      "note": "Established different results; this shows how to combine both"
+    },
+    {
+      "verseId": "isha-12",
+      "reference": "Īśa Upaniṣad 12",
+      "relationship": "parallel",
+      "note": "Similar teaching using different terminology (sambhūti/asambhūti)"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

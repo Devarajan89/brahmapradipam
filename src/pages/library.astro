@@ -1,0 +1,355 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Library">
+  <div class="flex min-h-screen">
+    <!-- Left Sidebar - Text Tree Navigation -->
+    <aside class="w-80 bg-[var(--color-bg-white)] border-r border-[var(--color-border)] overflow-y-auto sticky top-0 h-screen hidden lg:block">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold text-[var(--color-accent-saffron)] mb-6">
+          Sacred Texts
+        </h2>
+        
+        <!-- Prasthana Trayi -->
+        <div class="space-y-4">
+          <!-- Upanishads -->
+          <details open class="group">
+            <summary class="cursor-pointer font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent-saffron)] transition-colors mb-2 flex items-center gap-2">
+              <span class="text-xs">▶</span>
+              <span class="sanskrit-small">Upanishads</span>
+            </summary>
+            <div class="ml-4 space-y-1 mt-2">
+              <!-- Isha Upanishad with verses -->
+              <details class="group/isha">
+                <summary class="cursor-pointer py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors flex items-center gap-1">
+                  <span class="text-xs">▶</span>
+                  <span>Isha Upanishad</span>
+                </summary>
+                <div class="ml-4 space-y-1 mt-1">
+                  <a href="/verse/isha-01" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 1</a>
+                  <a href="/verse/isha-02" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 2</a>
+                  <a href="/verse/isha-03" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 3</a>
+                  <a href="/verse/isha-04" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 4</a>
+                  <a href="/verse/isha-05" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 5</a>
+                  <a href="/verse/isha-06" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 6</a>
+                  <a href="/verse/isha-07" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 7</a>
+                  <a href="/verse/isha-08" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 8</a>
+                  <a href="/verse/isha-09" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 9</a>
+                  <a href="/verse/isha-10" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 10</a>
+                  <a href="/verse/isha-11" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 11</a>
+                  <a href="/verse/isha-12" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 12</a>
+                  <a href="/verse/isha-13" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 13</a>
+                  <a href="/verse/isha-14" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 14</a>
+                  <a href="/verse/isha-15" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 15</a>
+                  <a href="/verse/isha-16" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 16</a>
+                  <a href="/verse/isha-17" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 17</a>
+                  <a href="/verse/isha-18" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Mantra 18</a>
+                </div>
+              </details>
+              
+              <a href="/library/kena" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Kena Upanishad
+              </a>
+              <a href="/library/katha" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Katha Upanishad
+              </a>
+              <a href="/library/mundaka" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Mundaka Upanishad
+              </a>
+              <a href="/library/mandukya" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Mandukya Upanishad
+              </a>
+              <a href="/library/taittiriya" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Taittiriya Upanishad
+              </a>
+              <a href="/library/chandogya" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Chandogya Upanishad
+              </a>
+              <a href="/library/brihadaranyaka" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Brihadaranyaka Upanishad
+              </a>
+            </div>
+          </details>
+
+          <!-- Bhagavad Gita -->
+          <details open class="group">
+            <summary class="cursor-pointer font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent-saffron)] transition-colors mb-2 flex items-center gap-2">
+              <span class="text-xs">▶</span>
+              <span class="sanskrit-small">Bhagavad Gita</span>
+            </summary>
+            <div class="ml-4 space-y-1 mt-2">
+              <!-- Chapter 2 with verses -->
+              <details class="group/ch2">
+                <summary class="cursor-pointer py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors flex items-center gap-1">
+                  <span class="text-xs">▶</span>
+                  <span>Chapter 2: Sankhya Yoga</span>
+                </summary>
+                <div class="ml-4 space-y-1 mt-1">
+                  <a href="/verse/bg-2-16" class="block py-1 px-3 text-sm rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-muted)] hover:text-[var(--color-accent-saffron)] transition-colors">Verse 2.16</a>
+                  <span class="block py-1 px-3 text-xs text-[var(--color-text-muted)] italic">(More verses coming soon...)</span>
+                </div>
+              </details>
+              <span class="block py-1 px-3 text-[var(--color-text-muted)] text-sm italic">
+                (More chapters coming soon...)
+              </span>
+            </div>
+          </details>
+
+          <!-- Brahma Sutras -->
+          <details class="group">
+            <summary class="cursor-pointer font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent-saffron)] transition-colors mb-2 flex items-center gap-2">
+              <span class="text-xs">▶</span>
+              <span class="sanskrit-small">Brahma Sutras</span>
+            </summary>
+            <div class="ml-4 mt-2">
+              <span class="block py-1 px-3 text-[var(--color-text-muted)] text-sm italic">
+                Coming soon...
+              </span>
+            </div>
+          </details>
+
+          <!-- Prakarana Granthas -->
+          <details class="group">
+            <summary class="cursor-pointer font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-accent-saffron)] transition-colors mb-2 flex items-center gap-2">
+              <span class="text-xs">▶</span>
+              <span class="sanskrit-small">Prakarana Granthas</span>
+            </summary>
+            <div class="ml-4 space-y-2 mt-2">
+              <a href="/library/vivekachudamani" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Vivekachudamani
+              </a>
+              <a href="/library/tattvabodha" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Tattvabodha
+              </a>
+              <a href="/library/atmabodha" class="block py-1 px-3 rounded hover:bg-[var(--color-bg-sanskrit)] text-[var(--color-text-secondary)] hover:text-[var(--color-accent-saffron)] transition-colors">
+                Atmabodha
+              </a>
+              <span class="block py-1 px-3 text-[var(--color-text-muted)] text-sm italic">
+                (More texts coming soon...)
+              </span>
+            </div>
+          </details>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 p-8">
+      <div class="max-w-4xl mx-auto">
+        <header class="mb-12">
+          <h1 class="text-4xl font-semibold text-[var(--color-accent-saffron)] mb-4">
+            Sacred Library
+          </h1>
+          <p class="text-[var(--color-text-secondary)] text-lg leading-relaxed">
+            Explore the foundational texts of Advaita Vedanta, including the Prasthana Trayi 
+            (Upanishads, Bhagavad Gita, and Brahma Sutras) along with important Prakarana texts, 
+            all accompanied by Sri Shankara Bhagavadpada's illuminating commentaries.
+          </p>
+        </header>
+
+        <!-- Stats Overview -->
+        <div class="mb-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-gradient-to-br from-bg-white to-bg-sanskrit rounded-lg p-4 border border-border text-center">
+            <div class="text-3xl font-bold text-accent-saffron mb-1">18</div>
+            <div class="text-sm text-text-secondary">Isha Upanishad<br/>Mantras</div>
+          </div>
+          <div class="bg-gradient-to-br from-bg-white to-bg-sanskrit rounded-lg p-4 border border-border text-center">
+            <div class="text-3xl font-bold text-accent-saffron mb-1">1</div>
+            <div class="text-sm text-text-secondary">Bhagavad Gita<br/>Verse</div>
+          </div>
+          <div class="bg-bg-white rounded-lg p-4 border border-border text-center opacity-60">
+            <div class="text-3xl font-bold text-text-muted mb-1">10</div>
+            <div class="text-sm text-text-muted">Principal<br/>Upanishads</div>
+          </div>
+          <div class="bg-bg-white rounded-lg p-4 border border-border text-center opacity-60">
+            <div class="text-3xl font-bold text-text-muted mb-1">700</div>
+            <div class="text-sm text-text-muted">Bhagavad Gita<br/>Verses (Total)</div>
+          </div>
+        </div>
+
+        <!-- Filter/Sort Options -->
+        <div class="mb-8 flex flex-wrap gap-3">
+          <span class="text-sm font-semibold text-text-primary">Filter by:</span>
+          <button class="px-4 py-2 rounded-full bg-accent-saffron text-white text-sm hover:opacity-90 transition-opacity">
+            All Texts
+          </button>
+          <button class="px-4 py-2 rounded-full bg-bg-white border border-border text-text-secondary text-sm hover:bg-bg-sanskrit transition-colors">
+            Upanishads
+          </button>
+          <button class="px-4 py-2 rounded-full bg-bg-white border border-border text-text-secondary text-sm hover:bg-bg-sanskrit transition-colors">
+            Bhagavad Gita
+          </button>
+          <button class="px-4 py-2 rounded-full bg-bg-white border border-border text-text-secondary text-sm hover:bg-bg-sanskrit transition-colors">
+            Prakarana Texts
+          </button>
+        </div>
+
+        <!-- Available Texts Grid -->
+        <div class="space-y-8">
+          <!-- Completed Texts -->
+          <section>
+            <h2 class="text-2xl font-semibold text-text-primary mb-4 flex items-center gap-2">
+              <span class="text-green-600">✓</span> Available Texts
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Isha Upanishad -->
+              <a href="/library/isha-upanishad" class="block bg-gradient-to-br from-bg-white to-bg-sanskrit rounded-lg border-2 border-accent-saffron p-6 hover:shadow-xl transition-all group">
+                <div class="flex items-start justify-between mb-3">
+                  <h3 class="text-xl font-semibold text-text-primary group-hover:text-accent-saffron transition-colors">
+                    Isha Upanishad
+                  </h3>
+                  <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                    Complete
+                  </span>
+                </div>
+                <p class="text-text-secondary text-sm mb-4">
+                  The first of the principal Upanishads, revealing the pervasiveness of the divine
+                </p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-text-muted">18 mantras with bhashya</span>
+                  <span class="text-accent-saffron font-medium group-hover:translate-x-1 transition-transform inline-block">
+                    Read →
+                  </span>
+                </div>
+              </a>
+
+              <!-- Bhagavad Gita Chapter 2, Verse 16 -->
+              <a href="/library/bhagavad-gita/chapter-02" class="block bg-gradient-to-br from-bg-white to-bg-sanskrit rounded-lg border-2 border-accent-saffron p-6 hover:shadow-xl transition-all group">
+                <div class="flex items-start justify-between mb-3">
+                  <h3 class="text-xl font-semibold text-text-primary group-hover:text-accent-saffron transition-colors">
+                    Bhagavad Gita 2.16
+                  </h3>
+                  <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                    Available
+                  </span>
+                </div>
+                <p class="text-text-secondary text-sm mb-4">
+                  Verse on the nature of the real and unreal from Sankhya Yoga chapter
+                </p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-text-muted">Chapter 2: Sankhya Yoga</span>
+                  <span class="text-accent-saffron font-medium group-hover:translate-x-1 transition-transform inline-block">
+                    Read →
+                  </span>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <!-- Coming Soon -->
+          <section>
+            <h2 class="text-2xl font-semibold text-text-primary mb-4 flex items-center gap-2">
+              <span class="text-yellow-600">⏳</span> Coming Soon
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Other Upanishads -->
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Kena Upanishad</h3>
+                <p class="text-text-muted text-sm">By whom does the mind know?</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Katha Upanishad</h3>
+                <p class="text-text-muted text-sm">Nachiketa's dialogue with Death</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Mundaka Upanishad</h3>
+                <p class="text-text-muted text-sm">The two kinds of knowledge</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Mandukya Upanishad</h3>
+                <p class="text-text-muted text-sm">The shortest yet profound Om</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Taittiriya Upanishad</h3>
+                <p class="text-text-muted text-sm">The five sheaths teaching</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Chandogya Upanishad</h3>
+                <p class="text-text-muted text-sm">Tat Tvam Asi - That Thou Art</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Brihadaranyaka Upanishad</h3>
+                <p class="text-text-muted text-sm">The great forest Upanishad</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Bhagavad Gita (Full)</h3>
+                <p class="text-text-muted text-sm">All 700 verses, 18 chapters</p>
+              </div>
+              <div class="bg-bg-white rounded-lg border border-border p-4 opacity-75">
+                <h3 class="font-semibold text-text-primary mb-2">Brahma Sutras</h3>
+                <p class="text-text-muted text-sm">Systematic Vedanta philosophy</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Study Resources -->
+          <section class="mt-12">
+            <h2 class="text-2xl font-semibold text-text-primary mb-4 flex items-center gap-2">
+              <span>📖</span> Study Resources
+            </h2>
+            <div class="grid md:grid-cols-3 gap-4">
+              <a href="/concepts/glossary" class="block bg-bg-white rounded-lg border border-border p-5 hover:shadow-lg hover:border-accent-saffron transition-all group">
+                <h3 class="font-semibold text-text-primary group-hover:text-accent-saffron mb-2">
+                  Glossary
+                </h3>
+                <p class="text-text-secondary text-sm">
+                  Essential Sanskrit terms and concepts
+                </p>
+              </a>
+              <a href="/concepts/key-concepts" class="block bg-bg-white rounded-lg border border-border p-5 hover:shadow-lg hover:border-accent-saffron transition-all group">
+                <h3 class="font-semibold text-text-primary group-hover:text-accent-saffron mb-2">
+                  Key Concepts
+                </h3>
+                <p class="text-text-secondary text-sm">
+                  Core teachings of Advaita Vedanta
+                </p>
+              </a>
+              <a href="/concepts/mahavakyas" class="block bg-bg-white rounded-lg border border-border p-5 hover:shadow-lg hover:border-accent-saffron transition-all group">
+                <h3 class="font-semibold text-text-primary group-hover:text-accent-saffron mb-2">
+                  Mahavakyas
+                </h3>
+                <p class="text-text-secondary text-sm">
+                  The four great Upanishadic statements
+                </p>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Menu Toggle (for sidebar) -->
+  <button 
+    id="mobile-menu-toggle"
+    class="lg:hidden fixed bottom-6 right-6 bg-[var(--color-accent-saffron)] text-white p-4 rounded-full shadow-lg z-50"
+  >
+    📚
+  </button>
+
+  <script>
+    // Mobile menu toggle logic
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const sidebar = document.querySelector('aside');
+    
+    toggleBtn?.addEventListener('click', () => {
+      sidebar?.classList.toggle('hidden');
+      sidebar?.classList.toggle('fixed');
+      sidebar?.classList.toggle('z-40');
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  details[open] > summary span:first-child {
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+  
+  details.group\/isha[open] > summary span:first-child,
+  details.group\/ch2[open] > summary span:first-child {
+    transform: rotate(90deg);
+    display: inline-block;
+  }
+</style>

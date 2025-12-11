@@ -1,0 +1,187 @@
+{
+  "id": "isha-09",
+  "reference": "Īśa Upaniṣad 9",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 9,
+  "original": {
+    "devanagari": "अन्धं तमः प्रविशन्ति ये अविद्यामुपासते ।\nततो भूय इव ते तमो य उ विद्यायां रताः ॥ ९ ॥",
+    "iast": "andhaṃ tamaḥ praviśanti ye avidyām upāsate |\ntato bhūya iva te tamo ya u vidyāyāṃ ratāḥ || 9 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "अन्धम्",
+      "transliteration": "andham",
+      "meaning": "blind, dark",
+      "grammar": "accusative singular adjective"
+    },
+    {
+      "word": "तमः",
+      "transliteration": "tamaḥ",
+      "meaning": "darkness",
+      "grammar": "accusative singular neuter"
+    },
+    {
+      "word": "प्रविशन्ति",
+      "transliteration": "praviśanti",
+      "meaning": "they enter into",
+      "grammar": "3rd person plural from pra + √viś"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who, those who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "अविद्याम्",
+      "transliteration": "avidyām",
+      "meaning": "ignorance, nescience, here: karma",
+      "grammar": "accusative singular feminine"
+    },
+    {
+      "word": "उपासते",
+      "transliteration": "upāsate",
+      "meaning": "worship, practice, engage in",
+      "grammar": "3rd person plural from upa + √ās"
+    },
+    {
+      "word": "ततः",
+      "transliteration": "tataḥ",
+      "meaning": "than that, from that",
+      "grammar": "ablative adverb"
+    },
+    {
+      "word": "भूयः",
+      "transliteration": "bhūyaḥ",
+      "meaning": "more, greater",
+      "grammar": "comparative adverb"
+    },
+    {
+      "word": "इव",
+      "transliteration": "iva",
+      "meaning": "as it were, seemingly",
+      "grammar": "particle"
+    },
+    {
+      "word": "ते",
+      "transliteration": "te",
+      "meaning": "they, those",
+      "grammar": "nominative plural pronoun"
+    },
+    {
+      "word": "तमः",
+      "transliteration": "tamaḥ",
+      "meaning": "darkness",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "उ",
+      "transliteration": "u",
+      "meaning": "indeed",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "विद्यायाम्",
+      "transliteration": "vidyāyām",
+      "meaning": "in knowledge, here: in deity worship",
+      "grammar": "locative singular feminine"
+    },
+    {
+      "word": "रताः",
+      "transliteration": "ratāḥ",
+      "meaning": "engaged, devoted",
+      "grammar": "nominative plural from √ram"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "Into blinding darkness enter those who worship ignorance (karma), and into still greater darkness, as it were, those who delight in knowledge (of deities).",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "Into blinding darkness enter those who worship ignorance; and into still greater darkness, as it were, those who are devoted to knowledge alone.",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "अन्धं तमः अदर्शनात्मकं तमः प्रविशन्ति । के ? ये अविद्याम् , विद्याया अन्या अविद्या कर्मेत्यर्थः, कर्मणो विद्याविरोधित्वात् , तामविद्यामग्निहोत्रादिलक्षणामेव केवलाम् उपासते तत्पराः सन्तोऽनुतिष्ठन्तीत्यभिप्रायः । ततः तस्मादन्धात्मकात्तमसः भूय इव बहुतरमेव ते तमः प्रविशन्ति । के ? कर्म हित्वा ये उ ये तु विद्यायामेव देवताज्ञाने एव रताः अभिरताः ॥\n\n[Continuation]\nतत्रावान्तरफलभेदं विद्याकर्मणोः समुच्चयकारणमाह । अन्यथा फलवदफलवतोः संनिहितयोरङ्गाङ्गितया जामितैव स्यादिति —",
+    "keyPoints": [
+      "Avidyā here means karma (rituals like agnihotra), not metaphysical ignorance",
+      "Vidyā here means knowledge/worship of deities (devatājñāna), not Brahman-knowledge",
+      "Those who worship karma alone (without vidyā) enter blind darkness",
+      "Those who abandon karma and are devoted only to deity-knowledge enter even greater darkness",
+      "This condemns exclusive practice (ekaikānuṣṭhāna) of either, not the practices themselves",
+      "The condemnation is due to the desire for combination (samuccicīṣā) - doing both together",
+      "Neither karma nor deity-knowledge should be practiced exclusively",
+      "Both have separate results: karma leads to pitṛ-loka, vidyā to deva-loka (per Bṛ.Up. 1.5.16)",
+      "Scripture-enjoined practices cannot be dismissed as not-to-be-done (akartavya)",
+      "Supreme Self-knowledge (ātmaikatva-vijñāna) cannot be combined with karma or other knowledge",
+      "This teaching is for those still desirous (kāmin), not for desireless renunciates (akāmin)",
+      "Foundation for teaching samuccaya (combination) in subsequent mantras"
+    ],
+    "notes": "Śaṅkara Bhagavadpāda's commentary establishes that avidyā here specifically means karma (rituals like agnihotra), not metaphysical ignorance, while vidyā means upāsanā (deity-meditation) leading to deva-loka, not supreme Brahman-knowledge. The condemnation is not of these practices themselves - both are śāstra-vihita (scripture-enjoined) with their own legitimate fruits (pitṛ-loka for karma, deva-loka for vidyā per Bṛ.Up. 1.5.16). Rather, what is condemned is exclusive practice (ekaikānuṣṭhāna) of either one alone.\n\nThe verse teaches that those who practice karma exclusively without vidyā enter blind darkness, while those who abandon karma and practice only vidyā enter even greater darkness. This establishes the foundation for the samuccaya teaching in subsequent mantras - that karma and vidyā should be combined appropriately. This teaching is specifically for householders who still have desires (kāmin), not for the desireless renunciates (akāmin) established in Self-knowledge for whom such combination is impossible and unnecessary."
+  },
+  "centralTeaching": "Exclusive devotion to either karma (rituals) alone or upāsanā (deity-meditation) alone leads to darkness. Neither should be practiced in isolation - they must be combined appropriately for those qualified householders who cannot yet take up the path of renunciation and Self-knowledge.",
+  "coreConcepts": [
+    {
+      "term": "अविद्या",
+      "transliteration": "avidyā",
+      "definition": "Here specifically means karma (Vedic rituals like agnihotra), not metaphysical ignorance; opposed to vidyā",
+      "importance": "primary"
+    },
+    {
+      "term": "विद्या",
+      "transliteration": "vidyā",
+      "definition": "Here specifically means knowledge/worship of deities (devatājñāna), not supreme Brahman-knowledge",
+      "importance": "primary"
+    },
+    {
+      "term": "समुच्चय",
+      "transliteration": "samuccaya",
+      "definition": "Combination, synthesis; the teaching that karma and upāsanā should be combined, not practiced exclusively",
+      "importance": "primary"
+    },
+    {
+      "term": "देवताज्ञान",
+      "transliteration": "devatājñāna",
+      "definition": "Knowledge of deities; meditation on various deities, leading to their worlds but not to liberation",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-10",
+      "reference": "Īśa Upaniṣad 10",
+      "relationship": "elaboration",
+      "note": "Explains that vidyā and avidyā have different results, justifying their combination"
+    },
+    {
+      "verseId": "isha-11",
+      "reference": "Īśa Upaniṣad 11",
+      "relationship": "elaboration",
+      "note": "Shows how to combine both - crossing death through avidyā, attaining immortality through vidyā"
+    },
+    {
+      "verseId": "isha-02",
+      "reference": "Īśa Upaniṣad 2",
+      "relationship": "prerequisite",
+      "note": "Earlier established karma-niṣṭhā for householders; this expands on that teaching"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}

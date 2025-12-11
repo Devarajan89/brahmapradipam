@@ -1,0 +1,348 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+---
+
+<BaseLayout title="Upaniṣads">
+  <div class="flex min-h-screen">
+    <Navigation currentPath={Astro.url.pathname} />
+    
+    <main class="flex-1 px-4 py-8">
+      <div class="max-w-5xl mx-auto">
+        <!-- Breadcrumb -->
+        <nav class="text-sm text-text-muted mb-6">
+          <a href="/library" class="hover:text-accent-saffron">Library</a>
+          <span class="mx-2">›</span>
+          <span class="text-text-primary">Upaniṣads</span>
+        </nav>
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+          <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
+            The Upaniṣads
+          </h1>
+          <p class="sanskrit text-2xl text-text-secondary mb-4">
+            उपनिषद्
+          </p>
+          <p class="text-xl text-text-muted mb-6 italic">
+            "Sitting Near" the Teacher — Profound Teachings on Brahman
+          </p>
+          <p class="text-text-secondary max-w-2xl mx-auto leading-relaxed">
+            The Upaniṣads form the concluding portions of the Vedas (Vedānta) and contain the essence of Vedic wisdom. They explore the nature of ultimate reality (Brahman), the self (Ātman), and the path to liberation (mokṣa).
+          </p>
+        </header>
+
+        <!-- Overview -->
+        <div class="bg-bg-white rounded-lg border border-border p-8 mb-8">
+          <h2 class="text-2xl font-semibold text-text-primary mb-4">
+            About the Upaniṣads
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Principal Upaniṣads</p>
+              <p class="text-3xl font-bold text-accent-saffron">10</p>
+            </div>
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Total Count</p>
+              <p class="text-3xl font-bold text-accent-saffron">108+</p>
+            </div>
+            <div class="bg-bg-sanskrit p-4 rounded">
+              <p class="text-sm text-text-muted mb-1">Tradition</p>
+              <p class="text-3xl font-bold text-accent-saffron sanskrit-small">वेदान्त</p>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-r from-bg-sanskrit to-bg-white p-6 rounded-lg">
+            <h3 class="font-semibold text-text-primary mb-2">
+              Primary Commentary
+            </h3>
+            <p class="text-text-primary mb-1">Śrī Śaṅkarācārya's Bhāṣya</p>
+            <p class="sanskrit-small text-text-secondary">श्रीशङ्कराचार्यभाष्यम्</p>
+            <p class="text-sm text-text-muted mt-2">
+              8th Century CE • Advaita Vedānta
+            </p>
+          </div>
+        </div>
+
+        <!-- Principal Upanishads List -->
+        <div>
+          <h2 class="text-2xl font-semibold text-text-primary mb-6">
+            The Ten Principal Upaniṣads
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-4">
+          <!-- Isha Upanishad -->
+          <a 
+            href="/library/isha-upanishad"
+            class="block bg-bg-white border border-border rounded-lg p-6 hover:shadow-lg hover:border-accent-saffron transition-all group"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-accent-saffron group-hover:text-accent-sandalwood transition-colors">
+                    Īśa Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    18 mantras
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  ईशोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed">
+                  The first and shortest of the principal Upaniṣads, teaching the all-pervading nature of the Lord and the path of karma and jñāna.
+                </p>
+              </div>
+              <span class="text-accent-saffron text-2xl opacity-0 group-hover:opacity-100 transition-opacity">
+                →
+              </span>
+            </div>
+          </a>
+
+          <!-- Other Upanishads - Coming Soon -->
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Kena Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    4 sections
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  केनोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  Explores the nature of Brahman as the power behind the senses and the mind. Named after its opening word "kena" (by whom).
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Kaṭha Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    2 chapters, 6 sections
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  कठोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  The famous dialogue between the boy Naciketa and Yama (Death), teaching discrimination and the nature of the Self.
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Muṇḍaka Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    3 chapters
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  मुण्डकोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  Contains profound teachings on para and apara vidyā (higher and lower knowledge) and the nature of Brahman.
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Māṇḍūkya Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    12 mantras
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  माण्डूक्योपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  The shortest yet most profound, expounding the nature of AUM and the four states of consciousness.
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Taittirīya Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    3 sections
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  तैत्तिरीयोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  Teaches the five sheaths (pañca-kośa) and the journey from anna (food) to ānanda (bliss).
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Aitareya Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    3 chapters
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  ऐतरेयोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  Discusses the creation of the universe and the nature of consciousness (prajñāna).
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Chāndogya Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    8 chapters
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  छान्दोग्योपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  One of the longest, containing famous teachings like "Tat Tvam Asi" (Thou art That) and the doctrine of Brahman as sat (existence).
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Bṛhadāraṇyaka Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    6 chapters
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  बृहदारण्यकोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  The longest and most comprehensive, containing the teachings of Yājñavalkya and profound discussions on Ātman and Brahman.
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-bg-white border border-border rounded-lg p-6 opacity-60">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-baseline gap-3 mb-3">
+                  <span class="text-2xl font-semibold text-text-primary">
+                    Praśna Upaniṣad
+                  </span>
+                  <span class="text-sm text-text-muted">
+                    6 questions
+                  </span>
+                </div>
+                <p class="sanskrit-small text-text-secondary mb-3">
+                  प्रश्नोपनिषद्
+                </p>
+                <p class="text-text-secondary leading-relaxed mb-2">
+                  Structured as six questions (praśna) posed by seekers to the sage Pippalāda on fundamental spiritual matters.
+                </p>
+                <p class="text-sm text-text-muted italic">Coming soon...</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Key Themes -->
+        <div class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-8 mt-8">
+          <h3 class="text-xl font-semibold text-accent-saffron mb-4">
+            Central Teachings of the Upaniṣads
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Brahman
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Ātman
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Tat Tvam Asi
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Mokṣa
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Māyā
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Neti Neti
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Sat-Cit-Ānanda
+            </span>
+            <span class="px-4 py-2 bg-bg-white border border-accent-saffron text-accent-sandalwood rounded-full text-sm font-medium">
+              Avidyā
+            </span>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-center items-center mt-12 pt-8 border-t border-border">
+          <a 
+            href="/library"
+            class="text-accent-sandalwood hover:text-accent-saffron transition-colors"
+          >
+            ← Back to Library
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+</BaseLayout>

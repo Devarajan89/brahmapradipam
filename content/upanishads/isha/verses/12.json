@@ -1,0 +1,195 @@
+{
+  "id": "isha-12",
+  "reference": "Īśa Upaniṣad 12",
+  "text": "isha-upanishad",
+  "chapter": 1,
+  "verse": 12,
+  "original": {
+    "devanagari": "अन्धं तमः प्रविशन्ति येऽसम्भूतिमुपासते ।\nततो भूय इव ते तमो य उ सम्भूत्यां रताः ॥ १२ ॥",
+    "iast": "andhaṃ tamaḥ praviśanti ye 'sambhūtim upāsate |\ntato bhūya iva te tamo ya u sambhūtyāṃ ratāḥ || 12 ||"
+  },
+  "wordAnalysis": [
+    {
+      "word": "अन्धम्",
+      "transliteration": "andham",
+      "meaning": "blind, dark",
+      "grammar": "accusative singular adjective"
+    },
+    {
+      "word": "तमः",
+      "transliteration": "tamaḥ",
+      "meaning": "darkness",
+      "grammar": "accusative singular neuter"
+    },
+    {
+      "word": "प्रविशन्ति",
+      "transliteration": "praviśanti",
+      "meaning": "they enter into",
+      "grammar": "3rd person plural from pra + √viś"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who, those who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "असम्भूतिम्",
+      "transliteration": "asambhūtim",
+      "meaning": "the unmanifest, Prakṛti",
+      "grammar": "accusative singular feminine"
+    },
+    {
+      "word": "उपासते",
+      "transliteration": "upāsate",
+      "meaning": "worship, meditate upon",
+      "grammar": "3rd person plural from upa + √ās"
+    },
+    {
+      "word": "ततः",
+      "transliteration": "tataḥ",
+      "meaning": "than that, from that",
+      "grammar": "ablative adverb"
+    },
+    {
+      "word": "भूयः",
+      "transliteration": "bhūyaḥ",
+      "meaning": "more, greater",
+      "grammar": "comparative adverb"
+    },
+    {
+      "word": "इव",
+      "transliteration": "iva",
+      "meaning": "as it were",
+      "grammar": "particle"
+    },
+    {
+      "word": "ते",
+      "transliteration": "te",
+      "meaning": "they, those",
+      "grammar": "nominative plural pronoun"
+    },
+    {
+      "word": "तमः",
+      "transliteration": "tamaḥ",
+      "meaning": "darkness",
+      "grammar": "accusative singular"
+    },
+    {
+      "word": "ये",
+      "transliteration": "ye",
+      "meaning": "who",
+      "grammar": "relative pronoun nominative plural"
+    },
+    {
+      "word": "उ",
+      "transliteration": "u",
+      "meaning": "indeed",
+      "grammar": "emphatic particle"
+    },
+    {
+      "word": "सम्भूत्याम्",
+      "transliteration": "sambhūtyām",
+      "meaning": "in the manifest, in Hiraṇyagarbha",
+      "grammar": "locative singular feminine"
+    },
+    {
+      "word": "रताः",
+      "transliteration": "ratāḥ",
+      "meaning": "engaged, devoted",
+      "grammar": "nominative plural from √ram"
+    }
+  ],
+  "translations": [
+    {
+      "translator": "Traditional",
+      "text": "Into blinding darkness enter those who worship asambhūti (the unmanifest Prakṛti); and into still greater darkness, as it were, those who are devoted to sambhūti (the manifest Hiraṇyagarbha).",
+      "style": "literal"
+    },
+    {
+      "translator": "Swami Gambhirananda",
+      "text": "Into blinding darkness enter those who meditate on the unmanifest (Prakṛti); and into still greater darkness those who are devoted to the manifest (Hiraṇyagarbha).",
+      "style": "contextual"
+    }
+  ],
+  "bhashya": {
+    "sanskrit": "अन्धं तमः प्रविशन्ति ये असम्भूतिम् , सम्भवनं सम्भूतिः सा यस्य कार्यस्य सा सम्भूतिः तस्या अन्या असम्भूतिः प्रकृतिः कारणम् अव्याकृताख्यम् , तामसम्भूतिमव्याकृताख्यां प्रकृतिं कारणमविद्यां कामकर्मबीजभूतामदर्शनात्मिकाम् उपासते ये ते तदनुरूपमेवान्धं तमः अदर्शनात्मकं प्रविशन्ति । ततः तस्मादपि भूयो बहुतरमिव तमः ते प्रविशन्ति ये उ सम्भूत्यां कार्यब्रह्मणि हिरण्यगर्भाख्ये रताः ॥\n\nअधुना उभयोरुपासनयोः समुच्चयकारणमवयवफलभेदमाह —",
+    "keyPoints": [
+      "This mantra condemns exclusive practice (pratiekam) of either vyākṛta or avyākṛta upāsanā",
+      "Asambhūti means the unmanifest cause (kāraṇa), Prakṛti, the avyākṛta (unmanifest)",
+      "Prakṛti is the seed of desire and karma (kāma-karma-bīja-bhūta), of the nature of non-perception",
+      "Those who worship only Prakṛti enter blinding darkness suited to it",
+      "Sambhūti means the manifest effect (kārya-brahman), Hiraṇyagarbha, the vyākṛta",
+      "Those devoted exclusively to Hiraṇyagarbha enter even greater darkness",
+      "Like mantras 9-11, this condemns exclusive practice due to desire for combination",
+      "The following verse will explain the different results justifying their combination"
+    ],
+    "notes": "This mantra parallels mantras 9-11 but uses different terminology: sambhūti (manifest/Hiraṇyagarbha) and asambhūti (unmanifest/Prakṛti) instead of vidyā and avidyā. Śaṅkara Bhagavadpāda explains that asambhūti refers to the unmanifest cause (avyākṛta), identified as Prakṛti - the material cause that is the seed of desire and karma. Sambhūti refers to the manifest effect (vyākṛta), identified as kārya-brahman or Hiraṇyagarbha (the cosmic person/golden embryo). The condemnation is not of these upāsanās themselves, but of practicing either exclusively. The introduction notes this is about the desire for combination (samuccicīṣā), and the next verse will explain the different results (avayava-phala-bheda) that justify combining both meditations."
+  },
+  "centralTeaching": "Exclusive meditation on either the unmanifest Prakṛti (asambhūti) alone or the manifest Hiraṇyagarbha (sambhūti) alone leads to darkness. Both upāsanās should be combined appropriately, not practiced in isolation, as they have different specific results.",
+  "coreConcepts": [
+    {
+      "term": "असम्भूति",
+      "transliteration": "asambhūti",
+      "definition": "The unmanifest, Prakṛti; the avyākṛta (unmanifest) cause, seed of desire and karma",
+      "importance": "primary"
+    },
+    {
+      "term": "सम्भूति",
+      "transliteration": "sambhūti",
+      "definition": "The manifest, Hiraṇyagarbha; the vyākṛta (manifest) effect, the cosmic person/kārya-brahman",
+      "importance": "primary"
+    },
+    {
+      "term": "अव्याकृत",
+      "transliteration": "avyākṛta",
+      "definition": "Unmanifest; the causal state before manifestation, identified with Prakṛti",
+      "importance": "secondary"
+    },
+    {
+      "term": "व्याकृत",
+      "transliteration": "vyākṛta",
+      "definition": "Manifest; the effect state after manifestation, identified with Hiraṇyagarbha",
+      "importance": "secondary"
+    },
+    {
+      "term": "हिरण्यगर्भ",
+      "transliteration": "hiraṇyagarbha",
+      "definition": "Golden embryo; the cosmic person, the first-born, kārya-brahman (effect Brahman)",
+      "importance": "secondary"
+    },
+    {
+      "term": "कार्यब्रह्मन्",
+      "transliteration": "kārya-brahman",
+      "definition": "Effect Brahman; Hiraṇyagarbha as the manifested cosmic being, not the supreme Brahman",
+      "importance": "secondary"
+    }
+  ],
+  "relatedVerses": [
+    {
+      "verseId": "isha-09",
+      "reference": "Īśa Upaniṣad 9",
+      "relationship": "parallel",
+      "note": "Similar structure condemning exclusive practice, using vidyā/avidyā terminology"
+    },
+    {
+      "verseId": "isha-11",
+      "reference": "Īśa Upaniṣad 11",
+      "relationship": "parallel",
+      "note": "Prescribes combination of vidyā/avidyā; this verse uses sambhūti/asambhūti"
+    },
+    {
+      "verseId": "isha-13",
+      "reference": "Īśa Upaniṣad 13",
+      "relationship": "elaboration",
+      "note": "Will explain the different results (avayava-phala-bheda) of sambhūti and asambhūti"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Initial Entry",
+      "role": "scholar",
+      "date": "2025-12-11"
+    }
+  ]
+}
