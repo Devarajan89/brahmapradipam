@@ -7,34 +7,34 @@ import Navigation from '../../../components/Navigation.astro';
   <div class="flex min-h-screen">
     <Navigation currentPath={Astro.url.pathname} />
     
-    <main class="flex-1 px-4 py-8">
+    <main class="flex-1 px-4 sm:px-6 lg:px-8 py-8">
     <div class="max-w-5xl mx-auto">
       <!-- Breadcrumb -->
-      <nav class="text-sm text-[var(--color-text-muted)] mb-6">
-        <a href="/library" class="hover:text-[var(--color-accent-saffron)]">Library</a>
+      <nav class="text-sm text-text-muted mb-6">
+        <a href="/library" class="hover:text-accent-saffron">Library</a>
         <span class="mx-2">›</span>
-        <a href="/library/bhagavad-gita" class="hover:text-[var(--color-accent-saffron)]">Bhagavad Gītā</a>
+        <a href="/library/bhagavad-gita" class="hover:text-accent-saffron">Bhagavad Gītā</a>
         <span class="mx-2">›</span>
-        <span class="text-[var(--color-text-primary)]">Chapter 2</span>
+        <span class="text-text-primary">Chapter 2</span>
       </nav>
 
       <!-- Header -->
       <header class="text-center mb-12">
-        <h1 class="text-4xl font-semibold text-[var(--color-accent-saffron)] mb-3">
+        <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
           Chapter 2: Sāṅkhya Yoga
         </h1>
-        <p class="sanskrit text-2xl text-[var(--color-text-secondary)] mb-4">
+        <p class="sanskrit text-2xl text-text-secondary mb-4">
           सांख्ययोग
         </p>
-        <p class="text-[var(--color-text-secondary)] max-w-2xl mx-auto leading-relaxed">
+        <p class="text-text-secondary max-w-2xl mx-auto leading-relaxed">
           The Yoga of Knowledge - In this chapter, Śrī Kṛṣṇa begins His instruction to Arjuna by 
           revealing the distinction between the eternal Self and the temporary body-mind complex.
         </p>
       </header>
 
       <!-- Chapter Overview -->
-      <div class="bg-[var(--color-bg-white)] rounded-lg border border-[var(--color-border)] p-8 mb-8">
-        <h2 class="text-2xl font-semibold text-[var(--color-text-primary)] mb-4">
+      <div class="bg-bg-white rounded-lg border border-border p-8 mb-8">
+        <h2 class="text-2xl font-semibold text-text-primary mb-4">
           Chapter Overview
         </h2>
         <p class="text-[var(--color-text-secondary)] leading-relaxed mb-4">
@@ -42,8 +42,8 @@ import Navigation from '../../../components/Navigation.astro';
           It introduces the nature of the eternal Self (Ātman), the distinction between 
           the Real and unreal, and the path of Self-knowledge.
         </p>
-        <div class="bg-[var(--color-bg-sanskrit)] p-4 rounded">
-          <p class="text-sm text-[var(--color-text-primary)]">
+        <div class="bg-bg-sanskrit p-4 rounded">
+          <p class="text-sm text-text-primary">
             <strong>Total Verses:</strong> 72 (Sample verse 16 available below)
           </p>
         </div>
@@ -57,7 +57,7 @@ import Navigation from '../../../components/Navigation.astro';
 
         <div class="space-y-8 mb-8">
           <!-- Verses 2.1-2.9 (No Bhashya) -->
-          <div class="bg-gradient-to-br from-[var(--color-bg-sanskrit)] to-[var(--color-bg-white)] rounded-lg border-2 border-[var(--color-accent-saffron)] p-6">
+          <div class="bg-linear-to-br from-bg-sanskrit to-bg-white rounded-lg border-2 border-accent-saffron p-6">
             <h3 class="text-xl font-semibold text-[var(--color-accent-saffron)] mb-4">
               Verses 2.1 - 2.9
             </h3>
@@ -67,12 +67,12 @@ import Navigation from '../../../components/Navigation.astro';
             
             <div class="space-y-6">
               <!-- Verse 2.1 -->
-              <div class="bg-[var(--color-bg-white)] rounded-lg p-6 border-l-4 border-[var(--color-accent-sandalwood)]">
-                <div class="flex items-baseline gap-3 mb-3">
-                  <span class="text-lg font-semibold text-[var(--color-accent-saffron)]">2.1</span>
-                  <span class="text-xs px-2 py-1 bg-[var(--color-bg-sanskrit)] rounded text-[var(--color-text-secondary)]">सञ्जय उवाच</span>
-                </div>
-                <p class="sanskrit text-lg leading-relaxed text-[var(--color-text-primary)]">
+                <div class="bg-bg-white rounded-lg p-6 border-l-4 border-accent-sandalwood">
+                  <div class="flex items-baseline gap-3 mb-3">
+                    <span class="text-lg font-semibold text-accent-saffron">2.1</span>
+                    <span class="text-xs px-2 py-1 bg-bg-sanskrit rounded text-text-secondary">सञ्जय उवाच</span>
+                  </div>
+                  <p class="sanskrit text-lg leading-relaxed text-text-primary">
                   तं तथा कृपयाविष्टं अश्रुपूर्णाकुलेक्षणम् ।<br/>
                   विषीदन्तमिदं वाक्यं उवाच मधुसूदनः ॥
                 </p>

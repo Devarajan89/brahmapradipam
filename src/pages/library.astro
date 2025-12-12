@@ -3,11 +3,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Library">
+  <!-- Mobile Toggle Button -->
+  <button id="library-sidebar-toggle" class="lg:hidden fixed bottom-6 right-6 z-50 bg-accent-saffron text-white p-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <!-- Sidebar Overlay -->
+  <div id="library-sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden"></div>
+
   <div class="flex min-h-screen">
     <!-- Left Sidebar - Text Tree Navigation -->
-    <aside class="w-80 bg-[var(--color-bg-white)] border-r border-[var(--color-border)] overflow-y-auto sticky top-0 h-screen hidden lg:block">
+    <aside id="library-sidebar" class="w-80 bg-[var(--color-bg-white)] border-r border-[var(--color-border)] overflow-y-auto fixed lg:static lg:block h-screen transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-40">
       <div class="p-6">
-        <h2 class="text-xl font-semibold text-[var(--color-accent-saffron)] mb-6">
+        <!-- Mobile Close Button -->
+        <div class="lg:hidden flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold text-[var(--color-accent-saffron)]">
+            Sacred Texts
+          </h2>
+          <button id="library-sidebar-close" class="text-text-secondary hover:text-accent-saffron">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <h2 class="text-xl font-semibold text-[var(--color-accent-saffron)] mb-6 hidden lg:block">
           Sacred Texts
         </h2>
         
@@ -135,7 +157,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </aside>
 
     <!-- Main Content Area -->
-    <main class="flex-1 p-8">
+    <main class="flex-1 p-4 sm:p-6 lg:p-8">
       <div class="max-w-4xl mx-auto">
         <header class="mb-12">
           <h1 class="text-4xl font-semibold text-[var(--color-accent-saffron)] mb-4">
@@ -320,24 +342,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </main>
   </div>
 
-  <!-- Mobile Menu Toggle (for sidebar) -->
-  <button 
-    id="mobile-menu-toggle"
-    class="lg:hidden fixed bottom-6 right-6 bg-[var(--color-accent-saffron)] text-white p-4 rounded-full shadow-lg z-50"
-  >
-    📚
-  </button>
-
   <script>
-    // Mobile menu toggle logic
-    const toggleBtn = document.getElementById('mobile-menu-toggle');
-    const sidebar = document.querySelector('aside');
+    // Mobile sidebar toggle logic
+    const toggleBtn = document.getElementById('library-sidebar-toggle');
+    const closeBtn = document.getElementById('library-sidebar-close');
+    const sidebar = document.getElementById('library-sidebar');
+    const overlay = document.getElementById('library-sidebar-overlay');
     
-    toggleBtn?.addEventListener('click', () => {
-      sidebar?.classList.toggle('hidden');
-      sidebar?.classList.toggle('fixed');
-      sidebar?.classList.toggle('z-40');
-    });
+    function openSidebar() {
+      sidebar?.classList.remove('-translate-x-full');
+      overlay?.classList.remove('hidden');
+    }
+    
+    function closeSidebar() {
+      sidebar?.classList.add('-translate-x-full');
+      overlay?.classList.add('hidden');
+    }
+    
+    toggleBtn?.addEventListener('click', openSidebar);
+    closeBtn?.addEventListener('click', closeSidebar);
+    overlay?.addEventListener('click', closeSidebar);
   </script>
 </BaseLayout>
 

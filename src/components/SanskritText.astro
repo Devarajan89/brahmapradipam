@@ -33,7 +33,7 @@ const uniqueId = `verse-${Math.random().toString(36).substr(2, 9)}`;
       <div id={`${uniqueId}-words`} class="word-view hidden cursor-pointer" data-target={`${uniqueId}-normal`}>
         {words.map((wordData, index) => (
           <span class="word-tooltip-wrapper inline-block">
-            <span class="clickable-word cursor-help hover:text-accent-saffron transition-colors border-b-2 border-transparent hover:border-accent-saffron px-1">
+            <span class="clickable-word cursor-pointer hover:text-accent-saffron transition-colors border-b-2 border-transparent hover:border-accent-saffron px-1" role="button" tabindex="0">
               {wordData.word}
               <span class="tooltip-content">
                 <span class="tooltip-transliteration">{wordData.transliteration}</span>
@@ -68,18 +68,54 @@ const uniqueId = `verse-${Math.random().toString(36).substr(2, 9)}`;
       });
     });
 
-    // Handle clicks on word view to toggle back to normal
+    // Handle clicks on word view to toggle back to normal (when clicking empty area)
     document.querySelectorAll('.word-view').forEach(element => {
       element.addEventListener('click', (e) => {
+        // If click is within a word tooltip or word, ignore (handled separately)
+        const targetEl = e.target as HTMLElement;
+        if (targetEl.closest('.clickable-word')) return;
+
         const target = (element as HTMLElement).dataset.target;
         if (target) {
           const normalView = document.getElementById(target);
           if (normalView) {
+            // Close any open tooltips first
+            element.querySelectorAll('.tooltip-content.open').forEach(t => t.classList.remove('open'));
             element.classList.add('hidden');
             normalView.classList.remove('hidden');
           }
         }
       });
+
+      // Enable click-to-toggle tooltips for each word
+      element.querySelectorAll('.clickable-word').forEach(wordEl => {
+        wordEl.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const current = wordEl.querySelector('.tooltip-content') as HTMLElement | null;
+          if (!current) return;
+          // Close other open tooltips within the same word view
+          element.querySelectorAll('.tooltip-content.open').forEach(t => {
+            if (t !== current) t.classList.remove('open');
+          });
+          current.classList.toggle('open');
+        });
+
+        // Support keyboard
+        (wordEl as HTMLElement).addEventListener('keydown', (ke) => {
+          if (ke.key === 'Enter' || ke.key === ' ') {
+            ke.preventDefault();
+            (wordEl as HTMLElement).click();
+          }
+        });
+      });
+    });
+
+    // Click outside to close any open tooltip
+    document.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest('.clickable-word')) {
+        document.querySelectorAll('.tooltip-content.open').forEach(t => t.classList.remove('open'));
+      }
     });
   });
 </script>
@@ -160,10 +196,11 @@ const uniqueId = `verse-${Math.random().toString(36).substr(2, 9)}`;
     border-top-color: var(--color-text-primary);
   }
 
-  .clickable-word:hover .tooltip-content {
+  .tooltip-content.open {
     visibility: visible;
     opacity: 1;
     transform: translateX(-50%) translateY(-4px);
+    pointer-events: auto;
   }
 
   .tooltip-transliteration {

@@ -79,7 +79,7 @@ const groupedVerses = verses.reduce((acc, verse) => {
 ---
 
 {verses && verses.length > 0 && (
-  <section class="bg-gradient-to-br from-bg-white to-bg-sanskrit border border-border rounded-lg p-6">
+  <section class="bg-linear-to-br from-bg-white to-bg-sanskrit border border-border rounded-lg p-6">
     <div class="flex items-center gap-3 mb-6">
       <h4 class="text-xl font-semibold text-text-primary">
         Related Verses
@@ -94,7 +94,7 @@ const groupedVerses = verses.reduce((acc, verse) => {
         const info = relationshipInfo[relationship as keyof typeof relationshipInfo];
         if (!info) return null;
         return (
-          <div key={relationship} class="space-y-3">
+          <div class="space-y-3">
             {/* Relationship Type Header */}
             <div class={`flex items-center gap-2 pb-2 border-b-2 ${info.border}`}>
               <span class={`text-xl ${info.color}`}>{info.icon}</span>
@@ -112,7 +112,6 @@ const groupedVerses = verses.reduce((acc, verse) => {
             <div class="space-y-2 ml-6">
               {relVerses.map(verse => (
                 <a 
-                  key={verse.verseId}
                   href={`/verse/${verse.verseId}`}
                   class={`block p-4 ${info.bg} border ${info.border} rounded-lg hover:shadow-md transition-all group`}
                 >

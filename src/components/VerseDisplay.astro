@@ -57,14 +57,14 @@ interface Props {
 const { verse, prevVerseId, nextVerseId } = Astro.props;
 ---
 
-<article class="max-w-4xl mx-auto px-4 py-8">
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <!-- Breadcrumb -->
-  <nav class="text-sm text-[var(--color-text-muted)] mb-6">
-    <a href="/library" class="hover:text-[var(--color-accent-saffron)]">Library</a>
+  <nav class="text-sm text-text-muted mb-6">
+    <a href="/library" class="hover:text-accent-saffron">Library</a>
     <span class="mx-2">›</span>
-    <a href={`/library/${verse.text}`} class="hover:text-[var(--color-accent-saffron)]">{verse.text}</a>
+    <a href={`/library/${verse.text}`} class="hover:text-accent-saffron">{verse.text}</a>
     <span class="mx-2">›</span>
-    <span class="text-[var(--color-text-primary)]">{verse.reference}</span>
+    <span class="text-text-primary">{verse.reference}</span>
   </nav>
 
   <!-- Section 1: Original Verse -->
@@ -116,7 +116,7 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
     <Bhashya content={verse.bhashya} />
 
     <!-- Section 5: Central Teaching -->
-    <section class="bg-gradient-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-6">
+    <section class="bg-linear-to-br from-bg-sanskrit to-bg-white rounded-lg border-l-4 border-accent-saffron p-6">
       <h3 class="text-lg font-semibold text-accent-saffron mb-3">
         मुख्य बोध (Central Teaching)
       </h3>
@@ -138,7 +138,7 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
       {prevVerseId ? (
         <a 
           href={`/verse/${prevVerseId}`}
-          class="flex items-center gap-2 text-[var(--color-accent-saffron)] hover:text-[var(--color-accent-sandalwood)] transition-colors"
+          class="flex items-center gap-2 text-accent-saffron hover:text-accent-sandalwood transition-colors"
         >
           <span>←</span>
           <span>Previous</span>
@@ -159,7 +159,7 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
       {nextVerseId ? (
         <a 
           href={`/verse/${nextVerseId}`}
-          class="flex items-center gap-2 text-[var(--color-accent-saffron)] hover:text-[var(--color-accent-sandalwood)] transition-colors"
+          class="flex items-center gap-2 text-accent-saffron hover:text-accent-sandalwood transition-colors"
         >
           <span>Next</span>
           <span>→</span>
@@ -170,6 +170,26 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
     </div>
   </nav>
 </article>
+
+<!-- Mobile Quick Jump Navigation (Top Sticky) -->
+<div class="lg:hidden sticky top-16 z-40 bg-bg-white/95 backdrop-blur-sm border-b border-border">
+  <div class="max-w-4xl mx-auto px-4 py-2 flex items-center gap-2">
+    <a href={prevVerseId ? `/verse/${prevVerseId}` : undefined} class={`px-3 py-2 rounded border ${prevVerseId ? 'border-border text-text-primary hover:bg-bg-sanskrit' : 'border-border text-text-muted cursor-not-allowed'}`} aria-disabled={!prevVerseId}>Prev</a>
+    <div class="flex-1 overflow-x-auto">
+      <div class="flex items-center gap-1 min-w-max">
+        {Array.from({ length: 18 }, (_, i) => {
+          const id = `isha-${String(i + 1).padStart(2, '0')}`;
+          return (
+            <a href={`/verse/${id}`} class="px-2 py-1 rounded-full text-xs border border-border bg-bg-white hover:bg-bg-sanskrit hover:text-accent-saffron">
+              {i + 1}
+            </a>
+          );
+        })}
+      </div>
+    </div>
+    <a href={nextVerseId ? `/verse/${nextVerseId}` : undefined} class={`px-3 py-2 rounded border ${nextVerseId ? 'border-border text-text-primary hover:bg-bg-sanskrit' : 'border-border text-text-muted cursor-not-allowed'}`} aria-disabled={!nextVerseId}>Next</a>
+  </div>
+</div>
 
 <style>
   details[open] summary span:last-child::before {

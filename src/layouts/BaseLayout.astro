@@ -17,11 +17,14 @@ const { title, description = "A sacred digital library for serious spiritual see
   <meta name="description" content={description}>
   <title>{title} | Brahmapradipam</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="min-h-screen flex flex-col">
   <!-- Header -->
-  <header class="sticky top-0 z-40 border-b border-border bg-bg-white/95 backdrop-blur-sm shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3 md:py-4">
+  <header class="sticky top-0 z-40 border-b border-border bg-bg-white/95 backdrop-blur-sm shadow-sm w-full">
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
@@ -77,7 +80,7 @@ const { title, description = "A sacred digital library for serious spiritual see
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-bg-white">
-      <nav class="px-4 py-4 space-y-2">
+      <nav class="px-4 sm:px-6 py-4 space-y-2">
         <a href="/library" class="block px-4 py-3 text-text-primary hover:bg-bg-sanskrit hover:text-accent-saffron rounded-lg transition-colors font-medium">
           Library
         </a>
@@ -120,77 +123,6 @@ const { title, description = "A sacred digital library for serious spiritual see
   <footer class="bg-gradient-to-b from-bg-white to-amber-50 border-t border-amber-200 mt-auto">
     <!-- Main Footer Content -->
     <div class="max-w-7xl mx-auto px-4 py-12">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <!-- About Section -->
-        <div class="md:col-span-2">
-          <div class="mb-4">
-            <img src="/images/logo.png" alt="Brahmapradipam" class="h-16 mb-3" />
-          </div>
-          <p class="text-text-secondary text-sm leading-relaxed mb-4">
-            A sacred digital library for serious seekers of <span class="sanskrit-small">mokṣa</span> studying Advaita Vedānta under qualified guru guidance.
-          </p>
-          <p class="sanskrit text-lg text-accent-saffron">
-            ब्रह्मप्रदीपम्
-          </p>
-          <p class="text-text-muted text-xs italic mt-1">
-            "A lamp for illuminating Brahman"
-          </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h3 class="font-semibold text-text-primary mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-sm">
-            <li>
-              <a href="/library" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Browse Library
-              </a>
-            </li>
-            <li>
-              <a href="/library/isha-upanishad" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Īśa Upaniṣad
-              </a>
-            </li>
-            <li>
-              <a href="/library/bhagavad-gita" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Bhagavad Gītā
-              </a>
-            </li>
-            <li>
-              <a href="/concepts/glossary" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Glossary
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Resources -->
-        <div>
-          <h3 class="font-semibold text-text-primary mb-4">Resources</h3>
-          <ul class="space-y-2 text-sm">
-            <li>
-              <a href="/guidance" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                For Newcomers
-              </a>
-            </li>
-            <li>
-              <a href="/about" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                About This Project
-              </a>
-            </li>
-            <li>
-              <a href="/concepts/key-concepts" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Key Concepts
-              </a>
-            </li>
-            <li>
-              <a href="/concepts/mahavakyas" class="text-text-secondary hover:text-accent-saffron transition-colors">
-                Mahāvākyas
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <!-- Important Disclaimer -->
       <div class="border-t border-amber-200 pt-8 mb-6">

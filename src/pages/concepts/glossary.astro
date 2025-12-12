@@ -238,7 +238,7 @@ const glossaryTerms = [
 ---
 
 <BaseLayout title="Advaita Vedanta Glossary">
-  <main class="max-w-5xl mx-auto px-4 py-12">
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <header class="mb-12 text-center">
       <h1 class="text-4xl font-semibold text-accent-saffron mb-3">
         Advaita Vedanta Glossary
@@ -251,12 +251,12 @@ const glossaryTerms = [
       </p>
     </header>
 
-    <!-- Quick Navigation -->
-    <div class="mb-8 bg-bg-white border border-border rounded-lg p-4">
+    <!-- Quick Navigation - Sticky on Mobile -->
+    <div class="sticky top-16 md:top-20 z-20 mb-8 bg-bg-white/95 backdrop-blur-sm border border-border rounded-lg p-4 shadow-md">
       <p class="text-sm text-text-secondary mb-2"><strong>Quick Navigation:</strong></p>
       <div class="flex flex-wrap gap-2">
         <a href="#core-concepts" class="px-3 py-1 bg-accent-saffron text-white hover:opacity-90 rounded text-sm transition-colors font-semibold">Core Concepts</a>
-        <span class="text-text-muted">|</span>
+        <span class="text-text-muted hidden sm:inline">|</span>
         <a href="#A" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">A</a>
         <a href="#B" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">B</a>
         <a href="#J" class="px-3 py-1 bg-bg-sanskrit hover:bg-accent-saffron hover:text-white rounded text-sm transition-colors">J</a>
