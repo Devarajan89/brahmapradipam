@@ -1,0 +1,101 @@
+---
+// Cross-Reference Map showing verse relationships across texts
+interface CrossRef {
+  verseId: string;
+  reference: string;
+  relationship: 'parallel' | 'elaboration' | 'contrast' | 'prerequisite' | 'related';
+  note: string;
+}
+
+interface Props {
+  currentVerse: string;
+  references: CrossRef[];
+}
+
+const { currentVerse, references } = Astro.props;
+
+const relationshipColors = {
+  parallel: 'border-blue-500 bg-blue-50',
+  elaboration: 'border-green-500 bg-green-50',
+  contrast: 'border-orange-500 bg-orange-50',
+  prerequisite: 'border-purple-500 bg-purple-50',
+  related: 'border-gray-500 bg-gray-50',
+};
+
+const relationshipIcons = {
+  parallel: '↔️',
+  elaboration: '📖',
+  contrast: '⚖️',
+  prerequisite: '⬆️',
+  related: '🔗',
+};
+
+const relationshipLabels = {
+  parallel: 'Parallel Teaching',
+  elaboration: 'Elaborates',
+  contrast: 'Contrasts',
+  prerequisite: 'Prerequisites',
+  related: 'Related',
+};
+---
+
+<section class="bg-bg-white rounded-lg border border-border p-6">
+  <h3 class="text-lg font-semibold text-text-primary mb-4 flex items-center gap-2">
+    <span>🗺️</span>
+    <span>Cross-Reference Map</span>
+  </h3>
+  
+  <div class="text-sm text-text-muted mb-4">
+    Explore how this teaching connects to other verses across the scriptures
+  </div>
+
+  {references.length === 0 ? (
+    <div class="text-center py-8 text-text-muted">
+      No cross-references available yet
+    </div>
+  ) : (
+    <div class="space-y-3">
+      {references.map((ref) => (
+        <a 
+          href={`/verse/${ref.verseId}`}
+          class={`block p-4 rounded-lg border-l-4 transition-all hover:shadow-md ${relationshipColors[ref.relationship]}`}
+        >
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">{relationshipIcons[ref.relationship]}</span>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold uppercase tracking-wide opacity-75">
+                  {relationshipLabels[ref.relationship]}
+                </span>
+              </div>
+              <div class="font-semibold text-text-primary mb-1">
+                {ref.reference}
+              </div>
+              <div class="text-sm text-text-secondary">
+                {ref.note}
+              </div>
+            </div>
+            <svg class="w-5 h-5 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+
+  <!-- Legend -->
+  <details class="mt-6">
+    <summary class="cursor-pointer text-sm text-text-muted hover:text-accent-saffron">
+      Relationship Types Legend
+    </summary>
+    <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+      {Object.entries(relationshipLabels).map(([key, label]) => (
+        <div class="flex items-center gap-2">
+          <span>{relationshipIcons[key as keyof typeof relationshipIcons]}</span>
+          <span class="text-text-secondary">{label}</span>
+        </div>
+      ))}
+    </div>
+  </details>
+</section>

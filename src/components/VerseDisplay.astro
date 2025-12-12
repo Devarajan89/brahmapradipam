@@ -69,9 +69,17 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
 
   <!-- Section 1: Original Verse -->
   <header class="mb-8">
-    <h1 class="text-3xl font-semibold text-accent-saffron mb-6 text-center">
-      {verse.reference}
-    </h1>
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="text-3xl font-semibold text-accent-saffron text-center flex-1">
+        {verse.reference}
+      </h1>
+      <!-- Mobile verse sidebar toggle -->
+      <button id="verse-sidebar-btn" class="lg:hidden p-2 ml-4 text-text-primary hover:text-accent-saffron" aria-label="Open verse sidebar">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
     <SanskritText 
       devanagari={verse.original.devanagari} 
       size="large" 
@@ -172,7 +180,7 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
 </article>
 
 <!-- Mobile Quick Jump Navigation (Top Sticky) -->
-<div class="lg:hidden sticky top-16 z-40 bg-bg-white/95 backdrop-blur-sm border-b border-border">
+<div class="lg:hidden sticky top-14 z-40 bg-bg-white/95 backdrop-blur-sm border-b border-border">
   <div class="max-w-4xl mx-auto px-4 py-2 flex items-center gap-2">
     <a href={prevVerseId ? `/verse/${prevVerseId}` : undefined} class={`px-3 py-2 rounded border ${prevVerseId ? 'border-border text-text-primary hover:bg-bg-sanskrit' : 'border-border text-text-muted cursor-not-allowed'}`} aria-disabled={!prevVerseId}>Prev</a>
     <div class="flex-1 overflow-x-auto">
@@ -190,6 +198,54 @@ const { verse, prevVerseId, nextVerseId } = Astro.props;
     <a href={nextVerseId ? `/verse/${nextVerseId}` : undefined} class={`px-3 py-2 rounded border ${nextVerseId ? 'border-border text-text-primary hover:bg-bg-sanskrit' : 'border-border text-text-muted cursor-not-allowed'}`} aria-disabled={!nextVerseId}>Next</a>
   </div>
 </div>
+
+<!-- Mobile Verse Sidebar & Overlay -->
+<div id="verse-overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
+<aside id="verse-sidebar" class="fixed top-0 left-0 h-full w-64 bg-bg-white border-r border-border shadow-xl -translate-x-full transition-transform z-50">
+  <div class="px-4 py-3 border-b border-border flex items-center justify-between">
+    <span class="font-semibold text-text-primary">Quick Jump</span>
+    <button id="verse-sidebar-close" class="p-2 text-text-muted hover:text-text-primary" aria-label="Close">
+      ✕
+    </button>
+  </div>
+  <nav class="p-4 space-y-3">
+    <div class="grid grid-cols-6 gap-2">
+      {Array.from({ length: 18 }, (_, i) => {
+        const id = `isha-${String(i + 1).padStart(2, '0')}`;
+        return (
+          <a href={`/verse/${id}`} class="px-2 py-1 rounded border border-border text-sm text-text-primary hover:bg-bg-sanskrit hover:text-accent-saffron text-center">
+            {i + 1}
+          </a>
+        );
+      })}
+    </div>
+    <a href="/library/isha-upanishad" class="block mt-4 text-sm text-text-secondary hover:text-accent-saffron">Back to Īśa Upaniṣad</a>
+    <a href="/library" class="block text-sm text-text-secondary hover:text-accent-saffron">All Texts</a>
+  </nav>
+  <div class="absolute bottom-4 left-0 w-full px-4">
+    <a href="/guidance" class="block text-xs text-text-muted hover:text-accent-saffron">Study under guru guidance</a>
+  </div>
+  </aside>
+
+<script>
+  const btn = document.getElementById('verse-sidebar-btn');
+  const sidebar = document.getElementById('verse-sidebar');
+  const overlay = document.getElementById('verse-overlay');
+  const closeBtn = document.getElementById('verse-sidebar-close');
+
+  function openSidebar() {
+    sidebar?.classList.remove('-translate-x-full');
+    overlay?.classList.remove('hidden');
+  }
+  function closeSidebar() {
+    sidebar?.classList.add('-translate-x-full');
+    overlay?.classList.add('hidden');
+  }
+
+  btn?.addEventListener('click', openSidebar);
+  closeBtn?.addEventListener('click', closeSidebar);
+  overlay?.addEventListener('click', closeSidebar);
+</script>
 
 <style>
   details[open] summary span:last-child::before {

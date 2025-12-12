@@ -1,0 +1,296 @@
+---
+// Global search component with keyboard shortcut (Cmd/Ctrl + K)
+---
+
+<div id="global-search-container">
+  <!-- Search Button in Header -->
+  <button 
+    id="search-trigger"
+    class="flex items-center gap-2 px-3 py-2 text-sm text-text-secondary border border-border rounded-lg hover:border-accent-saffron hover:text-accent-saffron transition-colors"
+    aria-label="Search"
+  >
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+    </svg>
+    <span class="hidden sm:inline">Search</span>
+    <kbd class="hidden md:inline-block px-2 py-0.5 text-xs bg-bg-sanskrit border border-border rounded">⌘K</kbd>
+  </button>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4 z-50" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="bg-bg-white rounded-lg max-w-2xl w-full shadow-2xl max-h-[80vh] flex flex-col">
+      <!-- Search Input -->
+      <div class="p-4 border-b border-border">
+        <h2 id="search-title" class="sr-only">Search Brahmapradipam</h2>
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search verses, concepts, texts... (try 'isha 5' or 'bg 2.16')"
+            class="flex-1 outline-none text-text-primary placeholder:text-text-muted"
+            autocomplete="off"
+            aria-label="Search query"
+          />
+          <button id="search-close" class="text-text-muted hover:text-text-primary" aria-label="Close search">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div id="search-results" class="overflow-y-auto flex-1 p-4">
+        <div class="text-center text-text-muted py-8">
+          Type to search verses, concepts, and texts
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="px-4 py-3 border-t border-border text-xs text-text-muted flex items-center justify-between">
+        <span>Press <kbd class="px-2 py-0.5 bg-bg-sanskrit border border-border rounded">↵</kbd> to go, <kbd class="px-2 py-0.5 bg-bg-sanskrit border border-border rounded">Esc</kbd> to close</span>
+        <span>Quick jump: isha 5, bg 2.16</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  import Fuse from 'fuse.js';
+  import type { SearchResult } from '../lib/search';
+
+  // Build search index from available content
+  const searchData: SearchResult[] = [
+    // Īśa Upaniṣad verses
+    ...Array.from({ length: 18 }, (_, i) => {
+      const num = i + 1;
+      return {
+        id: `isha-${String(num).padStart(2, '0')}`,
+        reference: `Īśa ${num}`,
+        text: 'isha-upanishad',
+        devanagari: `Mantra ${num}`,
+        iast: `īśa ${num}`,
+        translation: `Īśa Upaniṣad Mantra ${num}`,
+        url: `/verse/isha-${String(num).padStart(2, '0')}`,
+        type: 'verse' as const,
+      };
+    }),
+    // BG 2.16
+    {
+      id: 'bg-2-16',
+      reference: 'BG 2.16',
+      text: 'bhagavad-gita',
+      devanagari: 'Chapter 2, Verse 16',
+      iast: 'bg 2.16',
+      translation: 'Bhagavad Gītā Chapter 2, Verse 16',
+      url: '/verse/bg-2-16',
+      type: 'verse' as const,
+    },
+    // Texts
+    {
+      id: 'isha-upanishad',
+      name: 'Īśa Upaniṣad',
+      nameDevanagari: 'ईशोपनिषद्',
+      description: 'The Upaniṣad of the Lord, first of the principal Upaniṣads',
+      url: '/library/isha-upanishad',
+      type: 'text' as const,
+    },
+    {
+      id: 'bhagavad-gita',
+      name: 'Bhagavad Gītā',
+      nameDevanagari: 'भगवद्गीता',
+      description: 'The Song of God, dialogue between Krishna and Arjuna',
+      url: '/library/bhagavad-gita',
+      type: 'text' as const,
+    },
+    // Sample concepts (expand with actual glossary data)
+    {
+      id: 'atman',
+      term: 'Ātman',
+      transliteration: 'ātman',
+      definition: 'The Self, the eternal unchanging reality',
+      url: '/concepts/glossary#atman',
+      type: 'concept' as const,
+    },
+    {
+      id: 'brahman',
+      term: 'Brahman',
+      transliteration: 'brahman',
+      definition: 'The absolute reality, the supreme universal consciousness',
+      url: '/concepts/glossary#brahman',
+      type: 'concept' as const,
+    },
+  ];
+
+  const fuse = new Fuse(searchData, {
+    keys: [
+      { name: 'reference', weight: 2 },
+      { name: 'devanagari', weight: 1.5 },
+      { name: 'iast', weight: 1.5 },
+      { name: 'translation', weight: 1 },
+      { name: 'term', weight: 2 },
+      { name: 'transliteration', weight: 1.5 },
+      { name: 'definition', weight: 1 },
+      { name: 'name', weight: 2 },
+      { name: 'nameDevanagari', weight: 1.5 },
+      { name: 'description', weight: 1 },
+    ],
+    threshold: 0.4,
+    includeScore: true,
+    minMatchCharLength: 2,
+  });
+
+  const modal = document.getElementById('search-modal');
+  const input = document.getElementById('search-input') as HTMLInputElement;
+  const results = document.getElementById('search-results');
+  const trigger = document.getElementById('search-trigger');
+  const closeBtn = document.getElementById('search-close');
+
+  function openModal() {
+    modal?.classList.remove('hidden');
+    modal?.classList.add('flex');
+    setTimeout(() => input?.focus(), 100);
+  }
+
+  function closeModal() {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+    if (input) input.value = '';
+    if (results) results.innerHTML = '<div class="text-center text-text-muted py-8">Type to search verses, concepts, and texts</div>';
+  }
+
+  // Parse verse reference (e.g., "isha 5", "bg 2.16")
+  function parseVerseRef(query: string): string | null {
+    const q = query.trim().toLowerCase();
+    
+    // Īśa patterns
+    const ishaMatch = q.match(/^(?:isha|īśa)\s*(\d+)$/i);
+    if (ishaMatch) {
+      const num = parseInt(ishaMatch[1]);
+      if (num >= 1 && num <= 18) {
+        return `/verse/isha-${String(num).padStart(2, '0')}`;
+      }
+    }
+    
+    // BG patterns
+    const bgMatch = q.match(/^(?:bg|gita|gītā)\s*(\d+)[.-](\d+)$/i);
+    if (bgMatch) {
+      return `/verse/bg-${bgMatch[1]}-${bgMatch[2]}`;
+    }
+    
+    return null;
+  }
+
+  function performSearch(query: string) {
+    if (!query.trim()) {
+      results!.innerHTML = '<div class="text-center text-text-muted py-8">Type to search verses, concepts, and texts</div>';
+      return;
+    }
+
+    // Check for direct verse reference
+    const directUrl = parseVerseRef(query);
+    if (directUrl) {
+      results!.innerHTML = `
+        <div class="space-y-2">
+          <div class="p-3 rounded-lg border-2 border-accent-saffron bg-bg-sanskrit hover:bg-amber-100 transition-colors">
+            <a href="${directUrl}" class="block">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-accent-saffron">→</span>
+                <span class="font-semibold text-text-primary">Go to ${query}</span>
+              </div>
+              <div class="text-sm text-text-muted">Press Enter to navigate</div>
+            </a>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    const searchResults = fuse.search(query, { limit: 10 });
+    
+    if (searchResults.length === 0) {
+      results!.innerHTML = '<div class="text-center text-text-muted py-8">No results found. Try "isha 5" or "bg 2.16" for quick jump.</div>';
+      return;
+    }
+
+    const html = searchResults.map((result) => {
+      const item = result.item;
+      const typeIcon = item.type === 'verse' ? '📖' : item.type === 'concept' ? '💡' : '📚';
+      const typeName = item.type === 'verse' ? 'Verse' : item.type === 'concept' ? 'Concept' : 'Text';
+      
+      let title = '';
+      let subtitle = '';
+      
+      if (item.type === 'verse') {
+        title = item.reference;
+        subtitle = item.translation;
+      } else if (item.type === 'concept') {
+        title = item.term;
+        subtitle = item.definition;
+      } else {
+        title = item.name;
+        subtitle = item.description;
+      }
+
+      return `
+        <a href="${item.url}" class="block p-3 rounded-lg border border-border hover:border-accent-saffron hover:bg-bg-sanskrit transition-colors">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">${typeIcon}</span>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs text-text-muted uppercase">${typeName}</span>
+              </div>
+              <div class="font-semibold text-text-primary mb-1">${title}</div>
+              <div class="text-sm text-text-secondary line-clamp-2">${subtitle}</div>
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('');
+
+    results!.innerHTML = `<div class="space-y-2">${html}</div>`;
+  }
+
+  // Event listeners
+  trigger?.addEventListener('click', openModal);
+  closeBtn?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  input?.addEventListener('input', (e) => {
+    performSearch((e.target as HTMLInputElement).value);
+  });
+
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const firstLink = results?.querySelector('a');
+      if (firstLink) {
+        window.location.href = (firstLink as HTMLAnchorElement).href;
+      }
+    } else if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+
+  // Global keyboard shortcut (Cmd/Ctrl + K)
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openModal();
+    } else if (e.key === '/') {
+      e.preventDefault();
+      openModal();
+    }
+  });
+</script>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

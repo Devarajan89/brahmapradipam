@@ -1,35 +1,51 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Samarkan';
+  src: url('/fonts/samarkan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Siddhanta';
+  src: url('/fonts/siddhanta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   /* Backgrounds */
-  --color-bg-primary: #FBF8F3;
+  --color-bg-primary: #FFFFFF;
   --color-bg-white: #FFFFFF;
   --color-bg-sanskrit: #FFF9F0;
   --color-bg-bhashya: #F8F6F3;
-  
+
   /* Text Colors */
   --color-text-primary: #1F2937;
   --color-text-secondary: #4B5563;
   --color-text-muted: #9CA3AF;
-  
+
   /* Accents */
   --color-accent-saffron: #D97706;
   --color-accent-sandalwood: #92724F;
-  
+
   /* Borders & Shadows */
   --color-border: #E5E7EB;
-  
+
   /* Font Families */
-  --font-family-sanskrit: 'Noto Sans Devanagari', 'Siddhanta', serif;
+  --font-family-sanskrit: 'Siddhanta', 'Noto Sans Devanagari', serif;
   --font-family-body: 'Inter', system-ui, sans-serif;
-  
+
   /* Font Sizes */
   --font-size-verse: 2rem;
   --font-size-heading: 1.5rem;
   --font-size-body: 1.125rem;
   --font-size-commentary: 1.0625rem;
   --font-size-small: 0.875rem;
-  
+
   /* Line Heights */
   --line-height-verse: 1.8;
   --line-height-body: 1.75;
@@ -64,7 +80,13 @@ body {
 }
 
 /* Remove default margins */
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -84,4 +106,107 @@ h1, h2, h3, h4, h5, h6, p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted);
+}
+
+/* Wordmark styling using Samarkan font */
+.wordmark {
+  font-family: 'Samarkan', cursive;
+  letter-spacing: 0.5px;
+  padding-top: 0.7em;
+}
+
+/* ===============================
+   Accessibility Enhancements
+   =============================== */
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus,
+.sr-only:active {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Focus visible states for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--color-accent-saffron);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent-saffron);
+  outline-offset: 3px;
+}
+
+/* Larger tap targets for mobile (min 44x44px) */
+@media (max-width: 768px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-text-primary: #000000;
+    --color-bg-primary: #FFFFFF;
+    --color-border: #000000;
+  }
+  
+  a,
+  button {
+    text-decoration: underline;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link positioning */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-accent-saffron);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }

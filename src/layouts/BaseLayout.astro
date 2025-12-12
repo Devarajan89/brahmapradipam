@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import GlobalSearch from '../components/GlobalSearch.astro';
 
 interface Props {
   title: string;
@@ -7,6 +8,8 @@ interface Props {
 }
 
 const { title, description = "A sacred digital library for serious spiritual seekers of Advaita Vedānta" } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL('/images/logo.png', Astro.site);
 ---
 
 <!DOCTYPE html>
@@ -17,18 +20,59 @@ const { title, description = "A sacred digital library for serious spiritual see
   <meta name="description" content={description}>
   <title>{title} | Brahmapradipam</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href={canonicalURL} />
+  
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="/fonts/samarkan.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/siddhanta.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={`${title} | Brahmapradipam`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={imageURL} />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={canonicalURL} />
+  <meta property="twitter:title" content={`${title} | Brahmapradipam`} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={imageURL} />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Brahmapradipam",
+      "description": "A sacred digital library for serious spiritual seekers of Advaita Vedānta",
+      "url": "https://brahmapradipam.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://brahmapradipam.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </head>
 <body class="min-h-screen flex flex-col">
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent-saffron focus:text-white focus:outline-none focus:ring-2 focus:ring-accent-sandalwood">
+    Skip to main content
+  </a>
+  
   <!-- Header -->
   <header class="sticky top-0 z-40 border-b border-border bg-bg-white/95 backdrop-blur-sm shadow-sm w-full">
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
       <div class="flex items-center justify-between">
-        <!-- Logo -->
+        <!-- Logo + Wordmark -->
         <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <img src="/images/logo.png" alt="Brahmapradipam" class="h-10 md:h-12" />
+          <img src="/images/logo.png" alt="Brahmapradipam" class="h-16 md:h-18 translate-y-[1px] block" />
+          <span class="wordmark leading-none text-2xl md:text-3xl text-accent-saffron hidden sm:inline">Brahmapradipam</span>
         </a>
         
         <!-- Desktop Navigation -->
@@ -64,6 +108,7 @@ const { title, description = "A sacred digital library for serious spiritual see
           <a href="/about" class="text-text-primary hover:text-accent-saffron transition-colors font-medium">
             About
           </a>
+          <GlobalSearch />
           <a href="/library" class="bg-accent-saffron text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
             Browse Texts
           </a>
@@ -115,7 +160,7 @@ const { title, description = "A sacred digital library for serious spiritual see
   </script>
 
   <!-- Main Content -->
-  <main class="flex-1">
+  <main id="main-content" class="flex-1" tabindex="-1">
     <slot />
   </main>
   
@@ -135,6 +180,27 @@ const { title, description = "A sacred digital library for serious spiritual see
           <p class="text-text-muted text-xs text-center italic">
             Self-study without proper guidance may lead to misunderstanding. Please seek a qualified teacher.
           </p>
+        </div>
+      </div>
+
+      <!-- Community Links -->
+      <div class="border-t border-amber-200 pt-6 pb-6">
+        <div class="max-w-2xl mx-auto">
+          <h4 class="font-semibold text-text-primary text-center mb-4">Help Improve Brahmapradipam</h4>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="/releases" class="inline-flex items-center gap-2 px-4 py-2 bg-bg-white border border-border rounded-lg text-sm text-text-primary hover:border-accent-saffron hover:text-accent-saffron transition-colors">
+              <span>📋</span>
+              <span>Release Notes</span>
+            </a>
+            <a href="https://github.com/Devarajan89/brahmapradipam/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-bg-white border border-border rounded-lg text-sm text-text-primary hover:border-accent-saffron hover:text-accent-saffron transition-colors">
+              <span>💡</span>
+              <span>Suggest Feature</span>
+            </a>
+            <a href="https://github.com/Devarajan89/brahmapradipam/issues/new?template=bug_report.md" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-bg-white border border-border rounded-lg text-sm text-text-primary hover:border-accent-saffron hover:text-accent-saffron transition-colors">
+              <span>🐛</span>
+              <span>Report Issue</span>
+            </a>
+          </div>
         </div>
       </div>
 

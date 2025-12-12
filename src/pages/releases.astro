@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const releases = [
+  {
+    date: '2025-01-12',
+    version: 'v0.2.0',
+    highlights: [
+      'Global search with keyboard shortcuts (Cmd/Ctrl+K or /)',
+      'Cross-reference map for verse relationships',
+      'Mobile verse sidebar with quick navigation',
+      'Enhanced SEO and structured data',
+      'Accessibility improvements (skip-to-content, ARIA labels)',
+    ],
+    added: [
+      'Īśa Upaniṣad mantras 1-18 with full commentary',
+      'Bhagavad Gītā 2.16 with analysis',
+      'Advaita glossary with key concepts',
+    ],
+    improved: [
+      'Header logo and wordmark alignment',
+      'Mobile responsive design across all pages',
+      'Tap-to-open word meanings instead of hover',
+      'Sticky navigation elements',
+    ],
+  },
+];
+---
+
+<BaseLayout title="Release Notes" description="Track new features, improvements, and updates to Brahmapradipam">
+  <main class="min-h-screen bg-bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Header -->
+      <div class="mb-12">
+        <h1 class="text-4xl font-bold text-accent-saffron mb-4">
+          📋 Release Notes
+        </h1>
+        <p class="text-text-secondary text-lg">
+          Track new features, content additions, and improvements to Brahmapradipam
+        </p>
+      </div>
+
+      <!-- Releases Timeline -->
+      <div class="space-y-12">
+        {releases.map((release, index) => (
+          <article class="relative pl-8 border-l-2 border-accent-saffron">
+            <!-- Timeline dot -->
+            <div class="absolute -left-2 top-0 w-4 h-4 bg-accent-saffron rounded-full"></div>
+            
+            <!-- Release Header -->
+            <div class="mb-6">
+              <div class="flex items-center gap-3 mb-2">
+                <h2 class="text-2xl font-semibold text-text-primary">
+                  {release.version}
+                </h2>
+                <time class="text-sm text-text-muted">
+                  {new Date(release.date).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                  })}
+                </time>
+                {index === 0 && (
+                  <span class="px-2 py-1 text-xs bg-accent-saffron text-white rounded-full">
+                    Latest
+                  </span>
+                )}
+              </div>
+              
+              <!-- Highlights -->
+              {release.highlights && release.highlights.length > 0 && (
+                <div class="bg-linear-to-br from-bg-sanskrit to-bg-white rounded-lg p-4 border-l-4 border-accent-saffron">
+                  <h3 class="font-semibold text-accent-saffron mb-2">⭐ Highlights</h3>
+                  <ul class="space-y-1 text-sm text-text-primary">
+                    {release.highlights.map(item => (
+                      <li class="flex items-start gap-2">
+                        <span class="text-accent-saffron mt-1">→</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            <!-- Changes Grid -->
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Added -->
+              {release.added && release.added.length > 0 && (
+                <div class="bg-bg-white rounded-lg border border-border p-4">
+                  <h4 class="font-semibold text-green-600 mb-3 flex items-center gap-2">
+                    <span>✨</span>
+                    <span>Added</span>
+                  </h4>
+                  <ul class="space-y-2 text-sm text-text-secondary">
+                    {release.added.map(item => (
+                      <li class="flex items-start gap-2">
+                        <span class="text-green-600">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <!-- Improved -->
+              {release.improved && release.improved.length > 0 && (
+                <div class="bg-bg-white rounded-lg border border-border p-4">
+                  <h4 class="font-semibold text-blue-600 mb-3 flex items-center gap-2">
+                    <span>🔧</span>
+                    <span>Improved</span>
+                  </h4>
+                  <ul class="space-y-2 text-sm text-text-secondary">
+                    {release.improved.map(item => (
+                      <li class="flex items-start gap-2">
+                        <span class="text-blue-600">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Feedback Section -->
+      <div class="mt-16 bg-bg-white rounded-lg border border-border p-8 text-center">
+        <h3 class="text-xl font-semibold text-text-primary mb-3">
+          Have Suggestions?
+        </h3>
+        <p class="text-text-secondary mb-6">
+          Help us improve Brahmapradipam by suggesting features or reporting issues
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://github.com/Devarajan89/brahmapradipam/issues/new?template=feature_request.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-accent-saffron text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
+          >
+            <span>💡</span>
+            <span>Suggest Feature</span>
+          </a>
+          <a 
+            href="https://github.com/Devarajan89/brahmapradipam/issues/new?template=bug_report.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 border-2 border-accent-saffron text-accent-saffron rounded-lg font-medium hover:bg-bg-sanskrit transition-colors"
+          >
+            <span>🐛</span>
+            <span>Report Issue</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Subscribe Notice -->
+      <div class="mt-8 text-center text-sm text-text-muted">
+        <p>
+          Follow development on 
+          <a href="https://github.com/Devarajan89/brahmapradipam" target="_blank" rel="noopener noreferrer" class="text-accent-saffron hover:underline">
+            GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
